@@ -5,7 +5,7 @@
     @include('partials.header')
 
     <div class="row">
-        <div style="margin:10px;">
+        <div style="margin:20px;">
             <h2>About Page</h2>
             <div>
                 <p>Hello!</p>
