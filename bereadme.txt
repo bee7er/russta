@@ -20,6 +20,8 @@ Mysql is on the vagrant box:
     or
 
     mysql -uruss -pPangolin32
+	
+	http://russ.dev/img/thumbs/chipwaffle_still.png
 
 
 

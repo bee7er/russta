@@ -20163,13 +20163,55 @@ label {
   border-bottom-right-radius: 6px;
   border-bottom-left-radius: 6px;
 }
+/* This one works unless the page starts to scroll*/
+/*#sticky-footer {*/
+  /*background:#242424;*/
+  /*border:1px solid #ff0000;*/
+  /*width:100%;*/
+  /*height:40px;*/
+  /*position:absolute;*/
+  /*bottom:0;*/
+  /*left:0;*/
+/*}*/
 
-#sticky-footer {
-  background:#242424;
-  border:1px solid #ff0000;
-  width:100%;
-  height:40px;
-  position:absolute;
-  bottom:0;
-  left:0;
+/* This one works to stick to the bottom of the content */
+/** {*/
+  /*margin: 0;*/
+/*}*/
+/*html, body {*/
+  /*height: 100%;*/
+/*}*/
+/*.page-wrap {*/
+  /*min-height: 100%;*/
+  /*!* equal to footer height *!*/
+  /*margin-bottom: -40px;*/
+/*}*/
+/*.page-wrap:after {*/
+  /*content: "";*/
+  /*display: block;*/
+/*}*/
+/*.site-footer, .page-wrap:after {*/
+  /*height: 40px;*/
+/*}*/
+/*.site-footer {*/
+  /*background: orange;*/
+/*}*/
+
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -40px;
+}
+.bottom-footer, .push {
+  height: 40px;
+}
+.bottom-footer {
+  background-color: #242424;
 }
