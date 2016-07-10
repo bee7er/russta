@@ -1,0 +1,17 @@
+/*!
+ * BEE Override styles
+ */
+
+body {
+    background-color: #fff;
+}
+
+#wrapper {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-inverse {
+    border-color: #232323;
+}

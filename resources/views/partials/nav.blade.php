@@ -11,6 +11,11 @@
         </div>
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+            <span style="position:absolute;top:0px;left:0px;text-align:center;width:100%;height:40px;">
+                <a href="/"><img alt="russell etheridge dot com" src="/img/logo-anim.png"></a>
+            </span>
+
             <ul class="nav navbar-nav">
                 <li class="{{ (Request::is('/') ? 'active' : '') }}">
                     <a href="{{ url('') }}"><i class="fa fa-home"></i> Home</a>
@@ -24,11 +29,6 @@
                     <a href="{{ url('about') }}">About</a>
                 </li>
             </ul>
-
-            <span style="position:absolute;top:0px;left:0px;text-align:center;width:100%;height:40px;z-index:-1;">
-                <a href="/"><img alt="russell etheridge dot com" src="/img/logo-anim.png"></a>
-            </span>
-
             <ul class="nav navbar-nav navbar-right">
                 @if (Auth::guest())
                     <li class="{{ (Request::is('auth/login') ? 'active' : '') }}"><a href="{{ url('auth/login') }}"><i
