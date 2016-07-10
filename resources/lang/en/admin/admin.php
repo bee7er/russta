@@ -7,7 +7,7 @@ return [
 	'welcome' => 'Welcome',
     'action' => 'Actions',
     'back' => 'Back',
-    'created_at' => 'Created at',
+    'created_at' => 'Created',
     'language' => 'Language',
     'yes'       => 'Yes',
     'no'        =>  'No',
@@ -17,4 +17,5 @@ return [
     'photo_albums' => 'Photo albums',
     'photo_items' => 'Photo items',
     'users' => 'Users',
+    'template' => 'Template',
 	];

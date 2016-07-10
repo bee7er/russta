@@ -22,7 +22,7 @@ class UserController extends AdminController
     */
     public function index()
     {
-        dd($this->data());
+        //dd($this->data());
         // Show the page
         return view('admin.user.index', ['data' => $this->data()]);
     }

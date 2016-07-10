@@ -2,19 +2,18 @@
 @section('title') Home :: @parent @endsection
 @section('content')
 
-    @include('partials.header')
+    {{--@include('partials.header')--}}
 
-    @if(count($photos)>0)
+    @if(count($resources)>0)
         <div class="row">
-            @for ($i = 0; $i < count($photos); $i++)
+            @for ($i = 0; $i < count($resources); $i++)
                 <div class="col-sm-3">
                     <div class="row" style="height:153px;text-align:left;border:0px solid red;">
                         <!-- NB Using the resource type to spcify the base part of the url -->
-                        <a href="{{url($photos[$i]->type .'/'.$photos[$i]->id.'')}}"
-                           style="margin:0;padding:0;">
-                                <img class="col-sm-12" src="{!! url('img/thumbs/'.$photos[$i]->filename) !!}"
+                        <a href="{{url($resources[$i]->type .'/'.$resources[$i]->id.'')}}">
+                                <img class="col-sm-12" src="{!! url('img/thumbs/'.$resources[$i]->filename) !!}"
                                      style="margin:0;padding:0;width:100%;height:100%;border:0px solid red;"
-                                    title="{!! $photos[$i]->name !!}">
+                                    title="{!! $resources[$i]->name !!}">
                         </a>
                     </div>
                 </div>

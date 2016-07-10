@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Photo;
+use App\Resource;
 use DB;
 
 class HomeController extends Controller {
@@ -14,18 +14,18 @@ class HomeController extends Controller {
 	 */
 	public function index()
 	{
-		$photos = Photo::select(
+		$resources = Resource::select(
 			array(
-			'photos.id',
-			'photos.name',
-			'photos.description',
-			'photos.filename',
-			'photos.url',
-			'photos.type'
+			'resources.id',
+			'resources.name',
+			'resources.description',
+			'resources.filename',
+			'resources.url',
+			'resources.type'
 			)
 		)->limit(80)->get();
 
-		return view('pages.home', compact('photos'));
+		return view('pages.home', compact('resources'));
 	}
 
 	/**
@@ -38,16 +38,16 @@ class HomeController extends Controller {
 	{
 		$articles = Article::with('author')->orderBy('position', 'DESC')->orderBy('created_at', 'DESC')->limit(4)->get();
 
-		$photoAlbums = PhotoAlbum::select(array(
-			'photo_albums.id',
-			'photo_albums.name',
-			'photo_albums.description',
-			'photo_albums.folder_id',
-			DB::raw('(select filename from photos WHERE album_cover=1 AND deleted_at IS NULL and photos.photo_album_id=photo_albums.id LIMIT 1) AS album_image'),
-			DB::raw('(select filename from photos WHERE photos.photo_album_id=photo_albums.id AND deleted_at IS NULL ORDER BY position ASC, id ASC LIMIT 1) AS album_image_first')
+		$resourceAlbums = PhotoAlbum::select(array(
+			'resource_albums.id',
+			'resource_albums.name',
+			'resource_albums.description',
+			'resource_albums.folder_id',
+			DB::raw('(select filename from resources WHERE album_cover=1 AND deleted_at IS NULL and resources.resource_album_id=resource_albums.id LIMIT 1) AS album_image'),
+			DB::raw('(select filename from resources WHERE resources.resource_album_id=resource_albums.id AND deleted_at IS NULL ORDER BY position ASC, id ASC LIMIT 1) AS album_image_first')
 		))->limit(8)->get();
 
-		return view('pages.home', compact('articles', 'photoAlbums'));
+		return view('pages.home', compact('articles', 'resourceAlbums'));
 	}
 
 }

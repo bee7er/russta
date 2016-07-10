@@ -31,9 +31,6 @@
         </tr>
         </thead>
         <tbody>
-
-        {{$data}}}}
-
         </tbody>
     </table>
 @endsection
