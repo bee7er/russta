@@ -1,15 +1,20 @@
 <?php namespace App\Http\Controllers;
 
-use App\Photo;
+use App\Http\Helpers\TemplateHelper;
+use App\Resource;
 
-class ImageController extends Controller {
-
+class ImageController extends Controller
+{
+    /**
+     * @param $id
+     * @return \BladeView|bool|\Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
     public function show($id)
 	{
-        $baseUrl = config('app.base_url');
-        $image = Photo::find($id);
+        $image = Resource::with('template')->find($id);
 
-        return view('image.view_image',compact('baseUrl', 'image'));
+        $image->rendered = TemplateHelper::render($image);
+
+        return view('image.view_image',compact('image'));
 	}
-
 }

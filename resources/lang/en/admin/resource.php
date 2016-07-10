@@ -7,6 +7,7 @@ return [
     'description' => 'Description',
     'template' => 'Template',
     'image' => 'Image',
+    'thumb' => 'Thumb',
     'url' => 'Url',
 
 ];

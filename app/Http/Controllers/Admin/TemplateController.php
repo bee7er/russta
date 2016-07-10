@@ -53,7 +53,19 @@ class TemplateController extends AdminController
      */
     public function store(TemplateRequest $request)
     {
-        $template = new Template($request->all());
+        Log::info('Saving new data', [$request->get('container')]);
+
+        //@todo put this in a function as is used twice
+        $name = $request->get('name');
+        $container = json_decode($request->get('container'));
+        if ($container === null) {
+            $container = $request->get('container');
+        }
+
+        $template = new Template([
+            'name' => $name,
+            'container' => html_entity_decode($container)
+        ]);
         $template->save();
     }
 
@@ -67,9 +79,6 @@ class TemplateController extends AdminController
     {
         $environmentVars = TemplateHelper::$environment_vars;
         $resourceAttrs = TemplateHelper::$resource_attrs;
-
-//        Log::info('Reading data: ' . $template->id, [$template->container]);
-
         // Show the page
         return view('admin.template.create_edit', compact('template', 'environmentVars', 'resourceAttrs'));
     }
@@ -82,15 +91,18 @@ class TemplateController extends AdminController
      */
     public function update(TemplateRequest $request, Template $template)
     {
-
         Log::info('Updating data: ' . $template->id, [$request->get('container')]);
 
+        $name = $request->get('name');
         $container = json_decode($request->get('container'));
         if ($container === null) {
             $container = $request->get('container');
         }
 
-        $template->update(['container' => html_entity_decode($container)]);
+        $template->update([
+            'name' => $name,
+            'container' => html_entity_decode($container)
+        ]);
     }
 
     /**

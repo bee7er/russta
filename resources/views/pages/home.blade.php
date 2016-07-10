@@ -11,7 +11,7 @@
                     <div class="row" style="height:153px;text-align:left;border:0px solid red;">
                         <!-- NB Using the resource type to spcify the base part of the url -->
                         <a href="{{url($resources[$i]->type .'/'.$resources[$i]->id.'')}}">
-                                <img class="col-sm-12" src="{!! url('img/thumbs/'.$resources[$i]->filename) !!}"
+                                <img class="col-sm-12" src="{!! url('/appfiles/resource/'.$resources[$i]->thumb) !!}"
                                      style="margin:0;padding:0;width:100%;height:100%;border:0px solid red;"
                                     title="{!! $resources[$i]->name !!}">
                         </a>

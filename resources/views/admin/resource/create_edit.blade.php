@@ -38,13 +38,24 @@
                 <span class="help-block">{{ $errors->first('description', ':message') }}</span>
             </div>
         </div>
+        <div class="form-group {{ $errors->has('thumb') ? 'error' : '' }}">
+            <div class="col-lg-12">
+                <label class="control-label" for="thumb">
+                    {{ trans("admin/resource.thumb") }}</label>
+                <input name="thumb" type="file" class="uploader" id="thumb" value="Upload"/>
+                @if (isset($resource) && $resource->thumb)
+                    <img src="/appfiles/resource/{{$resource->thumb}}" width="80">
+                @endif
+            </div>
+        </div>
         <div class="form-group {{ $errors->has('image') ? 'error' : '' }}">
             <div class="col-lg-12">
                 <label class="control-label" for="image">
                     {{ trans("admin/resource.image") }}</label>
                 <input name="image" type="file" class="uploader" id="image" value="Upload"/>
-                {!! (@isset($resource) && $resource->filename) ?
-                    ('<img src="/appfiles/resource/' . $resource->filename . '" width="80">'): '' !!}
+                @if (isset($resource) && $resource->image)
+                    <img src="/appfiles/resource/{{$resource->image}}" width="80">
+                @endif
             </div>
         </div>
         <div class="form-group  {{ $errors->has('url') ? 'has-error' : '' }}">

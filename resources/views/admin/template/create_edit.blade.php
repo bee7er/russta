@@ -33,10 +33,11 @@
         <div class="form-group  {{ $errors->has('container') ? 'has-error' : '' }}">
             {!! Form::label('container_editor', trans("admin/template.container"), array('class' => 'control-label')) !!}
             <div class="controls">
-                <input type="hidden" name="container" id="container" value="{{$template->container}}" />
+                <input type="hidden" name="container" id="container" value="@if (isset($template))
+                {{$template->container}}@endif" />
                 <div name="container_editor" id="container_editor" contenteditable="true" style="border:1px solid
-                #c2c2c2;padding:5px;">{!!
-                htmlentities($template->container, ENT_HTML5) !!}</div>
+                #c2c2c2;padding:5px;">@if (isset($template)){!!
+                htmlentities($template->container, ENT_HTML5) !!}@endif</div>
                 <span class="help-block">{{ $errors->first('container', ':message') }}</span>
 
             </div>
@@ -99,7 +100,7 @@
     }, true);
 
     function resetContainerEditor() {
-        document.getElementById('container_editor').innerHTML = "{{$template->container}}";
+        document.getElementById('container_editor').innerHTML = "@if (isset($template)) {{$template->container}}@endif";
     }
 </script>
 

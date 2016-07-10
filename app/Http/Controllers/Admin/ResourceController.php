@@ -52,31 +52,16 @@ class ResourceController extends AdminController
      */
     public function store(ResourceRequest $request)
     {
-        $resource = new Resource($request->except('image'));
+        $resource = new Resource($request->except(['image', 'thumb']));
 
-        $image = "";
-        if ($request->hasFile('image')) {
-            $file = $request->file('image');
-            $filename = $file->getClientOriginalName();
-            $extension = $file->getClientOriginalExtension();
-            $image = sha1($filename . time()) . '.' . $extension;
-        }
-        $resource->filename = $image;
+        $resource->image = $this->getImage($request, 'image');
+        $resource->thumb = $this->getImage($request, 'thumb');
         $resource->save();
 
-        if ($request->hasFile('image')) {
-            $destinationPath = public_path() . '/appfiles/resource';
-            $request->file('image')->move($destinationPath, $image);
-
-        }
+        $this->moveImage($request, 'image', $resource->image);
+        $this->moveImage($request, 'tuhmb', $resource->thumb);
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param Resource $resource
-     * @return Response
-     */
     public function edit(Resource $resource)
     {
         $templates = Template::lists('name', 'id')->toArray();
@@ -92,20 +77,12 @@ class ResourceController extends AdminController
      */
     public function update(ResourceRequest $request, Resource $resource)
     {
-        $picture = $resource->filename;
-        if ($request->hasFile('image')) {
-            $file = $request->file('image');
-            $filename = $file->getClientOriginalName();
-            $extension = $file->getClientOriginalExtension();
-            $picture = sha1($filename . time()) . '.' . $extension;
-        }
-        $resource->filename = $picture;
-        $resource->update($request->except('image'));
+        $resource->image = $this->getImage($request, 'image', $resource->image);
+        $resource->thumb = $this->getImage($request, 'thumb', $resource->thumb);
+        $resource->update($request->except(['image', 'thumb']));
 
-        if ($request->hasFile('image')) {
-            $destinationPath = public_path() . '/appfiles/resource/';
-            $request->file('image')->move($destinationPath, $picture);
-        }
+        $this->moveImage($request, 'image', $resource->image);
+        $this->moveImage($request, 'tuhmb', $resource->thumb);
     }
 
     /**
@@ -166,5 +143,41 @@ class ResourceController extends AdminController
                 <input type="hidden" name="row" value="{{$id}}" id="row">')
             ->remove_column('id')
             ->make();
+    }
+
+    /**
+     * Examine the request.  If the named image is there move it to local.
+     *
+     * @param ResourceRequest $request
+     * @param string $imageName
+     * @return string
+     */
+    private function moveImage(ResourceRequest $request, $imageName, $image)
+    {
+        if ($request->hasFile($imageName)) {
+            $destinationPath = public_path() . '/appfiles/resource';
+            $request->file($imageName)->move($destinationPath, $image);
+        }
+    }
+
+    /**
+     * Examine the request.  If the named image is there convert it to an internal
+     * name and return it.
+     *
+     * @param ResourceRequest $request
+     * @param string $imageName
+     * @param string $currentImage
+     * @return string
+     */
+    private function getImage(ResourceRequest $request, $imageName, $currentImage = "")
+    {
+        $image = $currentImage;
+        if ($request->hasFile($imageName)) {
+            $file = $request->file($imageName);
+            $filename = $file->getClientOriginalName();
+            $extension = $file->getClientOriginalExtension();
+            $image = sha1($filename . time()) . '.' . $extension;
+        }
+        return $image;
     }
 }

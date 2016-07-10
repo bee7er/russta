@@ -1,15 +1,20 @@
 <?php namespace App\Http\Controllers;
 
-use App\Photo;
+use App\Http\Helpers\TemplateHelper;
+use App\Resource;
 
-class GifController extends Controller {
-
+class GifController extends Controller
+{
+    /**
+     * @param $id
+     * @return \BladeView|bool|\Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
     public function show($id)
 	{
-        $baseUrl = config('app.base_url');
-        $gif = Photo::find($id);
+        $gif = Resource::with('template')->find($id);
 
-        return view('gif.view_gif',compact('baseUrl', 'gif'));
+        $gif->rendered = TemplateHelper::render($gif);
+
+        return view('gif.view_gif',compact('gif'));
 	}
-
 }

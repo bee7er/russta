@@ -25,9 +25,9 @@
                 </li>
             </ul>
 
-            <span style="position:absolute;top:0px;left:0px;text-align:center;width:100%;height:40px;">
-                    <a href="/"><img alt="russell etheridge dot com" src="/img/logo-anim.png"></a>
-                </span>
+            <span style="position:absolute;top:0px;left:0px;text-align:center;width:100%;height:40px;z-index:-1;">
+                <a href="/"><img alt="russell etheridge dot com" src="/img/logo-anim.png"></a>
+            </span>
 
             <ul class="nav navbar-nav navbar-right">
                 @if (Auth::guest())
