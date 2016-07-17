@@ -2,13 +2,8 @@
 @section('title')
     {!! $video->name !!} :: @parent @endsection
 @section('content')
-    <h3>{!! $video->name !!}</h3>
-    <div style="width: inherit;text-align: center;">
+    <h3 style="margin:0;padding:0;">{!! $video->name !!}</h3>
+
         {!! $video->rendered !!}
-    </div>
-@endsection
-@section('scripts')
-    <script>
-        // Nothing to do here
-    </script>
+
 @endsection
