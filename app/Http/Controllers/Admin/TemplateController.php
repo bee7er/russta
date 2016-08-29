@@ -91,18 +91,26 @@ class TemplateController extends AdminController
      */
     public function update(TemplateRequest $request, Template $template)
     {
-        Log::info('Updating data: ' . $template->id, [$request->get('container')]);
+        try {
+            Log::info('1', []);
+            $name = $request->get('name');
+            $container = json_decode($request->get('container'));
+            if ($container === null) {
+                $container = $request->get('container');
+            }
+            $container = removeWhiteSpace($container);
 
-        $name = $request->get('name');
-        $container = json_decode($request->get('container'));
-        if ($container === null) {
-            $container = $request->get('container');
+            $template->update([
+                'name' => $name,
+                'container' => html_entity_decode($container)
+            ]);
+        } catch (\Exception $e) {
+            Log::info('Error updating data: ' . $template->id, [
+                $e->getMessage(),
+                $e->getFile(),
+                $e->getLine()
+            ]);
         }
-
-        $template->update([
-            'name' => $name,
-            'container' => html_entity_decode($container)
-        ]);
     }
 
     /**
