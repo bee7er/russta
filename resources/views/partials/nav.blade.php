@@ -62,10 +62,17 @@
 </span>
 
 <script type="application/javascript">
-    var src = '/img/logo_anim.gif';
+    var src = '{{config('app.base_url')}}img/logo_anim.gif';
+    var prvSrc = '';
     $(document).ready(function(){
         $('#logo-anim').mouseover(function() {
+            prvSrc = this.src;
             this.src = src;
+        });
+    });
+    $(document).ready(function(){
+        $('#logo-anim').mouseout(function() {
+            this.src = prvSrc;
         });
     });
 </script>
