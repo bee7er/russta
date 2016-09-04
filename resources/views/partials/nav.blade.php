@@ -12,11 +12,6 @@
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-            <span style="position:absolute;top:0px;left:0px;text-align:center;width:100%;height:40px;vertical-align:
-            top;">
-                <a href="/"><img alt="russell etheridge dot com" src="{{config('app.base_url')}}img/logo_anim.gif"></a>
-            </span>
-
             <ul class="nav navbar-nav">
                 <li class="{{ (Request::is('/') ? 'active' : '') }}">
                     <a href="{{ url('') }}"><i class="fa fa-home"></i> Home</a>
@@ -60,3 +55,17 @@
         </div>
     </div>
 </nav>
+
+<span style="position:absolute;top:0px;left:0px;text-align:center;width:100%;height:40px;vertical-align:top;">
+    <a href="/"><img id="logo-anim" style="z-index: 9999;" alt="russell etheridge dot com"
+                     src="{{config('app.base_url')}}img/logo-anim.png"></a>
+</span>
+
+<script type="application/javascript">
+    var src = '/img/logo_anim.gif';
+    $(document).ready(function(){
+        $('#logo-anim').mouseover(function() {
+            this.src = src;
+        });
+    });
+</script>
