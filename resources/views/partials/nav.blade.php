@@ -12,7 +12,7 @@
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-            <ul class="nav navbar-nav">
+            <ul id="navbar" class="nav navbar-nav" style="display:none;">
                 <li class="{{ (Request::is('/') ? 'active' : '') }}">
                     <a href="{{ url('') }}"><i class="fa fa-home"></i> Home</a>
                 </li>
@@ -27,8 +27,8 @@
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 @if (Auth::guest())
-                    <li class="{{ (Request::is('auth/login') ? 'active' : '') }}"><a href="{{ url('auth/login') }}"><i
-                                    class="fa fa-sign-in"></i> Login</a></li>
+                    {{--<li class="{{ (Request::is('auth/login') ? 'active' : '') }}"><a href="{{ url('auth/login') }}"><i--}}
+                                    {{--class="fa fa-sign-in"></i> Login</a></li>--}}
                     {{--<li class="{{ (Request::is('auth/register') ? 'active' : '') }}"><a--}}
                                 {{--href="{{ url('auth/register') }}">Register</a></li>--}}
                 @else
@@ -56,11 +56,6 @@
     </div>
 </nav>
 
-<span style="position:absolute;top:0px;left:0px;text-align:center;width:100%;height:40px;vertical-align:top;">
-    <a href="/"><img id="logo-anim" style="z-index: 9999;" alt="russell etheridge dot com"
-                     src="{{config('app.base_url')}}img/logo-anim.png"></a>
-</span>
-
 <script type="application/javascript">
     var src = '{{config('app.base_url')}}img/logo_anim.gif';
     var prvSrc = '';
@@ -69,10 +64,16 @@
             prvSrc = this.src;
             this.src = src;
         });
-    });
-    $(document).ready(function(){
         $('#logo-anim').mouseout(function() {
             this.src = prvSrc;
+        });
+        $('#navbar-top').mouseover(function() {
+            $('#hamburger').hide();
+            $('#navbar').show();
+        });
+        $('#navbar-top').mouseout(function() {
+            $('#navbar').hide();
+            $('#hamburger').show();
         });
     });
 </script>

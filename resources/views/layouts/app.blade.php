@@ -41,6 +41,16 @@
 
 @include('partials.footer')
 
+<span id="navbar-top" style="position:absolute;top:0px;left:0px;text-align:center;width:100%;height:40px;
+vertical-align:top;">
+    <a href="/russ/public"><img id="logo-anim" alt="russell etheridge dot com"
+                                src="{{config('app.base_url')}}img/logo-anim.png"></a>
+</span>
+<span style="position:absolute;top:0px;left:0px;">
+    <img id="hamburger" alt="hamburger menu" src="{{config('app.base_url')}}img/hamburger.gif" width="40px"
+         height="40px">
+</span>
+
 <!-- Scripts -->
 @yield('scripts')
 
