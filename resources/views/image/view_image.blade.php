@@ -2,7 +2,6 @@
 @section('title')
     {!! $image->name !!} :: @parent @endsection
 @section('content')
-    <h3>{!! $image->name !!}</h3>
     <div style="width: inherit;text-align: center;">
 
         {!! $image->rendered !!}

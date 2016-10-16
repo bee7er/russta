@@ -17,6 +17,8 @@ class TemplateHelper
         'TYPE' => ['type' => 'The type of the resource'],
         'TEMPLATE_ID' => ['template_id' => 'The id of the template being used for the resource'],
         'DESCRIPTION' => ['description' => 'The description of the resource'],
+        'CONTENT_A' => ['content_a' => 'The copy for content A'],
+        'CONTENT_B' => ['content_b' => 'The copy for content B'],
 	];
 
 	/**
@@ -26,23 +28,25 @@ class TemplateHelper
 	 */
 	public static function render(Resource $resource)
 	{
-		if ($resource->template) {
-			if ($resource->template->container) {
+		if ($template = $resource->template()->first()) {
+
+			$container = $template->container;
+			if ($container) {
 				// Gather all potential environment variables we are supporting
 				$baseUrl = config('app.base_url');
 				// Now substitute in the container
 				foreach (self::$environment_vars as $environment_var => $var) {
 					$key = key($var);
-					$resource->template->container =
-						str_ireplace("#$environment_var#", $$key, $resource->template->container);
+					$container =
+						str_ireplace("#$environment_var#", $$key, $container);
 				}
 				// Now substitute resource attributes in the container
 				foreach (self::$resource_attrs as $resource_attr => $attr) {
 					$key = key($attr);
-					$resource->template->container =
-						str_ireplace("#$resource_attr#", $resource->$key, $resource->template->container);
+					$container =
+						str_ireplace("#$resource_attr#", $resource->$key, $container);
 				}
-				return $resource->template->container;
+				return $container;
 			}
 		}
 		return '';

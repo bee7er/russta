@@ -1,5 +1,5 @@
 <nav class="navbar navbar-default navbar-inverse">
-    <div class="container">
+    <div class="container" id="nav-container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
                     data-target="#bs-example-navbar-collapse-1">
@@ -12,7 +12,13 @@
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-            <ul id="navbar" class="nav navbar-nav" style="display:none;">
+            {{--<ul class="nav navbar-nav navbar-left">--}}
+                    {{--<li class="dropdown">--}}
+                        {{--<img id="hamburger" alt="hamburger menu" src="{{config('app.base_url')}}img/hamburger.gif" width="40px"--}}
+                             {{--height="40px">--}}
+                    {{--</li>--}}
+            {{--</ul>--}}
+            <ul id="navbar" class="nav navbar-nav" style="XXXdisplay:none;">
                 <li class="{{ (Request::is('/') ? 'active' : '') }}">
                     <a href="{{ url('') }}"><i class="fa fa-home"></i> Home</a>
                 </li>
@@ -55,25 +61,3 @@
         </div>
     </div>
 </nav>
-
-<script type="application/javascript">
-    var src = '{{config('app.base_url')}}img/logo_anim.gif';
-    var prvSrc = '';
-    $(document).ready(function(){
-        $('#logo-anim').mouseover(function() {
-            prvSrc = this.src;
-            this.src = src;
-        });
-        $('#logo-anim').mouseout(function() {
-            this.src = prvSrc;
-        });
-        $('#navbar-top').mouseover(function() {
-            $('#hamburger').hide();
-            $('#navbar').show();
-        });
-        $('#navbar-top').mouseout(function() {
-            $('#navbar').hide();
-            $('#hamburger').show();
-        });
-    });
-</script>

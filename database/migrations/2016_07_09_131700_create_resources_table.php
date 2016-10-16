@@ -17,6 +17,8 @@ class CreateResourcesTable extends Migration
 			$table->enum('type', array('video', 'gif', 'image'));
 			$table->string('name', 255)->nullable();
 			$table->text('description')->nullable();
+			$table->text('content_a')->nullable();
+			$table->text('content_b')->nullable();
 			$table->string('image', 255);
 			$table->string('thumb', 255);
 			$table->string('url', 255);
