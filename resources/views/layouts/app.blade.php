@@ -31,15 +31,11 @@
 <body>
 <!-- Wrapper class and push div block below added to get footer to go to the bottom of the page -->
 <div class="wrapper">
-    @include('partials.nav')
-
     <div class="container-fluid">
         @yield('content')
     </div>
     <div class="push"></div>
 </div>
-
-@include('partials.footer')
 
 @yield('scripts')
 
