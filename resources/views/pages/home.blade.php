@@ -1,11 +1,10 @@
 @extends('layouts.app')
 @section('title') Home :: @parent @endsection
+
 @section('content')
 
-    @include('partials.header')
-
     @if(count($resources)>0)
-        <div style="border:20px solid black;padding: 25px;margin:30px;background-color:#fff">
+        <div style="border:20px solid black;padding:25px;margin:30px;background-color:#fff">
             <div class="row" style="width:100%; border:0px solid red;">
                 @for ($i = 0; $i < count($resources); $i++)
                         <!-- NB Using the resource type to specify the base part of the url -->

@@ -29,10 +29,16 @@
     <link rel="shortcut icon" href="{!! asset('assets/site/ico/favicon.ico')  !!} ">
 </head>
 <body>
-<!-- Wrapper class and push div block below added to get footer to go to the bottom of the page -->
+
+@include('partials.header')
+
 <div class="wrapper">
+
+
     <div class="container-fluid">
+
         @yield('content')
+
     </div>
 </div>
 
