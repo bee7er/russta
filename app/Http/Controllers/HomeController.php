@@ -28,6 +28,15 @@ class HomeController extends Controller
 			)
 		)->limit(80)->get();
 
+		$first = null;
+		// Make sure we have an even number, cloning the first one if not
+		$count = $resources->count();
+		if (($count % 2) !== 0) {
+			$first = clone($resources->first());
+			$first['id'] = 60;
+			$resources = $resources->merge([$first]);
+		}
+
 		return view('pages.home', compact('resources'));
 	}
 

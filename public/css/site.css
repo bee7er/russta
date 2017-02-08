@@ -20167,7 +20167,7 @@ label {
  */
 
 body {
-  background-color: #fff;
+  background-color: #04DAFF;
 }
 
 #wrapper {
@@ -20208,85 +20208,6 @@ body {
   border-bottom: 0px solid #dddddd;
 }
 
-/* Stick footer to the bottom of the page */
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-html,
-body {
-  height: 100%;
-}
-
-.wrapper {
-  min-height: 100%;
-}
-
-.container-fluid {
-  overflow: auto;
-  padding-bottom: 40px;
-  /* must be same height as the footer */
-}
-
-.bottom-footer {
-  position: relative;
-  margin-top: -40px;
-  /* negative value of footer height */
-  height: 40px;
-  clear: both;
-  background-color: #242424;
-}
-
-/** {*/
-
-/*margin: 0;*/
-
-/*}*/
-
-/*html, body {*/
-
-/*height: 100%;*/
-
-/*}*/
-
-/*.wrapper {*/
-
-/*min-height: 100%;*/
-
-/*height: auto !important;*/
-
-/*!*height: 100%;*!*/
-
-/*!*margin: 0 auto -40px;*!*/
-
-/*margin: 0;*/
-
-/*padding: 0;*/
-
-/*}*/
-
-/*.bottom-footer {*/
-
-/*height: 40px;*/
-
-/*}*/
-
-/*.push {*/
-
-/*height: 2px;*/
-
-/*}*/
-
-/*.bottom-footer {*/
-
-/*background-color: #242424;*/
-
-/*}*/
-
-/* end stick footer */
-
 @media (min-width: 1200px) {
   .container-fluid {
     width: 1170px;
@@ -20306,8 +20227,6 @@ body {
 }
 
 .container-fluid {
-  /*margin-right: auto;*/
-  /*margin-left: auto;*/
   margin: 0;
   padding: 0;
   width: 100%;
@@ -20336,4 +20255,16 @@ body {
 .col-xl-1 {
   margin: 0;
   padding: 0;
+}
+
+.white-link {
+  color: #fff;
+  padding: 0 20px 0 20px;
+}
+
+.white-link:hover,
+.white-link:visited,
+.white-link:active {
+  color: #fff;
+  text-decoration: underline;
 }
