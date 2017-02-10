@@ -20,6 +20,16 @@ Mysql is on the vagrant box:
     or
 
     mysql -uruss -pPangolin32 russ_201606
+
+    -- Places db.sql into the vagrant root directory
+    mysqldump -uruss -pPangolin32 russ_201606 >  db.sql
+    -- Move it to the 'russ' directory
+    mv db.sql Code/russ
+
+    -- To replace the database, log
+    mysql -uruss -pPangolin32 russ_201606
+    -- Run the script
+    source db.sql
 	
 	http://russ.dev/img/thumbs/chipwaffle_still.png
 

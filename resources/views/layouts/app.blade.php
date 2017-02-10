@@ -30,16 +30,19 @@
 </head>
 <body>
 
-@include('partials.header')
 
 <div class="wrapper">
 
+    @include('partials.header')
 
     <div class="container-fluid">
 
         @yield('content')
 
     </div>
+
+
+    @include('partials.fish-tank')
 </div>
 
 @yield('scripts')

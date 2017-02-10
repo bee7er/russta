@@ -30,7 +30,7 @@ href="https://vimeo.com/russether">Russell Etheridge</a> on <a href="https://vim
         $resource = new Resource();
         $resource->name = 'Bathroom Boarder';
         $resource->image = '';
-        $resource->thumb = 'spidy.png';
+        $resource->thumb = 'bathroomboarder_th.png';
         $resource->url = 'https://player.vimeo.com/video/137499366';
         $resource->type = 'video';
         $resource->template_id = $videoTemplate->id;
