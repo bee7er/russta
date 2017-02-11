@@ -33,6 +33,10 @@
 
 <div class="wrapper">
 
+    @if (!Auth::guest())
+        @include('partials.nav')
+    @endif
+
     @include('partials.header')
 
     <div class="container-fluid">

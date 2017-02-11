@@ -12,12 +12,12 @@
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-            {{--<ul class="nav navbar-nav navbar-left">--}}
-                    {{--<li class="dropdown">--}}
-                        {{--<img id="hamburger" alt="hamburger menu" src="{{config('app.base_url')}}img/hamburger.gif" width="40px"--}}
-                             {{--height="40px">--}}
-                    {{--</li>--}}
-            {{--</ul>--}}
+            <ul class="nav navbar-nav navbar-left">
+                    <li class="dropdown">
+                        <img id="hamburger" alt="hamburger menu" src="{{config('app.base_url')}}img/hamburger.gif" width="40px"
+                             height="40px">
+                    </li>
+            </ul>
             <ul id="navbar" class="nav navbar-nav" style="XXXdisplay:none;">
                 <li class="{{ (Request::is('/') ? 'active' : '') }}">
                     <a href="{{ url('') }}"><i class="fa fa-home"></i> Home</a>
@@ -33,10 +33,10 @@
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 @if (Auth::guest())
-                    {{--<li class="{{ (Request::is('auth/login') ? 'active' : '') }}"><a href="{{ url('auth/login') }}"><i--}}
-                                    {{--class="fa fa-sign-in"></i> Login</a></li>--}}
-                    {{--<li class="{{ (Request::is('auth/register') ? 'active' : '') }}"><a--}}
-                                {{--href="{{ url('auth/register') }}">Register</a></li>--}}
+                    <li class="{{ (Request::is('auth/login') ? 'active' : '') }}"><a href="{{ url('auth/login') }}"><i
+                                    class="fa fa-sign-in"></i> Login</a></li>
+                    <li class="{{ (Request::is('auth/register') ? 'active' : '') }}"><a
+                                href="{{ url('auth/register') }}">Register</a></li>
                 @else
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"

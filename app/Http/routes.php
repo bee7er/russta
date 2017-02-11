@@ -14,6 +14,7 @@ Route::get('home', 'HomeController@index');
 Route::get('expressions', 'PagesController@expressions');
 Route::get('about', 'PagesController@about');
 Route::get('contact', 'PagesController@contact');
+Route::get('merch', 'PagesController@merch');
 Route::get('video/{id}', 'VideoController@show');
 Route::get('gif/{id}', 'GifController@show');
 Route::get('image/{id}', 'ImageController@show');

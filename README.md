@@ -26,6 +26,10 @@ Or:
     
     (root directory for the vagrant box is /home/vagrant)
     
+Login with:
+
+    http://<env>/auth/login
+    
 =====================================================================================
 
 -------

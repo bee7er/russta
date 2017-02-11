@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title') About :: @parent @endsection
+@section('title') about :: @parent @endsection
 
 @section('content')
 
