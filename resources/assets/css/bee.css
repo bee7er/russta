@@ -44,6 +44,17 @@ body {
     border-bottom: 0px solid #dddddd;
 }
 
+.header-block {
+    padding:0;
+    margin:0 auto 0 auto;
+    background-color:#04DAFF;
+    color:#fff;
+    font-family:Avenir, Verdana;
+    font-size:2.0em;
+    font-weight:bold;
+    text-align:center;
+}
+
 @media (min-width: 1200px) {
     .container-fluid {
         width: 1170px;
@@ -86,11 +97,83 @@ body {
     padding: 0;
 }
 
+.row-container, .about-row-container, .contact-row-container, .merch-row-container, .fish-tank-row-container {
+    border:10px solid black;
+    padding:25px;
+    margin:20px auto 0 auto;
+    background-color:#fff;
+    width:80%;
+    text-align:center;
+}
+.fish-tank-row-container {
+    margin-top:0;
+}
+.about-row-container {
+    margin-top:0;
+}
+.contact-row-container {
+    margin-top:0;
+    padding:20px;
+    width:30%;
+    text-align:left;
+    font-size:1.8em;
+    font-weight:bold;
+}
+.merch-row-container {
+    margin-top:0;
+    padding:20px;
+    width:30%;
+    text-align:left;
+    font-size:1.8em;
+    font-weight:bold;
+}
+.work-image {
+    border:10px solid #fff;
+    margin:0;
+    background-color:#000;
+    padding:10px;
+}
+.about-left {
+    width:50%;
+    float:left;
+}
+.about-right {
+    width:50%;
+    float:right;
+    text-align:left;
+    padding:20px;
+    font-size:1.2em;
+    font-weight:bold;
+}
+.about-left-img {
+    width:100%;margin-left:-30px;
+}
+.center-wrap-text {
+    text-align:center;
+    word-wrap:break-word;
+}
+.center-text {
+    text-align:center;
+}
+.panel-title {
+    color: #fff;
+    text-align: center;
+    font-weight:bold;
+    font-size: 2.0em;
+    margin: 50px 0 20px 0;
+}
 .white-link {
     color: #fff;
     padding: 0 20px 0 20px;
 }
 .white-link:hover, .white-link:visited, .white-link:active {
     color: #fff;
-    text-decoration: underline;
+    text-decoration: none;
+    border-bottom: 10px;
+    border-bottom-color: black;
+}
+.white-link-hover {
+    border-bottom: 10px;
+    border-bottom-style: solid;
+    border-bottom-color: black;
 }

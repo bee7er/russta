@@ -45,8 +45,6 @@
 
     </div>
 
-
-    @include('partials.fish-tank')
 </div>
 
 @yield('scripts')

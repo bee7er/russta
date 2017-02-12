@@ -21,7 +21,7 @@ return [
     'last' => 'Last',
     'filter' => '(filtered from a total of _MAX_ elements)',
     'view' => 'Showing 0 to 0 of a total of 0 elements',
-    'show' => 'Showing _START_ do _END_ of _TOTAL_ elements',
+    'show' => 'Showing _START_ to _END_ of _TOTAL_ elements',
     'noresult' => 'There is no match found',
     'showmenu' => 'Show _MENU_ elements',
     'processing' => 'Processing ...',
