@@ -20272,7 +20272,8 @@ body {
 .about-row-container,
 .contact-row-container,
 .merch-row-container,
-.fish-tank-row-container {
+.fish-tank-row-container,
+.resource-container {
   border: 10px solid black;
   padding: 25px;
   margin: 20px auto 0 auto;
@@ -20305,6 +20306,11 @@ body {
   text-align: left;
   font-size: 1.8em;
   font-weight: bold;
+}
+
+.resource-container {
+  margin-top: 0;
+  padding: 20px;
 }
 
 .work-image {

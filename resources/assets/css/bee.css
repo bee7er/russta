@@ -127,6 +127,14 @@ body {
     font-size:1.8em;
     font-weight:bold;
 }
+.video-container {
+    margin-top:0;
+    padding:20px;
+}
+.resource-container {
+    margin-top:0;
+    padding:20px;
+}
 .work-image {
     border:10px solid #fff;
     margin:0;

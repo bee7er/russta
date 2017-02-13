@@ -32,4 +32,10 @@ class PagesController extends Controller {
 		return view('pages.merch');
 	}
 
+
+	public function template()
+	{
+		return view('pages.template');
+	}
+
 }

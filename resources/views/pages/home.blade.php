@@ -35,7 +35,7 @@
         </div>
     </div>
     <div class="go-top clearfix" onclick="scrollToAnchor('top');">#top</div>
-    
+
     <div id="contact" class="panel-title">contact</div>
     <div class="row contact-row-container">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
