@@ -5,14 +5,14 @@
     <div class="hidden-xs hidden-sm col-md-12 col-lg-12 header-block">
         <span onclick="gotoPage('home');" onmouseover="$(this).addClass('white-link-hover');"
                                                  onmouseout="$(this).removeClass('white-link-hover')">work</span>
-        <img src="img/square.png" />
+        <img style="padding: 0 10px;" src="{{config('app.base_url')}}img/square.png" />
         <span onclick="gotoPage('about');" onmouseover="$(this).addClass('white-link-hover')"
                                                   onmouseout="$(this).removeClass('white-link-hover')">about</span>
         <a href="#home" class="white-link"><img src="{{config('app.base_url')}}img/logo.png" /></a>
         <span onclick="gotoPage('contact');" onmouseover="$(this).addClass('white-link-hover')"
                                                     onmouseout="$(this).removeClass('white-link-hover')
                                                     ">contact</span>
-        <img src="img/square.png" />
+        <img style="padding: 0 10px;" src="{{config('app.base_url')}}img/square.png" />
         <span onclick="gotoPage('merch');" onmouseover="$(this).addClass('white-link-hover')"
                                                   onmouseout="$(this).removeClass('white-link-hover')">merch</span>
     </div>
@@ -22,14 +22,14 @@
         </div>
         <span onclick="gotoPage('home');" onmouseover="$(this).addClass('white-link-hover');"
               onmouseout="$(this).removeClass('white-link-hover')">work</span>
-        <img src="img/square.png" />
+        <img style="padding: 0 10px;" src="{{config('app.base_url')}}img/square.png" />
         <span onclick="gotoPage('about');" onmouseover="$(this).addClass('white-link-hover')"
               onmouseout="$(this).removeClass('white-link-hover')">about</span>
-        <img src="img/square.png" />
+        <img style="padding: 0 10px;" src="{{config('app.base_url')}}img/square.png" />
         <span onclick="gotoPage('contact');" onmouseover="$(this).addClass('white-link-hover')"
               onmouseout="$(this).removeClass('white-link-hover')
                                                     ">contact</span>
-        <img src="img/square.png" />
+        <img style="padding: 0 10px;" src="{{config('app.base_url')}}img/square.png" />
         <span onclick="gotoPage('merch');" onmouseover="$(this).addClass('white-link-hover')"
               onmouseout="$(this).removeClass('white-link-hover')">merch</span>
     </div>
@@ -44,7 +44,8 @@
                     <span onclick="gotoPage('home');" onmouseover="$(this).addClass('white-link-hover');"
                           onmouseout="$(this).removeClass('white-link-hover')">work</span>
                 </td>
-                <td style="text-align:center;"><img src="img/square.png" /></td>
+                <td style="text-align:center;padding: 0 10px;"><img src="{{config('app.base_url')}}img/square.png"
+                    /></td>
                 <td style="text-align:left;">
                     <span onclick="gotoPage('about');" onmouseover="$(this).addClass('white-link-hover')"
                           onmouseout="$(this).removeClass('white-link-hover')">about</span>
@@ -56,7 +57,8 @@
                           onmouseout="$(this).removeClass('white-link-hover')
                                                     ">contact</span>
                 </td>
-                <td style="text-align:center;"><img src="img/square.png" /></td>
+                <td style="text-align:center;padding: 0 10px"><img src="{{config('app.base_url')}}img/square.png"
+                    /></td>
                 <td style="text-align:left;">
                     <span onclick="gotoPage('merch');" onmouseover="$(this).addClass('white-link-hover')"
                           onmouseout="$(this).removeClass('white-link-hover')">merch</span>
@@ -69,7 +71,11 @@
 
 <script type="text/javascript">
     function gotoPage(aid) {
-        scrollToAnchor(aid);
+        @if (Request::is('home'))
+                scrollToAnchor(aid);
+        @else
+                document.location = ("{{config('app.base_url')}}" + "home#" + aid);
+        @endif
     }
     function scrollToAnchor(aid) {
         var aTag = $("div[id='"+ aid +"']");

@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e08b04bc-1139-46e3-94a2-580d1b20f4d9" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/PagesController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/PagesController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/site.css" afterPath="$PROJECT_DIR$/public/css/site.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/css/bee.css" afterPath="$PROJECT_DIR$/resources/assets/css/bee.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/pages/home.blade.php" afterPath="$PROJECT_DIR$/resources/views/pages/home.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/partials/header.blade.php" afterPath="$PROJECT_DIR$/resources/views/partials/header.blade.php" />
     </list>
     <ignored path="Laravel.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,65 +32,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="home.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/pages/home.blade.php">
+      <file leaf-file-name="header.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/partials/header.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.75">
-              <caret line="22" column="51" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="51" />
+            <state vertical-scroll-proportion="0.13944224">
+              <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
               <folding>
-                <element signature="e#218#237#0#HTML" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#1;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#1;n#div#1;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#2;n#div#1;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#2;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#div#2;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#div#2;n#div#1;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="merch.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/pages/merch.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.5">
-              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="14" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="template.blade.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/pages/template.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.72103006">
-              <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-              <folding>
-                <element signature="e#185#261#0#HTML" expanded="true" />
-                <element signature="e#394#495#0#HTML" expanded="true" />
-                <element signature="e#529#629#0#HTML" expanded="true" />
-                <element signature="e#848#868#0#HTML" expanded="true" />
-                <element signature="e#998#1078#0#HTML" expanded="true" />
-                <element signature="e#1838#1858#0#HTML" expanded="true" />
-                <element signature="e#1988#2068#0#HTML" expanded="true" />
-                <element signature="e#2222#2242#0#HTML" expanded="true" />
-                <element signature="e#2394#2517#0#HTML" expanded="true" />
-                <element signature="e#2645#2665#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="db.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="135" column="678" selection-start-line="135" selection-start-column="638" selection-end-line="135" selection-end-column="678" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bee.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/assets/css/bee.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.9166666">
-              <caret line="100" column="0" selection-start-line="100" selection-start-column="0" selection-end-line="105" selection-end-column="22" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -152,12 +104,12 @@
         <option value="$PROJECT_DIR$/resources/views/pages/contact.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/pages/merch.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/partials/header.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/pages/home.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/PagesController.php" />
         <option value="$PROJECT_DIR$/resources/assets/css/bee.css" />
         <option value="$PROJECT_DIR$/resources/views/pages/template.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/pages/home.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/PagesController.php" />
+        <option value="$PROJECT_DIR$/resources/views/partials/header.blade.php" />
       </list>
     </option>
   </component>
@@ -515,7 +467,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14442295" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28198758" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.647205" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6658385" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24982406" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -550,16 +502,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.25">
-          <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
-          <folding>
-            <element signature="e#7#38#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Debug/Dumper.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3888889">
@@ -708,22 +650,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-23.125">
-          <caret line="37" column="9" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/ResourceController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -739,14 +665,6 @@
           <folding>
             <marker date="1486652762000" expanded="true" signature="998:1054" placeholder="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -911,44 +829,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/partials/header.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.1923077">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#1;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#table#0;n#div#2;n#div#1;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#2;n#div#1;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#2;n#div#1;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#div#2;n#div#1;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#div#2;n#div#1;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#div#2;n#div#1;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#td#2;n#tr#1;n#tbody#0;n#table#0;n#div#2;n#div#1;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/pages/merch.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.5">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="14" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PagesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.60076046">
-          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48479086">
-          <caret line="17" column="48" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
           <folding />
         </state>
       </provider>
@@ -969,19 +853,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/home.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.75">
-          <caret line="22" column="51" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="51" />
-          <folding>
-            <element signature="e#218#237#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/pages/template.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.72103006">
+        <state vertical-scroll-proportion="-9.807693">
           <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
           <folding>
             <element signature="e#185#261#0#HTML" expanded="true" />
@@ -994,6 +868,81 @@
             <element signature="e#2222#2242#0#HTML" expanded="true" />
             <element signature="e#2394#2517#0#HTML" expanded="true" />
             <element signature="e#2645#2665#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-23.125">
+          <caret line="37" column="9" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.75">
+          <caret line="17" column="48" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/home.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.875">
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+          <folding>
+            <element signature="e#218#237#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.077220075">
+          <caret line="4" column="8" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/maximebf/debugbar/src/DebugBar/JavascriptRenderer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2430279">
+          <caret line="613" column="46" selection-start-line="613" selection-start-column="38" selection-end-line="613" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PagesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5179283">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/partials/header.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.13944224">
+          <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#1;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#1;n#div#1;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#2;n#div#1;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#2;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#div#2;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#div#2;n#div#1;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
