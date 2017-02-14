@@ -1,18 +1,19 @@
 
 <div id="top">&nbsp;</div>
 
-<div class="row" style="width:80%; border:0px solid red;margin:20px auto 0 auto;">
+<div class="row" style="margin:20px auto 0 auto;">
     <div class="hidden-xs hidden-sm col-md-12 col-lg-12 header-block">
-        <span onclick="gotoPage('home');" onmouseover="$(this).addClass('white-link-hover');"
+        <span onclick="gotoPage('home');" 
+              onmouseover="$(this).addClass('white-link-hover');"
                                                  onmouseout="$(this).removeClass('white-link-hover')">work</span>
-        <img style="padding: 0 10px;" src="{{config('app.base_url')}}img/square.png" />
+        <img style="padding: 0 15px;" src="{{config('app.base_url')}}img/square.png" />
         <span onclick="gotoPage('about');" onmouseover="$(this).addClass('white-link-hover')"
                                                   onmouseout="$(this).removeClass('white-link-hover')">about</span>
-        <a href="#home" class="white-link"><img src="{{config('app.base_url')}}img/logo.png" /></a>
+        <a href="#home" class="white-link"><img src="{{config('app.base_url')}}img/logo.png" width="150px" /></a>
         <span onclick="gotoPage('contact');" onmouseover="$(this).addClass('white-link-hover')"
                                                     onmouseout="$(this).removeClass('white-link-hover')
                                                     ">contact</span>
-        <img style="padding: 0 10px;" src="{{config('app.base_url')}}img/square.png" />
+        <img style="padding: 0 15px;" src="{{config('app.base_url')}}img/square.png" />
         <span onclick="gotoPage('merch');" onmouseover="$(this).addClass('white-link-hover')"
                                                   onmouseout="$(this).removeClass('white-link-hover')">merch</span>
     </div>
@@ -22,14 +23,14 @@
         </div>
         <span onclick="gotoPage('home');" onmouseover="$(this).addClass('white-link-hover');"
               onmouseout="$(this).removeClass('white-link-hover')">work</span>
-        <img style="padding: 0 10px;" src="{{config('app.base_url')}}img/square.png" />
+        <img style="padding: 0 15px;" src="{{config('app.base_url')}}img/square.png" />
         <span onclick="gotoPage('about');" onmouseover="$(this).addClass('white-link-hover')"
               onmouseout="$(this).removeClass('white-link-hover')">about</span>
-        <img style="padding: 0 10px;" src="{{config('app.base_url')}}img/square.png" />
+        <img style="padding: 0 15px;" src="{{config('app.base_url')}}img/square.png" />
         <span onclick="gotoPage('contact');" onmouseover="$(this).addClass('white-link-hover')"
               onmouseout="$(this).removeClass('white-link-hover')
                                                     ">contact</span>
-        <img style="padding: 0 10px;" src="{{config('app.base_url')}}img/square.png" />
+        <img style="padding: 0 15px;" src="{{config('app.base_url')}}img/square.png" />
         <span onclick="gotoPage('merch');" onmouseover="$(this).addClass('white-link-hover')"
               onmouseout="$(this).removeClass('white-link-hover')">merch</span>
     </div>
@@ -40,26 +41,27 @@
         <table style="margin-bottom:10px;margin:0 auto 0 auto;">
             <tbody>
             <tr>
-                <td style="text-align:right;">
+                <td style="text-align:center;width:40%;">
                     <span onclick="gotoPage('home');" onmouseover="$(this).addClass('white-link-hover');"
                           onmouseout="$(this).removeClass('white-link-hover')">work</span>
                 </td>
-                <td style="text-align:center;padding: 0 10px;"><img src="{{config('app.base_url')}}img/square.png"
+                <td style="text-align:center;padding: 0 15px;width:20%;"><img src="{{config('app.base_url')
+                }}img/square.png"
                     /></td>
-                <td style="text-align:left;">
+                <td style="text-align:center;width:40%;">
                     <span onclick="gotoPage('about');" onmouseover="$(this).addClass('white-link-hover')"
                           onmouseout="$(this).removeClass('white-link-hover')">about</span>
                 </td>
             </tr>
             <tr>
-                <td style="text-align:right;">
+                <td style="text-align:center;">
                     <span onclick="gotoPage('contact');" onmouseover="$(this).addClass('white-link-hover')"
                           onmouseout="$(this).removeClass('white-link-hover')
                                                     ">contact</span>
                 </td>
-                <td style="text-align:center;padding: 0 10px"><img src="{{config('app.base_url')}}img/square.png"
+                <td style="text-align:center;padding: 0 15px"><img src="{{config('app.base_url')}}img/square.png"
                     /></td>
-                <td style="text-align:left;">
+                <td style="text-align:center;">
                     <span onclick="gotoPage('merch');" onmouseover="$(this).addClass('white-link-hover')"
                           onmouseout="$(this).removeClass('white-link-hover')">merch</span>
                 </td>
@@ -81,4 +83,15 @@
         var aTag = $("div[id='"+ aid +"']");
         $('html,body').animate({scrollTop: aTag.offset().top},'slow');
     }
+
+    $(document).ready( function() {
+
+        $('.gallery-item-VV').hover( function() {
+            $(this).find('.img-title').fadeIn(300);
+        }, function() {
+            $(this).find('.img-title').fadeOut(100);
+        });
+
+    });
+
 </script>

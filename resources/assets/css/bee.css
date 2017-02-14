@@ -1,9 +1,15 @@
 /*!
  * BEE Override styles
  */
+@font-face {
+    font-family: "Muli Black 900";
+    src: url(http://russ.dev/fonts/Muli.ttf) format("truetype");
+}
 
 body {
     background-color: #04DAFF;
+    font-family: "Muli", "Verdana", sans-serif;
+    color: #000;
 }
 
 #wrapper {
@@ -49,7 +55,6 @@ body {
     margin:0 auto 0 auto;
     background-color:#04DAFF;
     color:#fff;
-    font-family:Avenir, Verdana;
     font-size:2.0em;
     font-weight:bold;
     text-align:center;
@@ -99,10 +104,10 @@ body {
 
 .row-container, .about-row-container, .contact-row-container, .merch-row-container, .fish-tank-row-container {
     border:10px solid black;
-    padding:25px;
+    padding:18px;
     margin:20px auto 0 auto;
     background-color:#fff;
-    width:80%;
+    width:70%;
     text-align:center;
 }
 .fish-tank-row-container {
@@ -110,21 +115,23 @@ body {
 }
 .about-row-container {
     margin-top:0;
+    padding: 0;
+    background-color:#fff;
 }
 .contact-row-container {
     margin-top:0;
     padding:20px;
     width:30%;
-    text-align:left;
-    font-size:1.8em;
+    text-align:center;
+    font-size:1.2em;
     font-weight:bold;
 }
 .merch-row-container {
     margin-top:0;
     padding:20px;
     width:30%;
-    text-align:left;
-    font-size:1.8em;
+    text-align:center;
+    font-size:1.2em;
     font-weight:bold;
 }
 .video-container {
@@ -136,25 +143,45 @@ body {
     padding:20px;
 }
 .work-image {
-    border:10px solid #fff;
+    border:18px solid #fff;
     margin:0;
     background-color:#000;
     padding:10px;
+    cursor: pointer;
 }
-.about-left {
+.about-left, .about-left-vertical {
     width:50%;
     float:left;
+    margin: 0;
+    padding: 0;
+    border-right: 10px solid #000;
+    vertical-align: bottom;
 }
-.about-right {
+.about-right, .about-right-vertical {
     width:50%;
     float:right;
     text-align:left;
     padding:20px;
     font-size:1.2em;
     font-weight:bold;
+    border-left: 0px solid #000;
+    background-color:#fff;
+    text-align: justify;
+    -moz-text-align-last: left; /* Code for Firefox */
+    text-align-last: left;
+}
+.about-left-vertical {
+    width:100%;
+    clear: both;
+    border: 0;
+}
+.about-right-vertical {
+    width:100%;
+    clear: both;
+    border: 0;
 }
 .about-left-img {
-    width:100%;margin-left:-30px;
+    width:100%;
 }
 .center-wrap-text {
     text-align:center;
@@ -167,8 +194,8 @@ body {
     color: #fff;
     text-align: center;
     font-weight:bold;
-    font-size: 2.0em;
-    margin: 50px 0 20px 0;
+    font-size: 2.8em;
+    margin: 300px 0 40px 0;
 }
 .go-top {
     color: #fff;
@@ -180,7 +207,7 @@ body {
 }
 .white-link {
     color: #fff;
-    padding: 0 20px 0 20px;
+    padding: 0 35px 0 35px;
 }
 .white-link:hover, .white-link:visited, .white-link:active {
     color: #fff;
