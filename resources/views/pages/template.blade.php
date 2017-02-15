@@ -3,7 +3,7 @@
 
 @section('content')
 
-    <body style="background-color: magenta;" />
+    <body style="background-color: #ff0076;" />
 
     <div class="template-title">bathroom boarder</div>
     <div id="video-panel" class="row template-row-container">
