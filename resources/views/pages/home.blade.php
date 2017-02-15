@@ -19,6 +19,11 @@
         <div class="go-top clearfix" onclick="scrollToAnchor('top');">#top</div>
     @endif
 
+    <div class="row fish-tank-row-container">
+        <img src="{{config('app.base_url')}}img/fishtank_placeholder.png" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" />
+    </div>
+    <div class="go-top clearfix" onclick="scrollToAnchor('top');">#top</div>
+
     <div id="about" class="panel-title">about</div>
     <div class="row about-row-container">
         <div class="hidden-xs hidden-sm col-md-6 col-lg-6 about-left">
@@ -38,21 +43,13 @@
 
     <div id="contact" class="panel-title">contact</div>
     <div class="row contact-row-container">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding:10px;">
             <p>Have a project in mind, or just want to say hi?</p>
             <p>I’d love to hear from you!.</p>
             <p class="center-wrap-text">email.address</p>
             <p class="center-text">telephone.number</p>
             <p class="center-text">Follow me!</p>
-            <p class="center-text">
-                <a target="_blank" href="https://dribbble.com/russ_ether"><img src="img/social/dribble.png" class="social-icon" title="Share on dribble" /></a>
-                <a target="_blank" href="https://www.facebook.com/profile.php?id=100013591591149"><img src="img/social/facebook.png" class="social-icon" title="Share on facebook" /></a>
-                <a target="_blank" href="https://www.instagram.com/russ_ether/"><img src="img/social/instagram.png" class="social-icon" title="Share on instagram" /></a>
-                <a target="_blank" href="https://www.linkedin.com/in/russether"><img src="img/social/linkedin.png" class="social-icon" title="Share on linkedin" /></a>
-                <a target="_blank" href="http://russether.tumblr.com/"><img src="img/social/tumblr.png" class="social-icon" title="Share on tumblr" /></a>
-                <a target="_blank" href="https://twitter.com/russ_ether"><img src="img/social/twitter.png" class="social-icon" title="Share on twitter" /></a>
-                <a target="_blank" href="https://vimeo.com/russether"><img src="img/social/vimeo.png" class="social-icon" title="Share on vimeo" /></a>
-            </p>
+            <p class="center-text"><a target="_blank" href="https://dribbble.com/russ_ether"><img src="img/social/dribble.png" class="social-icon" title="Share on dribble" /></a><a target="_blank" href="https://www.facebook.com/profile.php?id=100013591591149"><img src="img/social/facebook.png" class="social-icon" title="Share on facebook" /></a><a target="_blank" href="https://www.instagram.com/russ_ether/"><img src="img/social/instagram.png" class="social-icon" title="Share on instagram" /></a><br><a target="_blank" href="https://www.linkedin.com/in/russether"><img src="img/social/linkedin.png" class="social-icon" title="Share on linkedin" /></a><a target="_blank" href="https://twitter.com/russ_ether"><img src="img/social/twitter.png" class="social-icon" title="Share on twitter" /></a><a target="_blank" href="https://vimeo.com/russether"><img src="img/social/vimeo.png" class="social-icon" title="Share on vimeo" /></a></p>
         </div>
     </div>
     <div class="go-top clearfix" onclick="scrollToAnchor('top');">#top</div>
@@ -69,10 +66,8 @@
     </div>
     <div class="go-top clearfix" onclick="scrollToAnchor('top');">#top</div>
 
-    <h2 id="fish-tank" class="panel-title">fish tank</h2>
-    <div class="row fish-tank-row-container">
-            <img src="{{config('app.base_url')}}img/fishtank_placeholder.png" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" />
+    <div class="row footer-row-container">
+        <div style="text-align: center;padding-top:100px;">&copy; 2017 Russ Etheridge</div>
     </div>
-    <div class="go-top clearfix" onclick="scrollToAnchor('top');">#top</div>
 
 @endsection

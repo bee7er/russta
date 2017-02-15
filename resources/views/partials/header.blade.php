@@ -9,7 +9,7 @@
         <img style="padding: 0 15px;" src="{{config('app.base_url')}}img/square.png" />
         <span onclick="gotoPage('about');" onmouseover="$(this).addClass('white-link-hover')"
                                                   onmouseout="$(this).removeClass('white-link-hover')">about</span>
-        <a href="#home" class="white-link"><img src="{{config('app.base_url')}}img/logo.png" width="150px" /></a>
+        <a href="#top" class="white-link"><img src="{{config('app.base_url')}}img/logo.png" /></a>
         <span onclick="gotoPage('contact');" onmouseover="$(this).addClass('white-link-hover')"
                                                     onmouseout="$(this).removeClass('white-link-hover')
                                                     ">contact</span>
@@ -72,26 +72,52 @@
 </div>
 
 <script type="text/javascript">
-    function gotoPage(aid) {
+    function gotoPage(aid)
+    {
         @if (Request::is('home'))
                 scrollToAnchor(aid);
         @else
                 document.location = ("{{config('app.base_url')}}" + "home#" + aid);
         @endif
     }
-    function scrollToAnchor(aid) {
+    function scrollToAnchor(aid)
+    {
         var aTag = $("div[id='"+ aid +"']");
         $('html,body').animate({scrollTop: aTag.offset().top},'slow');
     }
 
-    $(document).ready( function() {
-
+    $(document).ready( function()
+    {
         $('.gallery-item-VV').hover( function() {
             $(this).find('.img-title').fadeIn(300);
         }, function() {
             $(this).find('.img-title').fadeOut(100);
         });
-
     });
+
+    $(document).ready( function()
+    {
+        addEvent(window, "resize", function () {
+            // On resize we recalculate the height of the ifrmae to maintain aspect ratio
+            if (vidFrame = $("#video-frame")) {
+                vidWidth = vidFrame.width();
+//                vidHeight = vidFrame.height();
+                vidHeight = (vidWidth / 16) * 9;
+                vidFrame.css('height', vidHeight);
+            }
+
+        });
+    });
+
+    var addEvent = function(object, type, callback) {
+        if (object == null || typeof(object) == 'undefined') return;
+        if (object.addEventListener) {
+            object.addEventListener(type, callback, false);
+        } else if (object.attachEvent) {
+            object.attachEvent("on" + type, callback);
+        } else {
+            object["on"+type] = callback;
+        }
+    };
 
 </script>

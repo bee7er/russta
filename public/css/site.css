@@ -20167,12 +20167,17 @@ label {
  */
 
 @font-face {
-  font-family: "Muli Black 900";
-  src: url(http://russ.dev/fonts/Muli.ttf) format("truetype");
+  font-family: "Muli";
+  src: url(http://russ.dev/fonts/Muli-Black.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Muli-ExtraBold";
+  src: url(http://russ.dev/fonts/Muli-ExtraBold.ttf) format("truetype");
 }
 
 body {
-  background-color: #04DAFF;
+  background-color: #00DAFF;
   font-family: "Muli", "Verdana", sans-serif;
   color: #000;
 }
@@ -20218,10 +20223,10 @@ body {
 .header-block {
   padding: 0;
   margin: 0 auto 0 auto;
-  background-color: #04DAFF;
+  background-color: #00DAFF;
   color: #fff;
   font-size: 2.0em;
-  font-weight: bold;
+  font-weight: normal;
   text-align: center;
 }
 
@@ -20278,7 +20283,9 @@ body {
 .about-row-container,
 .contact-row-container,
 .merch-row-container,
-.fish-tank-row-container {
+.fish-tank-row-container,
+.footer-row-container,
+.template-row-container {
   border: 10px solid black;
   padding: 18px;
   margin: 20px auto 0 auto;
@@ -20287,8 +20294,27 @@ body {
   text-align: center;
 }
 
-.fish-tank-row-container {
+.template-row-container {
+  width: 60%;
   margin-top: 0;
+  padding: 36px;
+  background-color: #fff;
+}
+
+.footer-row-container {
+  height: 200px;
+  width: 100%;
+  margin-top: 300px;
+  padding: 0;
+  border: 0;
+  border-top: 10px solid #000;
+  font-size: 1.2em;
+}
+
+.fish-tank-row-container {
+  margin-top: 300px;
+  padding: 0;
+  border: 0;
 }
 
 .about-row-container {
@@ -20302,17 +20328,17 @@ body {
   padding: 20px;
   width: 30%;
   text-align: center;
+  font-family: "Muli-ExtraBold", "Verdana";
   font-size: 1.2em;
-  font-weight: bold;
 }
 
 .merch-row-container {
   margin-top: 0;
   padding: 20px;
   width: 30%;
+  font-family: "Muli-ExtraBold", "Verdana";
   text-align: center;
   font-size: 1.2em;
-  font-weight: bold;
 }
 
 .video-container {
@@ -20347,11 +20373,9 @@ body {
 .about-right-vertical {
   width: 50%;
   float: right;
-  text-align: left;
   padding: 20px;
+  font-family: "Muli-ExtraBold", "Verdana";
   font-size: 1.2em;
-  font-weight: bold;
-  border-left: 0px solid #000;
   background-color: #fff;
   text-align: justify;
   -moz-text-align-last: left;
@@ -20362,7 +20386,8 @@ body {
 .about-left-vertical {
   width: 100%;
   clear: both;
-  border: 0;
+  border-right: 0;
+  border-bottom: 10px solid #000;
 }
 
 .about-right-vertical {
@@ -20384,18 +20409,21 @@ body {
   text-align: center;
 }
 
-.panel-title {
+.panel-title,
+.template-title {
   color: #fff;
   text-align: center;
-  font-weight: bold;
-  font-size: 2.8em;
+  font-size: 36px;
   margin: 300px 0 40px 0;
+}
+
+.template-title {
+  margin: 20px 0 40px 0;
 }
 
 .go-top {
   color: #fff;
   text-align: right;
-  font-weight: bold;
   font-size: 1.6em;
   margin-right: 20px;
   cursor: pointer;
@@ -20416,6 +20444,7 @@ body {
 }
 
 .white-link-hover {
+  padding-bottom: 6px;
   border-bottom: 10px;
   border-bottom-style: solid;
   border-bottom-color: black;
@@ -20423,6 +20452,6 @@ body {
 }
 
 .social-icon {
-  width: 20px;
-  margin: 4px;
+  width: 30px;
+  margin: 15px;
 }
