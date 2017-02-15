@@ -20223,7 +20223,6 @@ body {
 .header-block {
   padding: 0;
   margin: 0 auto 0 auto;
-  background-color: #00DAFF;
   color: #fff;
   font-size: 2.0em;
   font-weight: normal;
@@ -20285,20 +20284,33 @@ body {
 .merch-row-container,
 .fish-tank-row-container,
 .footer-row-container,
-.template-row-container {
+.template-row-container,
+.template-credits-row-container {
   border: 10px solid black;
   padding: 18px;
-  margin: 20px auto 0 auto;
+  margin: 20px auto 40px auto;
   background-color: #fff;
   width: 70%;
   text-align: center;
 }
 
 .template-row-container {
-  width: 60%;
+  width: 65%;
   margin-top: 0;
   padding: 36px;
   background-color: #fff;
+}
+
+.template-credits-row-container {
+  width: 40%;
+  margin-top: 0;
+  padding: 36px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.template-sub-container {
+  margin-top: 50px;
 }
 
 .footer-row-container {
@@ -20410,7 +20422,8 @@ body {
 }
 
 .panel-title,
-.template-title {
+.template-title,
+.template-credits-title {
   color: #fff;
   text-align: center;
   font-size: 36px;
@@ -20419,6 +20432,29 @@ body {
 
 .template-title {
   margin: 20px 0 40px 0;
+}
+
+.template-text {
+  text-align: left;
+}
+
+.template-credits-title {
+  margin: 20px 0;
+}
+
+.template-credits-text,
+.template-credits-label {
+  font-size: 24px;
+}
+
+.template-credits-text {
+  margin-bottom: 20px;
+}
+
+.template-credits-label {
+  color: #FF0076;
+  margin: 0;
+  font-weight: 100;
 }
 
 .go-top {
