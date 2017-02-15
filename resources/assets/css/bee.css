@@ -186,8 +186,11 @@ body {
     float:left;
     margin: 0;
     padding: 0;
+}
+.about-left {
+    position: relative;
+    background-color: #00DAFF;
     border-right: 10px solid #000;
-    vertical-align: bottom;
 }
 .about-right, .about-right-vertical {
     width:50%;
@@ -213,6 +216,9 @@ body {
 }
 .about-left-img {
     width:100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
 .center-wrap-text {
     text-align:center;

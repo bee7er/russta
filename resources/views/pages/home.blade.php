@@ -25,8 +25,8 @@
     <div class="go-top clearfix" onclick="scrollToAnchor('top');"><img src="img/gotoTop.png" title="" style="margin: 0 auto;"></div>
 
     <div id="about" class="panel-title">about</div>
-    <div class="row about-row-container">
-        <div class="hidden-xs hidden-sm col-md-6 col-lg-6 about-left">
+    <div id="about-left-container" class="row about-row-container">
+        <div id="about-left-div" class="hidden-xs hidden-sm col-md-6 col-lg-6 about-left">
             @include('partials.about-img')
         </div>
         <div class="hidden-xs hidden-sm col-md-6 col-lg-6 about-right">
@@ -44,7 +44,8 @@
     <div id="contact" class="panel-title">contact</div>
     <div class="row contact-row-container">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding:10px;">
-            <p>Have a project in mind, or just want to say hi?</p>
+            <p>Have a project in mind,<br>
+            or just want to say hi?</p>
             <p>I’d love to hear from you!.</p>
             <p><img class="col-xs-12 col-sm-12 col-md-12 col-lg-12" src="img/emailNumImage.png" title=""></p>
             <p class="center-text">Follow me!</p>
@@ -56,10 +57,8 @@
     <div id="merch" class="panel-title">merch</div>
     <div class="row merch-row-container">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <p>Check out my range of merchandising.</p>
-            <p>Interesting and fun at affordable prices.</p>
+            <p>Coming soon.</p>
             <p><img class="col-xs-12 col-sm-12 col-md-12 col-lg-12" src="img/emailNumImage.png" title=""></p>
-            <p class="center-text">Buy me!</p>
         </div>
     </div>
     <div class="go-top clearfix" onclick="scrollToAnchor('top');"><img src="img/gotoTop.png" title="" style="margin: 0 auto;"></div>

@@ -3,9 +3,10 @@
 
 <div class="row" style="margin:20px auto 0 auto;">
     <div class="hidden-xs hidden-sm col-md-12 col-lg-12 header-block">
-        <span onclick="gotoPage('home');" 
+        <!-- The non-breaking spaces with 'work' force the logo image to be centered above the thumbs -->
+        <span onclick="gotoPage('home');"
               onmouseover="$(this).addClass('white-link-hover');"
-                                                 onmouseout="$(this).removeClass('white-link-hover')">work</span>
+                                                 onmouseout="$(this).removeClass('white-link-hover')">&nbsp;&nbsp;&nbsp;work</span>
         <img style="padding: 0 15px;" src="{{config('app.base_url')}}img/square.png" />
         <span onclick="gotoPage('about');" onmouseover="$(this).addClass('white-link-hover')"
                                                   onmouseout="$(this).removeClass('white-link-hover')">about</span>
@@ -101,15 +102,30 @@
 
         // Calculate the apsect ratio now, so that it is correct on page load
         calcAspectRatio();
+        // Set the about left div height
+        calcAboutLeft();
     });
 
     var calcAspectRatio = function () {
         // On resize we recalculate the height of the ifrmae to maintain aspect ratio
         if (vidFrame = $("#video-frame")) {
             vidWidth = vidFrame.width();
-//                vidHeight = vidFrame.height();
             vidHeight = (vidWidth / 16) * 9;
             vidFrame.css('height', vidHeight);
+        }
+        // Recalculate the about left div height, too
+        calcAboutLeft();
+    };
+
+    var calcAboutLeft = function () {
+        // Here we force the div containing the about image to be the same size as its parent
+        // This is so that we can get the image to vertically align at the bottom
+        if (abContainer = $("#about-left-container")) {
+            containerHeight = abContainer.height();
+            if (abDiv = $("#about-left-div")) {
+                divHeight = abDiv.height();
+                abDiv.css('height', containerHeight);
+            }
         }
 
     };
