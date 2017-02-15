@@ -248,10 +248,7 @@ body {
     font-weight: 100;
 }
 .go-top {
-    color: #fff;
-    text-align: right;
-    font-size: 1.6em;
-    margin-right: 20px;
+    text-align: center;
     cursor: pointer;
 }
 .white-link {
