@@ -97,17 +97,22 @@
 
     $(document).ready( function()
     {
-        addEvent(window, "resize", function () {
-            // On resize we recalculate the height of the ifrmae to maintain aspect ratio
-            if (vidFrame = $("#video-frame")) {
-                vidWidth = vidFrame.width();
-//                vidHeight = vidFrame.height();
-                vidHeight = (vidWidth / 16) * 9;
-                vidFrame.css('height', vidHeight);
-            }
+        addEvent(window, "resize", calcAspectRatio);
 
-        });
+        // Calculate the apsect ratio now, so that it is correct on page load
+        calcAspectRatio();
     });
+
+    var calcAspectRatio = function () {
+        // On resize we recalculate the height of the ifrmae to maintain aspect ratio
+        if (vidFrame = $("#video-frame")) {
+            vidWidth = vidFrame.width();
+//                vidHeight = vidFrame.height();
+            vidHeight = (vidWidth / 16) * 9;
+            vidFrame.css('height', vidHeight);
+        }
+
+    };
 
     var addEvent = function(object, type, callback) {
         if (object == null || typeof(object) == 'undefined') return;
