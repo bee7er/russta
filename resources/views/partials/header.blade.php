@@ -102,8 +102,6 @@
 
         // Calculate the apsect ratio now, so that it is correct on page load
         calcAspectRatio();
-        // Set the about left div height
-        calcAboutLeft();
     });
 
     var calcAspectRatio = function () {
@@ -113,21 +111,6 @@
             vidHeight = (vidWidth / 16) * 9;
             vidFrame.css('height', vidHeight);
         }
-        // Recalculate the about left div height, too
-        calcAboutLeft();
-    };
-
-    var calcAboutLeft = function () {
-        // Here we force the div containing the about image to be the same size as its parent
-        // This is so that we can get the image to vertically align at the bottom
-        if (abContainer = $("#about-left-container")) {
-            containerHeight = abContainer.height();
-            if (abDiv = $("#about-left-div")) {
-                divHeight = abDiv.height();
-                abDiv.css('height', containerHeight);
-            }
-        }
-
     };
 
     var addEvent = function(object, type, callback) {

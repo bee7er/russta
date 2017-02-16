@@ -44,8 +44,7 @@
     <div id="contact" class="panel-title">contact</div>
     <div class="row contact-row-container">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding:10px;">
-            <p>Have a project in mind,<br>
-            or just want to say hi?</p>
+            <p>Have a project in mind, or just want to say hi?</p>
             <p>I’d love to hear from you!.</p>
             <p><img class="col-xs-12 col-sm-12 col-md-12 col-lg-12" src="img/emailNumImage.png" title=""></p>
             <p class="center-text">Follow me!</p>

@@ -148,7 +148,7 @@ body {
 .about-row-container {
     margin-top:0;
     padding: 0;
-    background-color:#fff;
+    background-color:#00DAFF;
 }
 .contact-row-container {
     margin-top:0;
@@ -188,9 +188,7 @@ body {
     padding: 0;
 }
 .about-left {
-    position: relative;
     background-color: #00DAFF;
-    border-right: 10px solid #000;
 }
 .about-right, .about-right-vertical {
     width:50%;
@@ -202,11 +200,10 @@ body {
     text-align: justify;
     -moz-text-align-last: left; /* Code for Firefox */
     text-align-last: left;
+    border-left: 10px solid #000;
 }
 .about-left-vertical {
     width:100%;
-    clear: both;
-    border-right: 0;
     border-bottom: 10px solid #000;
 }
 .about-right-vertical {
@@ -216,9 +213,6 @@ body {
 }
 .about-left-img {
     width:100%;
-    position: absolute;
-    left: 0;
-    bottom: 0;
 }
 .center-wrap-text {
     text-align:center;
@@ -276,7 +270,7 @@ body {
 }
 .social-icon {
     width: 30px;
-    margin: 15px;
+    margin: 8px;
 }
 
 @media (max-width: 768px) {

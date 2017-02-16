@@ -20332,7 +20332,7 @@ body {
 .about-row-container {
   margin-top: 0;
   padding: 0;
-  background-color: #fff;
+  background-color: #00DAFF;
 }
 
 .contact-row-container {
@@ -20380,9 +20380,7 @@ body {
 }
 
 .about-left {
-  position: relative;
   background-color: #00DAFF;
-  border-right: 10px solid #000;
 }
 
 .about-right,
@@ -20397,12 +20395,11 @@ body {
   -moz-text-align-last: left;
   /* Code for Firefox */
   text-align-last: left;
+  border-left: 10px solid #000;
 }
 
 .about-left-vertical {
   width: 100%;
-  clear: both;
-  border-right: 0;
   border-bottom: 10px solid #000;
 }
 
@@ -20414,9 +20411,6 @@ body {
 
 .about-left-img {
   width: 100%;
-  position: absolute;
-  left: 0;
-  bottom: 0;
 }
 
 .center-wrap-text {
@@ -20493,7 +20487,7 @@ body {
 
 .social-icon {
   width: 30px;
-  margin: 15px;
+  margin: 8px;
 }
 
 @media (max-width: 768px) {
