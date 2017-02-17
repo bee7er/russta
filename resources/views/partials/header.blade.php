@@ -4,9 +4,9 @@
 <div class="row" style="margin:20px auto 0 auto;">
     <div class="hidden-xs hidden-sm col-md-12 col-lg-12 header-block">
         <!-- The non-breaking spaces with 'work' force the logo image to be centered above the thumbs -->
-        <span onclick="gotoPage('home');"
+        &nbsp;&nbsp;&nbsp;<span onclick="gotoPage('home');"
               onmouseover="$(this).addClass('white-link-hover');"
-                                                 onmouseout="$(this).removeClass('white-link-hover')">&nbsp;&nbsp;&nbsp;work</span>
+                                                 onmouseout="$(this).removeClass('white-link-hover')">work</span>
         <img style="padding: 0 15px;" src="{{config('app.base_url')}}img/square.png" />
         <span onclick="gotoPage('about');" onmouseover="$(this).addClass('white-link-hover')"
                                                   onmouseout="$(this).removeClass('white-link-hover')">about</span>
