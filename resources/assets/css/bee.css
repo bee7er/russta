@@ -3,11 +3,11 @@
  */
 @font-face {
     font-family: "Muli";
-    src: url(http://russ.dev/fonts/Muli-Black.ttf) format("truetype");
+    src: url(../fonts/Muli-Black.ttf) format("truetype");
 }
 @font-face {
     font-family: "Muli-ExtraBold";
-    src: url(http://russ.dev/fonts/Muli-ExtraBold.ttf) format("truetype");
+    src: url(../fonts/Muli-ExtraBold.ttf) format("truetype");
 }
 
 body {
