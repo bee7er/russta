@@ -10,19 +10,27 @@
                 @for ($i = 0; $i < count($resources); $i++)
                     <div class="gallery-item" onclick="document.location='{{url($resources[$i]->type .'/' .
                         $resources[$i]->id .'')}}';">
-                        <img class="work-image col-xs-12 col-sm-6 col-md-6 col-lg-4"
+                        <img id="{!! $resources[$i]->id !!}" class="work-image col-xs-12 col-sm-6 col-md-6 col-lg-4"
+                             onmouseover="this.src='{!! url('img/thumbs/'.$resources[8]->thumb) !!}'"
+                             onmouseout="this.src='{!! url('img/thumbs/'.$resources[$i]->thumb) !!}'"
                              src="{!! url('img/thumbs/'.$resources[$i]->thumb) !!}" title="{!! $resources[$i]->name !!}">
                     </div>
                 @endfor
             </div>
         </div>
-        <div class="go-top clearfix" onclick="scrollToAnchor('top');"><img src="img/gotoTop.png" title="" style="margin: 0 auto;"></div>
+        <div class="go-top clearfix" onclick="scrollToAnchor('top');"><img src="img/gotoTopHandSTATIC.gif"
+                               onmouseover="this.src='img/gotoTopHandANIM.gif'"
+                               onmouseout="this.src='img/gotoTopHandSTATIC.gif'"
+                               title="" style="margin: 0 auto;"></div>
     @endif
 
     <div class="row fish-tank-row-container">
         <img src="{{config('app.base_url')}}img/fishtank_placeholder.png" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" />
     </div>
-    <div class="go-top clearfix" onclick="scrollToAnchor('top');"><img src="img/gotoTop.png" title="" style="margin: 0 auto;"></div>
+    <div class="go-top clearfix" onclick="scrollToAnchor('top');"><img src="img/gotoTopHandSTATIC.gif"
+                               onmouseover="this.src='img/gotoTopHandANIM.gif'"
+                               onmouseout="this.src='img/gotoTopHandSTATIC.gif'"
+                               title="" style="margin: 0 auto;"></div>
 
     <div id="about" class="panel-title">about</div>
     <div id="about-left-container" class="row about-row-container">
@@ -39,7 +47,10 @@
             @include('partials.about-text')
         </div>
     </div>
-    <div class="go-top clearfix" onclick="scrollToAnchor('top');"><img src="img/gotoTop.png" title="" style="margin: 0 auto;"></div>
+    <div class="go-top clearfix" onclick="scrollToAnchor('top');"><img src="img/gotoTopHandSTATIC.gif"
+                               onmouseover="this.src='img/gotoTopHandANIM.gif'"
+                               onmouseout="this.src='img/gotoTopHandSTATIC.gif'"
+                               title="" style="margin: 0 auto;"></div>
 
     <div id="contact" class="panel-title">contact</div>
     <div class="row contact-row-container">
@@ -51,7 +62,10 @@
             <p class="center-text"><a target="_blank" href="https://dribbble.com/russ_ether"><img src="img/social/dribble.png" class="social-icon" title="Share on dribble" /></a><a target="_blank" href="https://www.facebook.com/profile.php?id=100013591591149"><img src="img/social/facebook.png" class="social-icon" title="Share on facebook" /></a><a target="_blank" href="https://www.instagram.com/russ_ether/"><img src="img/social/instagram.png" class="social-icon" title="Share on instagram" /></a><br><a target="_blank" href="https://www.linkedin.com/in/russether"><img src="img/social/linkedin.png" class="social-icon" title="Share on linkedin" /></a><a target="_blank" href="https://twitter.com/russ_ether"><img src="img/social/twitter.png" class="social-icon" title="Share on twitter" /></a><a target="_blank" href="https://vimeo.com/russether"><img src="img/social/vimeo.png" class="social-icon" title="Share on vimeo" /></a></p>
         </div>
     </div>
-    <div class="go-top clearfix" onclick="scrollToAnchor('top');"><img src="img/gotoTop.png" title="" style="margin: 0 auto;"></div>
+    <div class="go-top clearfix" onclick="scrollToAnchor('top');"><img src="img/gotoTopHandSTATIC.gif"
+                               onmouseover="this.src='img/gotoTopHandANIM.gif'"
+                               onmouseout="this.src='img/gotoTopHandSTATIC.gif'"
+                               title="" style="margin: 0 auto;"></div>
 
     <div id="merch" class="panel-title">merch</div>
     <div class="row merch-row-container">
@@ -60,6 +74,9 @@
             <p><img class="col-xs-12 col-sm-12 col-md-12 col-lg-12" src="img/emailNumImage.png" title=""></p>
         </div>
     </div>
-    <div class="go-top clearfix" onclick="scrollToAnchor('top');"><img src="img/gotoTop.png" title="" style="margin: 0 auto;"></div>
+    <div class="go-top clearfix" onclick="scrollToAnchor('top');"><img src="img/gotoTopHandSTATIC.gif"
+                               onmouseover="this.src='img/gotoTopHandANIM.gif'"
+                               onmouseout="this.src='img/gotoTopHandSTATIC.gif'"
+                               title="" style="margin: 0 auto;"></div>
 
 @endsection

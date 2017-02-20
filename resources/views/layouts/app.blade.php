@@ -46,7 +46,7 @@
     </div>
 
     <div class="row footer-row-container">
-        <div style="text-align: center;padding-top:100px;">&copy; 2017 Russ Etheridge</div>
+        <div style="text-align: center;padding-top:80px;">&copy; 2017 Russ Etheridge</div>
     </div>
 
 </div>

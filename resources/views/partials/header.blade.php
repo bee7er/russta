@@ -124,4 +124,18 @@
         }
     };
 
+    var plotText = function (elem) {
+
+        alert("Plot=" + elem.id);
+        position = $(elem).position();
+        alert("Plot position=" + position.top + ' ' + position.left);
+
+    };
+
+    var unPlotText = function (elem) {
+
+        alert("Unplot=" + elem.id);
+
+    };
+
 </script>

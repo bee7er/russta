@@ -3,11 +3,15 @@
  */
 @font-face {
     font-family: "Muli";
-    src: url(../fonts/Muli-Black.ttf) format("truetype");
+    src: url(../fonts/Muli-Black.ttf); /* format("truetype"); */
 }
 @font-face {
     font-family: "Muli-ExtraBold";
-    src: url(../fonts/Muli-ExtraBold.ttf) format("truetype");
+    src: url(../fonts/Muli-ExtraBold.ttf);
+}
+@font-face {
+    font-family: "Muli-Light";
+    src: url(../fonts/Muli-Light.ttf);
 }
 
 body {
@@ -241,12 +245,14 @@ body {
     font-size: 24px;
 }
 .template-credits-text {
+    font-family: "Muli-ExtraBold", "Verdana";
     margin-bottom: 20px;
+    font-weight: bold;
 }
 .template-credits-label {
+    font-family: "Muli-Light", "Verdana", sans-serif;
     color: #FF0076;
     margin: 0;
-    font-weight: 100;
 }
 .go-top {
     text-align: center;
