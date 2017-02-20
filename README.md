@@ -15,7 +15,7 @@ Or:
     cd /Users/brianetheridge/Homestead
     vagrant ssh
     
-Run MySQL:
+Run MySQL as root:
 
     mysql -uroot -psecret
     

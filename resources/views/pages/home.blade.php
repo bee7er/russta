@@ -62,8 +62,4 @@
     </div>
     <div class="go-top clearfix" onclick="scrollToAnchor('top');"><img src="img/gotoTop.png" title="" style="margin: 0 auto;"></div>
 
-    <div class="row footer-row-container">
-        <div style="text-align: center;padding-top:100px;">&copy; 2017 Russ Etheridge</div>
-    </div>
-
 @endsection
