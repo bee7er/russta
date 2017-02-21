@@ -89,11 +89,17 @@
 
     $(document).ready( function()
     {
-        $('.gallery-item-VV').hover( function() {
-            $(this).find('.img-title').fadeIn(300);
-        }, function() {
-            $(this).find('.img-title').fadeOut(100);
-        });
+
+        var animData = {
+            wrapper: document.getElementById('bodymovin'),
+            animType: 'html',
+            loop: true,
+            prerender: true,
+            autoplay: true,
+            path: 'animation/data.json'
+        };
+        var anim = bodymovin.loadAnimation(animData);
+
     });
 
     $(document).ready( function()
@@ -105,10 +111,11 @@
     });
 
     var calcAspectRatio = function () {
-        // On resize we recalculate the height of the ifrmae to maintain aspect ratio
+        // On resize we recalculate the height of the iframe to maintain aspect ratio
         if (vidFrame = $("#video-frame")) {
             vidWidth = vidFrame.width();
-            vidHeight = (vidWidth / 16) * 9;
+            //vidHeight = (vidWidth / 16) * 9;
+            vidHeight = (Math.round(vidWidth * 0.5625, 0) + 20);
             vidFrame.css('height', vidHeight);
         }
     };
@@ -124,18 +131,15 @@
         }
     };
 
-    var plotText = function (elem) {
-
-        alert("Plot=" + elem.id);
-        position = $(elem).position();
-        alert("Plot position=" + position.top + ' ' + position.left);
-
+    // Hover image
+    var hoverImage = function (elem) {
+        img = elem.src.replace("_th.jpg", "_hv.png");
+        elem.src = img;
     };
 
-    var unPlotText = function (elem) {
-
-        alert("Unplot=" + elem.id);
-
+    var unHoverImage = function (elem) {
+        img = elem.src.replace("_hv.png", "_th.jpg");
+        elem.src = img;
     };
 
 </script>

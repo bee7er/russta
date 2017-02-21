@@ -3,15 +3,15 @@
  */
 @font-face {
     font-family: "Muli";
-    src: url(../fonts/Muli-Black.ttf); /* format("truetype"); */
+    src: url(../fonts/Muli-Black.ttf);
 }
 @font-face {
     font-family: "Muli-ExtraBold";
     src: url(../fonts/Muli-ExtraBold.ttf);
 }
 @font-face {
-    font-family: "Muli-Light";
-    src: url(../fonts/Muli-Light.ttf);
+    font-family: "Muli-Regular";
+    src: url(../fonts/Muli-Regular.ttf);
 }
 
 body {
@@ -126,7 +126,7 @@ body {
     background-color:#fff;
 }
 .template-credits-row-container {
-    width:40%;
+    width:30%;
     margin-top:0;
     padding: 36px;
     background-color:#fff;
@@ -226,16 +226,21 @@ body {
 .center-text {
     text-align:center;
 }
-.panel-title, .template-title, .template-credits-title {
+.panel-title, .template-title, .template-details-title, .template-credits-title {
     color: #fff;
     text-align: center;
-    font-size: 36px;
+    font-size: 48px;
     margin: 300px 0 40px 0;
 }
-.template-title {
+.template-title, .template-details-title {
     margin: 20px 0 40px 0;
 }
+.template-details-title {
+    font-size: 64px;
+}
 .template-text {
+    font-family: "Muli-Regular", "Verdana", sans-serif;
+    font-size: 16px;
     text-align: left;
 }
 .template-credits-title {
@@ -247,10 +252,9 @@ body {
 .template-credits-text {
     font-family: "Muli-ExtraBold", "Verdana";
     margin-bottom: 20px;
-    font-weight: bold;
 }
 .template-credits-label {
-    font-family: "Muli-Light", "Verdana", sans-serif;
+    font-family: "Muli-Regular", "Verdana", sans-serif;
     color: #FF0076;
     margin: 0;
 }

@@ -11,9 +11,10 @@
                     <div class="gallery-item" onclick="document.location='{{url($resources[$i]->type .'/' .
                         $resources[$i]->id .'')}}';">
                         <img id="{!! $resources[$i]->id !!}" class="work-image col-xs-12 col-sm-6 col-md-6 col-lg-4"
-                             onmouseover="this.src='{!! url('img/thumbs/'.$resources[8]->thumb) !!}'"
-                             onmouseout="this.src='{!! url('img/thumbs/'.$resources[$i]->thumb) !!}'"
-                             src="{!! url('img/thumbs/'.$resources[$i]->thumb) !!}" title="{!! $resources[$i]->name !!}">
+                             onmouseover="hoverImage(this);"
+                             onmouseout="unHoverImage(this);"
+                             src="{!! url('img/thumbs/'.$resources[$i]->thumb) !!}" title="" alt="{!!
+                             $resources[$i]->name !!}">
                     </div>
                 @endfor
             </div>
@@ -27,10 +28,6 @@
     <div class="row fish-tank-row-container">
         <img src="{{config('app.base_url')}}img/fishtank_placeholder.png" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" />
     </div>
-    <div class="go-top clearfix" onclick="scrollToAnchor('top');"><img src="img/gotoTopHandSTATIC.gif"
-                               onmouseover="this.src='img/gotoTopHandANIM.gif'"
-                               onmouseout="this.src='img/gotoTopHandSTATIC.gif'"
-                               title="" style="margin: 0 auto;"></div>
 
     <div id="about" class="panel-title">about</div>
     <div id="about-left-container" class="row about-row-container">

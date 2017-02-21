@@ -5,7 +5,7 @@
 
     <body style="background-color: #ff0076;" />
 
-    <div class="template-title">bathroom boarder</div>
+    <div class="template-details-title">bathroom boarder</div>
     <div id="video-panel" class="row template-row-container">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <iframe id="video-frame" style="border:10px solid black;background-color: #000;padding:0;margin:0 auto 0
