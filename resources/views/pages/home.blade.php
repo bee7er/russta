@@ -25,6 +25,8 @@
                                title="" style="margin: 0 auto;"></div>
     @endif
 
+    <div style="width:100%;height:100%;background-color:#333;" id="bodymovin"></div>
+
     <div class="row fish-tank-row-container">
         <img src="{{config('app.base_url')}}img/fishtank_placeholder.png" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" />
     </div>

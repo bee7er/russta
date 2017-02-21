@@ -96,7 +96,7 @@
             loop: true,
             prerender: true,
             autoplay: true,
-            path: 'animation/data.json'
+            path: '{{config('app.base_url')}}animation/data.json'
         };
         var anim = bodymovin.loadAnimation(animData);
 
