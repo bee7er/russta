@@ -10,7 +10,7 @@
         <img style="padding: 0 15px;" src="{{config('app.base_url')}}img/square.png" />
         <span onclick="gotoPage('about');" onmouseover="$(this).addClass('white-link-hover')"
                                                   onmouseout="$(this).removeClass('white-link-hover')">about</span>
-        <a href="#top" class="white-link"><img src="{{config('app.base_url')}}img/logo.png" /></a>
+        <span onclick="gotoPage('top');" class="go-top"><img src="{{config('app.base_url')}}img/logo.png" /></span>
         <span onclick="gotoPage('contact');" onmouseover="$(this).addClass('white-link-hover')"
                                                     onmouseout="$(this).removeClass('white-link-hover')
                                                     ">contact</span>
@@ -20,7 +20,7 @@
     </div>
     <div class="hidden-xs col-sm-12 hidden-md hidden-lg header-block">
         <div class="row" style="margin-bottom:20px;">
-            <a href="#home" class="white-link"><img src="{{config('app.base_url')}}img/logo.png" /></a>
+            <span onclick="gotoPage('top');" class="go-top"><img src="{{config('app.base_url')}}img/logo.png" /></span>
         </div>
         <span onclick="gotoPage('home');" onmouseover="$(this).addClass('white-link-hover');"
               onmouseout="$(this).removeClass('white-link-hover')">work</span>
@@ -37,7 +37,7 @@
     </div>
     <div class="col-xs-12 hidden-sm hidden-md hidden-lg header-block">
         <div class="row" style="margin-bottom:20px;">
-            <a href="#home" class="white-link"><img src="{{config('app.base_url')}}img/logo.png" /></a>
+            <span onclick="gotoPage('top');" class="go-top"><img src="{{config('app.base_url')}}img/logo.png" /></span>
         </div>
         <table style="margin-bottom:10px;margin:0 auto 0 auto;">
             <tbody>
