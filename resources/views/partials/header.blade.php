@@ -126,15 +126,4 @@
         }
     };
 
-    // Hover image
-    var hoverImage = function (elem) {
-        img = elem.src.replace("_th.jpg", "_hv.png");
-        elem.src = img;
-    };
-
-    var unHoverImage = function (elem) {
-        img = elem.src.replace("_hv.png", "_th.jpg");
-        elem.src = img;
-    };
-
 </script>

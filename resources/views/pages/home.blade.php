@@ -11,11 +11,13 @@
                     <div class="gallery-item" onclick="document.location='{{url($resources[$i]->type .'/' .
                         $resources[$i]->id .'')}}';">
                         <img id="{!! $resources[$i]->id !!}" class="work-image col-xs-12 col-sm-6 col-md-6 col-lg-4"
-                             onmouseover="hoverImage(this);"
-                             onmouseout="unHoverImage(this);"
+                             onmouseover="this.src='{!! url('img/thumbs/'.$resources[$i]->hover) !!}'"
+                             onmouseout="this.src='{!! url('img/thumbs/'.$resources[$i]->thumb) !!}'"
                              src="{!! url('img/thumbs/'.$resources[$i]->thumb) !!}" title="" alt="{!!
                              $resources[$i]->name !!}">
                     </div>
+                    {{-- Preload image --}}
+                    <style>#preload-{!! $resources[$i]->id !!} { background: url({!! url('img/thumbs/'.$resources[$i]->hover) !!}) no-repeat -9999px -9999px; }</style>
                 @endfor
             </div>
         </div>

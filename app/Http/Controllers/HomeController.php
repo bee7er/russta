@@ -28,9 +28,14 @@ class HomeController extends Controller
 			)
 		)->limit(80)->get();
 
-		$first = null;
+		// Derive the hover thumbnail image and add it to the object
+		foreach ($resources as &$resource) {
+			$resource->hover = str_replace('th.jpg', 'hv.jpg', $resource->thumb);
+		}
+
 		// Make sure we have a factor of twelve entries, cloning the first one if not
 		$count = $resources->count();
+		$first = null;
 		$useImage = 0;
 		while (($count % 3) !== 0) {
 			$use = clone($resources->get($useImage));
