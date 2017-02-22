@@ -89,25 +89,20 @@
 
     $(document).ready( function()
     {
-
-        var animData = {
-            wrapper: document.getElementById('bodymovin'),
-            animType: 'html',
-            loop: true,
-            prerender: true,
-            autoplay: true,
-            path: '{{config('app.base_url')}}animation/data.json'
-        };
-        var anim = bodymovin.loadAnimation(animData);
-
-    });
-
-    $(document).ready( function()
-    {
         addEvent(window, "resize", calcAspectRatio);
 
         // Calculate the apsect ratio now, so that it is correct on page load
         calcAspectRatio();
+
+        var animData = {
+            wrapper: document.getElementById('bodymovin'),
+            animType: 'svg',
+            loop: true,
+            prerender: false,
+            autoplay: true,
+            path: '{{config('app.base_url')}}animation/fishTank.json'
+        };
+        var anim = bodymovin.loadAnimation(animData);
     });
 
     var calcAspectRatio = function () {

@@ -9,6 +9,7 @@ gulp.task('bower', function() {
 var vendors = '../../vendor/';
 
 var paths = {
+    'bodymovin': vendors + '/bodymovin/dist',
     'jquery': vendors + '/jquery/dist',
     'bootstrap': vendors + '/bootstrap/dist',
     'bootswatch': vendors + '/bootswatch/simplex',
@@ -59,6 +60,7 @@ elixir(function(mix) {
 
     // Merge Site scripts.
     mix.scripts([
+        paths.bodymovin + '/bodymovin.js',
         paths.jquery + '/jquery.js',
         paths.bootstrap + '/js/bootstrap.js',
         paths.colorbox + '/jquery.colorbox.js',
