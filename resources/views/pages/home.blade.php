@@ -33,11 +33,11 @@
     </div>
 
     <div id="about" class="panel-title">about</div>
-    <div id="about-left-container" class="row about-row-container">
-        <div id="about-left-div" class="hidden-xs hidden-sm col-md-6 col-lg-6 about-left">
+    <div class="row about-row-container">
+        <div id="about-left-container" class="hidden-xs hidden-sm col-md-6 col-lg-6 about-left">
             @include('partials.about-img')
         </div>
-        <div class="hidden-xs hidden-sm col-md-6 col-lg-6 about-right">
+        <div id="about-right-container" class="hidden-xs hidden-sm col-md-6 col-lg-6 about-right">
             @include('partials.about-text')
         </div>
         <div class="col-xs-12 col-sm-12 hidden-md hidden-lg about-left-vertical">

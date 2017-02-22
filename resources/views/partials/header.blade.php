@@ -89,10 +89,13 @@
 
     $(document).ready( function()
     {
-        addEvent(window, "resize", calcAspectRatio);
+        addEvent(window, "resize", handleResizeEvent);
 
         // Calculate the apsect ratio now, so that it is correct on page load
         calcAspectRatio();
+
+        // Also ensure that the About text panel is at least as high as the image panel
+        calcAboutTextPanelHeight();
 
         var animData = {
             wrapper: document.getElementById('bodymovin'),
@@ -105,13 +108,29 @@
         var anim = bodymovin.loadAnimation(animData);
     });
 
-    var calcAspectRatio = function () {
+    var handleResizeEvent = function (event) {
+
+        calcAspectRatio(event);
+        calcAboutTextPanelHeight(event);
+    };
+
+    var calcAspectRatio = function (event) {
         // On resize we recalculate the height of the iframe to maintain aspect ratio
         if (vidFrame = $("#video-frame")) {
             vidWidth = vidFrame.width();
             //vidHeight = (vidWidth / 16) * 9;
             vidHeight = (Math.round(vidWidth * 0.5625, 0) + 20);
             vidFrame.css('height', vidHeight);
+        }
+    };
+
+    var calcAboutTextPanelHeight = function (event) {
+        // On resize we recalculate the height of the About text panel to make sure is at least as big as the image one
+        if ((leftContainer = $("#about-left-container"))
+         && (rightContainer = $("#about-right-container"))) {
+            if (rightContainer.height() < leftContainer.height()) {
+                rightContainer.css('min-height', leftContainer.height());
+            }
         }
     };
 
