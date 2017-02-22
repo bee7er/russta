@@ -260,11 +260,12 @@ body {
 }
 .go-top {
     text-align: center;
+    padding: 0 20px;
     cursor: pointer;
 }
 .white-link {
     color: #fff;
-    padding: 0 35px 0 35px;
+    padding: 0 35px;
 }
 .white-link:hover, .white-link:visited, .white-link:active {
     color: #fff;
