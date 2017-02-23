@@ -20168,17 +20168,17 @@ label {
 
 @font-face {
   font-family: "Muli";
-  src: url(../fonts/Muli-Black.ttf);
+  src: url("../fonts/Muli-Black.ttf");
 }
 
 @font-face {
   font-family: "Muli-ExtraBold";
-  src: url(../fonts/Muli-ExtraBold.ttf);
+  src: url("../fonts/Muli-ExtraBold.ttf");
 }
 
 @font-face {
   font-family: "Muli-Regular";
-  src: url(../fonts/Muli-Regular.ttf);
+  src: url("../fonts/Muli-Regular.ttf");
 }
 
 body {
@@ -20211,7 +20211,7 @@ body {
 }
 
 .page-header {
-  border-bottom: 0px solid #eee;
+  border-bottom: 0 solid #eee;
 }
 
 .row {
@@ -20220,9 +20220,9 @@ body {
 }
 
 .page-header {
-  padding-bottom: 0px;
+  padding-bottom: 0;
   margin: 0;
-  border-bottom: 0px solid #dddddd;
+  border-bottom: 0 solid #dddddd;
 }
 
 .header-block {
@@ -20346,7 +20346,7 @@ body {
   padding: 20px;
   width: 30%;
   text-align: center;
-  font-family: "Muli-ExtraBold", "Verdana";
+  font-family: "Muli-ExtraBold", "Verdana", sans-serif;
   font-size: 1.2em;
 }
 
@@ -20354,7 +20354,7 @@ body {
   margin-top: 0;
   padding: 20px;
   width: 30%;
-  font-family: "Muli-ExtraBold", "Verdana";
+  font-family: "Muli-ExtraBold", "Verdana", sans-serif;
   text-align: center;
   font-size: 1.2em;
 }
@@ -20369,12 +20369,17 @@ body {
   padding: 20px;
 }
 
-.work-image {
+.work-image,
+.details-work-image {
   border: 18px solid #fff;
   margin: 0;
   background-color: #000;
   padding: 10px;
   cursor: pointer;
+}
+
+.details-work-image {
+  cursor: default;
 }
 
 .about-left,
@@ -20390,17 +20395,22 @@ body {
 }
 
 .about-right,
-.about-right-vertical {
-  width: 50%;
-  float: right;
+.about-right-vertical,
+.template-text {
   padding: 20px;
-  font-family: "Muli-ExtraBold", "Verdana";
+  font-family: "Muli-ExtraBold", "Verdana", sans-serif;
   font-size: 1.2em;
   background-color: #fff;
   text-align: justify;
   -moz-text-align-last: left;
   /* Code for Firefox */
   text-align-last: left;
+}
+
+.about-right,
+.about-right-vertical {
+  width: 50%;
+  float: right;
   border-left: 10px solid #000;
 }
 
@@ -20447,12 +20457,6 @@ body {
   font-size: 64px;
 }
 
-.template-text {
-  font-family: "Muli-Regular", "Verdana", sans-serif;
-  font-size: 16px;
-  text-align: left;
-}
-
 .template-credits-title {
   margin: 20px 0;
 }
@@ -20463,12 +20467,13 @@ body {
 }
 
 .template-credits-text {
-  font-family: "Muli-ExtraBold", "Verdana";
+  font-family: "Muli-ExtraBold", "Verdana", sans-serif;
   margin-bottom: 20px;
 }
 
 .template-credits-label {
   font-family: "Muli-Regular", "Verdana", sans-serif;
+  font-weight: bold;
   color: #FF0076;
   margin: 0;
 }

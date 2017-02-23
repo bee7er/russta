@@ -8,7 +8,7 @@
         <div class="row-container">
             <div class="row">
                 @for ($i = 0; $i < count($resources); $i++)
-                    <div class="gallery-item" onclick="document.location='{{url($resources[$i]->type .'/' .
+                    <div onclick="document.location='{{url($resources[$i]->type .'/' .
                         $resources[$i]->id .'')}}';">
                         <img id="{!! $resources[$i]->id !!}" class="work-image col-xs-12 col-sm-6 col-md-6 col-lg-4"
                              onmouseover="this.src='{!! url('img/thumbs/'.$resources[$i]->hover) !!}'"

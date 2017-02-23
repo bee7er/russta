@@ -97,15 +97,19 @@
         // Also ensure that the About text panel is at least as high as the image panel
         calcAboutTextPanelHeight();
 
-        var animData = {
-            wrapper: document.getElementById('bodymovin'),
-            animType: 'svg',
-            loop: true,
-            prerender: false,
-            autoplay: true,
-            path: '{{config('app.base_url')}}animation/fishTank.json'
-        };
-        var anim = bodymovin.loadAnimation(animData);
+        // Check if we are running the fish tank animation and kick it off
+        bodymovinPanel = document.getElementById('bodymovin');
+        if (bodymovinPanel) {
+            var animData = {
+                wrapper: bodymovinPanel,
+                animType: 'svg',
+                loop: true,
+                prerender: false,
+                autoplay: true,
+                path: '{{config('app.base_url')}}animation/fishTank.json'
+            };
+            var anim = bodymovin.loadAnimation(animData);
+        }
     });
 
     var handleResizeEvent = function (event) {

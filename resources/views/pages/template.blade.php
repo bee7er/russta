@@ -19,9 +19,20 @@
         </div>
     </div>
 
+    <div class="template-row-container">
+        <div class="row">
+            <img class="work-image col-xs-12 col-sm-6 col-md-6 col-lg-4" src="../img/gifs/1.OlympopRings_400sq_EZ.gif">
+            <img class="work-image col-xs-12 col-sm-6 col-md-6 col-lg-4" src="../img/gifs/2.Diving_400sq_EZ.gif">
+            <img class="work-image col-xs-12 col-sm-6 col-md-6 col-lg-4" src="../img/gifs/3.Javelin_400sq.gif">
+            <img class="work-image col-xs-12 col-sm-6 col-md-6 col-lg-4" src="../img/gifs/4.weightLift_400sq.gif">
+            <img class="work-image col-xs-12 col-sm-6 col-md-6 col-lg-4" src="../img/gifs/5.Wrestling_400sq_EZ.gif">
+            <img class="work-image col-xs-12 col-sm-6 col-md-6 col-lg-4" src="../img/gifs/6.VuvuReboot_400sq.gif">
+        </div>
+    </div>
+
     <div class="row template-row-container template-sub-container">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 template-text">
-            <img src="img/pegs.png" width="100%" />
+            <img src="../img/stills/divingStill.jpg" width="100%" />
         </div>
     </div>
 
