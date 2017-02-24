@@ -51,7 +51,8 @@
 
 </div>
 
-@yield('scripts')
+@yield('global-scripts')
+@yield('page-scripts')
 
 </body>
 </html>

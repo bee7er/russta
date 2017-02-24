@@ -70,7 +70,7 @@
     </div>
 </div>
 
-@section('scripts')
+@section('global-scripts')
     <script type="text/javascript">
         function gotoPage(aid)
         {
@@ -110,5 +110,32 @@
                 var anim = bodymovin.loadAnimation(animData);
             }
         });
+
+        // Bodymovin hand animation functions to go top
+        var handAnims = [];
+        function createBodymovinHand(elem)
+        {
+            var handAnimData = {
+                wrapper: elem,
+                animType: 'svg',
+                loop: true,
+                prerender: true,
+                autoplay: false,
+                path: '{{config('app.base_url')}}animation/goToTop.json'
+            };
+            return bodymovin.loadAnimation(handAnimData);
+        }
+        function startBodymovinHand(index)
+        {
+            if (handAnims[index]) {
+                handAnims[index].play();
+            }
+        }
+        function stopBodymovinHand(index)
+        {
+            if (handAnims[index]) {
+                handAnims[index].stop();
+            }
+        }
     </script>
-@stop
+@endsection

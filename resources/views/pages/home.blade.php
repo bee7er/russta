@@ -21,10 +21,11 @@
                 @endfor
             </div>
         </div>
-        <div class="go-top clearfix" onclick="scrollToAnchor('top');"><img src="img/gotoTopHandSTATIC.gif"
-                               onmouseover="this.src='img/gotoTopHandANIM.gif'"
-                               onmouseout="this.src='img/gotoTopHandSTATIC.gif'"
-                               title=""></div>
+        <div class="go-top" onclick="scrollToAnchor('top');">
+            <div id="goTopHand-work" class="bodymovin-hand" onmouseover="startBodymovinHand(WORK);"
+                 onmouseout="stopBodymovinHand(WORK);">
+            </div>
+        </div>
     @endif
 
     <div class="row fish-tank-row-container">
@@ -46,10 +47,11 @@
             @include('partials.about-text')
         </div>
     </div>
-    <div class="go-top clearfix" onclick="scrollToAnchor('top');"><img src="img/gotoTopHandSTATIC.gif"
-                               onmouseover="this.src='img/gotoTopHandANIM.gif'"
-                               onmouseout="this.src='img/gotoTopHandSTATIC.gif'"
-                               title=""></div>
+    <div class="go-top" onclick="scrollToAnchor('top');">
+        <div id="goTopHand-about" class="bodymovin-hand" onmouseover="startBodymovinHand(ABOUT);"
+             onmouseout="stopBodymovinHand(ABOUT);">
+        </div>
+    </div>
 
     <div id="contact" class="panel-title">contact</div>
     <div class="row contact-row-container">
@@ -61,10 +63,11 @@
             <p class="center-text"><a target="_blank" href="https://dribbble.com/russ_ether"><img src="img/social/dribble.png" class="social-icon" title="Share on dribble" /></a><a target="_blank" href="https://www.facebook.com/profile.php?id=100013591591149"><img src="img/social/facebook.png" class="social-icon" title="Share on facebook" /></a><a target="_blank" href="https://www.instagram.com/russ_ether/"><img src="img/social/instagram.png" class="social-icon" title="Share on instagram" /></a><br><a target="_blank" href="https://www.linkedin.com/in/russether"><img src="img/social/linkedin.png" class="social-icon" title="Share on linkedin" /></a><a target="_blank" href="https://twitter.com/russ_ether"><img src="img/social/twitter.png" class="social-icon" title="Share on twitter" /></a><a target="_blank" href="https://vimeo.com/russether"><img src="img/social/vimeo.png" class="social-icon" title="Share on vimeo" /></a></p>
         </div>
     </div>
-    <div class="go-top clearfix" onclick="scrollToAnchor('top');"><img src="img/gotoTopHandSTATIC.gif"
-                               onmouseover="this.src='img/gotoTopHandANIM.gif'"
-                               onmouseout="this.src='img/gotoTopHandSTATIC.gif'"
-                               title=""></div>
+    <div class="go-top" onclick="scrollToAnchor('top');">
+        <div id="goTopHand-contact" class="bodymovin-hand" onmouseover="startBodymovinHand(CONTACT);"
+             onmouseout="stopBodymovinHand(CONTACT);">
+        </div>
+    </div>
 
     <div id="merch" class="panel-title">merch</div>
     <div class="row merch-row-container">
@@ -73,9 +76,27 @@
             <p><img class="col-xs-12 col-sm-12 col-md-12 col-lg-12" src="img/emailNumImage.png" title=""></p>
         </div>
     </div>
-    <div class="go-top clearfix" onclick="scrollToAnchor('top');"><img src="img/gotoTopHandSTATIC.gif"
-                               onmouseover="this.src='img/gotoTopHandANIM.gif'"
-                               onmouseout="this.src='img/gotoTopHandSTATIC.gif'"
-                               title=""></div>
+    <div class="go-top" onclick="scrollToAnchor('top');">
+        <div id="goTopHand-merch" class="bodymovin-hand" onmouseover="startBodymovinHand(MERCH);"
+             onmouseout="stopBodymovinHand(MERCH);">
+        </div>
+    </div>
 
+@endsection
+
+@section('page-scripts')
+    <script type="text/javascript">
+        var WORK = 0;
+        var ABOUT  = 1;
+        var CONTACT = 2;
+        var MERCH = 3;
+        $(document).ready( function()
+        {
+            // Setup the goto top hands and store them in an array
+            handAnims[WORK] = createBodymovinHand(document.getElementById('goTopHand-work'));
+            handAnims[ABOUT] = createBodymovinHand(document.getElementById('goTopHand-about'));
+            handAnims[CONTACT] = createBodymovinHand(document.getElementById('goTopHand-contact'));
+            handAnims[MERCH] = createBodymovinHand(document.getElementById('goTopHand-merch'));
+        });
+    </script>
 @endsection

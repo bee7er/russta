@@ -317,6 +317,11 @@ body {
     height:100%;
     background-color:#00DAFF;
 }
+.bodymovin-hand {
+    width:150px;
+    height:150px;
+    margin:0 auto;
+}
 
 /* Media queries */
 
