@@ -72,81 +72,45 @@
     </div>
 </div>
 
-<script type="text/javascript">
-    function gotoPage(aid)
-    {
-        @if (Request::is('home'))
+@section('scripts')
+    <script type="text/javascript">
+        function gotoPage(aid)
+        {
+            @if (Request::is('home'))
                 scrollToAnchor(aid);
-        @else
-                document.location = ("{{config('app.base_url')}}" + "home#" + aid);
-        @endif
-    }
-    function scrollToAnchor(aid)
-    {
-        var aTag = $("div[id='"+ aid +"']");
-        $('html,body').animate({scrollTop: aTag.offset().top},'slow');
-    }
-
-    $(document).ready( function()
-    {
-        addEvent(window, "resize", handleResizeEvent);
-
-        // Calculate the apsect ratio now, so that it is correct on page load
-        calcAspectRatio();
-
-        // Also ensure that the About text panel is at least as high as the image panel
-        calcAboutTextPanelHeight();
-
-        // Check if we are running the fish tank animation and kick it off
-        bodymovinPanel = document.getElementById('bodymovin');
-        if (bodymovinPanel) {
-            var animData = {
-                wrapper: bodymovinPanel,
-                animType: 'svg',
-                loop: true,
-                prerender: false,
-                autoplay: true,
-                path: '{{config('app.base_url')}}animation/fishTank.json'
-            };
-            var anim = bodymovin.loadAnimation(animData);
+            @else
+                    document.location = ("{{config('app.base_url')}}" + "home#" + aid);
+            @endif
         }
-    });
 
-    var handleResizeEvent = function (event) {
-
-        calcAspectRatio(event);
-        calcAboutTextPanelHeight(event);
-    };
-
-    var calcAspectRatio = function (event) {
-        // On resize we recalculate the height of the iframe to maintain aspect ratio
-        if (vidFrame = $("#video-frame")) {
-            vidWidth = vidFrame.width();
-            //vidHeight = (vidWidth / 16) * 9;
-            vidHeight = (Math.round(vidWidth * 0.5625, 0) + 20);
-            vidFrame.css('height', vidHeight);
+        function scrollToAnchor(aid)
+        {
+            var aTag = $("div[id='"+ aid +"']");
+            $('html,body').animate({scrollTop: aTag.offset().top},'slow');
         }
-    };
 
-    var calcAboutTextPanelHeight = function (event) {
-        // On resize we recalculate the height of the About text panel to make sure is at least as big as the image one
-        if ((leftContainer = $("#about-left-container"))
-         && (rightContainer = $("#about-right-container"))) {
-            if (rightContainer.height() < leftContainer.height()) {
-                rightContainer.css('min-height', leftContainer.height());
+        $(document).ready( function()
+        {
+            // On page load and on resize we check some aspects of the page to ensure responsiveness is correct
+            addEvent(window, "resize", handleResizeEvent);
+            // Calculate the apsect ratio now, so that it is correct on page load
+            calcAspectRatio();
+            // Also ensure that the About text panel is at least as high as the image panel
+            calcAboutTextPanelHeight();
+
+            // Check if we are running the fish tank animation and, if so, kick it off
+            bodymovinPanel = document.getElementById('bodymovin');
+            if (bodymovinPanel) {
+                var animData = {
+                    wrapper: bodymovinPanel,
+                    animType: 'svg',
+                    loop: true,
+                    prerender: true,
+                    autoplay: true,
+                    path: '{{config('app.base_url')}}animation/fishTank.json'
+                };
+                var anim = bodymovin.loadAnimation(animData);
             }
-        }
-    };
-
-    var addEvent = function(object, type, callback) {
-        if (object == null || typeof(object) == 'undefined') return;
-        if (object.addEventListener) {
-            object.addEventListener(type, callback, false);
-        } else if (object.attachEvent) {
-            object.attachEvent("on" + type, callback);
-        } else {
-            object["on"+type] = callback;
-        }
-    };
-
-</script>
+        });
+    </script>
+@stop

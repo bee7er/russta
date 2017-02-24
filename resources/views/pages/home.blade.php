@@ -17,19 +17,18 @@
                              $resources[$i]->name !!}">
                     </div>
                     {{-- Preload image --}}
-                    <style>#preload-{!! $resources[$i]->id !!} { background: url({!! url('img/thumbs/'.$resources[$i]->hover) !!}) no-repeat -9999px -9999px; }</style>
+                    <style>#preload-{!! $resources[$i]->id !!} { background: url('{!! url('img/thumbs/'.$resources[$i]->hover) !!}') no-repeat -9999px -9999px; }</style>
                 @endfor
             </div>
         </div>
         <div class="go-top clearfix" onclick="scrollToAnchor('top');"><img src="img/gotoTopHandSTATIC.gif"
                                onmouseover="this.src='img/gotoTopHandANIM.gif'"
                                onmouseout="this.src='img/gotoTopHandSTATIC.gif'"
-                               title="" style="margin: 0 auto;"></div>
+                               title=""></div>
     @endif
 
     <div class="row fish-tank-row-container">
-        <div id="bodymovin" class="col-xs-12 col-sm-12 col-md-12 col-lg-12"
-             style="width:100%;height:100%;background-color:#00DAFF;"></div>
+        <div id="bodymovin" class="bodymovin-fishtank col-xs-12 col-sm-12 col-md-12 col-lg-12"></div>
     </div>
 
     <div id="about" class="panel-title">about</div>
@@ -50,11 +49,11 @@
     <div class="go-top clearfix" onclick="scrollToAnchor('top');"><img src="img/gotoTopHandSTATIC.gif"
                                onmouseover="this.src='img/gotoTopHandANIM.gif'"
                                onmouseout="this.src='img/gotoTopHandSTATIC.gif'"
-                               title="" style="margin: 0 auto;"></div>
+                               title=""></div>
 
     <div id="contact" class="panel-title">contact</div>
     <div class="row contact-row-container">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding:10px;">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <p>Have a project in mind, or just want to say hi?</p>
             <p>I’d love to hear from you!.</p>
             <p><img class="col-xs-12 col-sm-12 col-md-12 col-lg-12" src="img/emailNumImage.png" title=""></p>
@@ -65,7 +64,7 @@
     <div class="go-top clearfix" onclick="scrollToAnchor('top');"><img src="img/gotoTopHandSTATIC.gif"
                                onmouseover="this.src='img/gotoTopHandANIM.gif'"
                                onmouseout="this.src='img/gotoTopHandSTATIC.gif'"
-                               title="" style="margin: 0 auto;"></div>
+                               title=""></div>
 
     <div id="merch" class="panel-title">merch</div>
     <div class="row merch-row-container">
@@ -77,6 +76,6 @@
     <div class="go-top clearfix" onclick="scrollToAnchor('top');"><img src="img/gotoTopHandSTATIC.gif"
                                onmouseover="this.src='img/gotoTopHandANIM.gif'"
                                onmouseout="this.src='img/gotoTopHandSTATIC.gif'"
-                               title="" style="margin: 0 auto;"></div>
+                               title=""></div>
 
 @endsection

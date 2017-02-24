@@ -158,13 +158,11 @@ The follow up to the Train Squeeze loop also garned a good ammount of social med
 Check out this awesome article over at Animade’s website.
 </p><p>
 More coming soon ;o)</p>',NULL,NULL,'','trainSqueeze_th.jpg','https://player.vimeo.com/video/161372781',19,'2017-02-17 11:19:20','2017-02-17 11:19:20',NULL),
-(7,'video','propz - binoculars','<p>My feline-vision-aid contribution to the Propz series.
-</p><p>
-My valentines-shoe contribution to the Propz series.
-</p><p>
-Check out the rest of the amazing weirdness featuring some of Animade''s top talent over on their vimeo page. (https://vimeo.com/channels/propz)
+(7,'video','propz','<p>My feline-vision-aid contribution to the Propz series.</p>','<p>My valentines-shoe contribution to the Propz series.
+</p><p>Check out the rest of the amazing weirdness featuring some of Animade''s top talent over on their vimeo page.
+(<a href="https://vimeo.com/channels/propz" target="_blank">https://vimeo.com/channels/propz</a>)
 </p>
-','And here is the second bit of text in Content A','','','propzBinoculars_th.jpg','https://player.vimeo
+','','','propzBinoculars_th.jpg','https://player.vimeo
 .com/video/122770363',20,'2016-10-16 12:47:36','2016-10-16 12:47:36',NULL),
 (8,'video','bathroom boarder','A little arachnid in my bathroom.','Hello from content A','Hello from content B','','bathroomBoarder_th.jpg','https://player.vimeo
 .com/video/161502476',14,'2016-10-16 12:47:36','2017-02-17 17:20:36',NULL),
@@ -226,10 +224,9 @@ CREATE TABLE `templates` (
 
 LOCK TABLES `templates` WRITE;
 /*!40000 ALTER TABLE `templates` DISABLE KEYS */;
-INSERT INTO `templates` VALUES (9,'Default template','\n<div style=\"width: 100%;padding:0;margin:0;border:0px solid blue;text-align: center;\">\n    <span style=\"width: 480px;\"><table\n                    style=\"width:480px;padding:5px;margin: 0px auto;\">\n                <tr style=\"border:0px solid red;\">\n                    <td style=\"border:1px solid #c4c4c4;\" colspan=\"2\"><h3 style=\"margin:0;padding:0;\">#NAME#</h3></td>\n                </tr>\n                <tr style=\"border:0px solid red;\">\n                    <td style=\"border:1px solid #c4c4c4;\">#CONTENT_A#</td>\n                    <td style=\"border:1px solid #c4c4c4;\">#CONTENT_B#</td>\n                </tr>\n            </table><img style=\"border:1px solid #d2d2d2;\" src=\"../img/images/#IMAGE#\" width=\"480\" frameborder=\"0\">\n    <p style=\"border:0px solid red;\"><p style=\"border:0px solid red;\">#DESCRIPTION#</p>\n    <p style=\"text-align: center;\"><a href=\"/\"><img src=\"../img/back.png\" alt=\"Go back\" title=\"Go back\" width=\"38px\"></a></p></span></div>','2016-10-16 12:47:34','2016-10-16 12:47:34',NULL),(10,'GIF template','\n<div style=\"width: 100%;padding:0;margin:0;border:0px solid blue;text-align: center;\">\n    <span style=\"width: 480px;\"><table\n                    style=\"width:480px;padding:5px;margin: 0px auto;\">\n                <tr style=\"border:0px solid red;\">\n                    <td style=\"border:1px solid #c4c4c4;\" colspan=\"2\"><h3 style=\"margin:0;padding:0;\">#NAME#</h3></td>\n                </tr>\n                <tr style=\"border:0px solid red;\">\n                    <td style=\"border:1px solid #c4c4c4;\">#CONTENT_A#</td>\n                    <td style=\"border:1px solid #c4c4c4;\">#CONTENT_B#</td>\n                </tr>\n            </table><img style=\"border:1px solid #d2d2d2;\" src=\"../appfiles/resource/#IMAGE#\" width=\"480\" height=\"480\" frameborder=\"0\">\n    <p style=\"border:0px solid red;\">#DESCRIPTION#</p>\n    <p style=\"text-align: center;\"><a href=\"/\"><img src=\"../img/back.png\" alt=\"Go back\" title=\"Go back\" width=\"38px\"></a></p></span></div>','2016-10-16 12:47:34','2016-10-16 12:47:34',NULL),(11,'Image template','\n<div style=\"width: 100%;padding:0;margin:0;border:0px solid blue;text-align: center;\">\n    <span style=\"width: 480px;\"><table\n                    style=\"width:480px;padding:5px;margin: 0px auto;\">\n                <tr style=\"border:0px solid red;\">\n                    <td style=\"border:1px solid #c4c4c4;\" colspan=\"2\"><h3 style=\"margin:0;padding:0;\">#NAME#</h3></td>\n                </tr>\n                <tr style=\"border:0px solid red;\">\n                    <td style=\"border:1px solid #c4c4c4;\">#CONTENT_A#</td>\n                    <td style=\"border:1px solid #c4c4c4;\">#CONTENT_B#</td>\n                </tr>\n            </table><img style=\"border:1px solid #d2d2d2;\" src=\"../appfiles/resource/#IMAGE#\" width=\"480\" frameborder=\"0\">\n    <p style=\"border:0px solid red;\">#DESCRIPTION#</p>\n    <p style=\"text-align: center;\"><a href=\"/\"><img src=\"../img/back.png\" alt=\"Go back\" title=\"Go back\" width=\"38px\"></a></p></span></div>','2016-10-16 12:47:34','2016-10-16 12:47:34',NULL),
-(12,'Video template','\n<div style=\"width: 100%;padding:0;margin:0;text-align: center;\">\n    <span style=\"width: 480px;\"><table\n                    style=\"width:480px;padding:5px;margin: 0px auto;\">\n                <tr style=\"border:0px solid red;\">\n                    <td style=\"border:1px solid #c4c4c4;\" colspan=\"2\"><h3 style=\"margin:0;padding:0;\">#NAME#</h3></td>\n                </tr>\n                <tr style=\"border:0px solid red;\">\n                    <td style=\"border:1px solid #c4c4c4;\">#CONTENT_A#</td>\n                    <td style=\"border:1px solid #c4c4c4;\">#CONTENT_B#</td>\n                </tr>\n            </table><iframe style=\"border:1px solid #d2d2d2;\" src=\"#URL#\" width=\"480\" height=\"480\"\n    frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n    <p class=\"details-description\">#DESCRIPTION#</p>\n    <p style=\"text-align: center;\"><a href=\"#BASE_URL#\"><img src=\"../img/back.png\" alt=\"Go back\" title=\"Go back\" width=\"38px\"></a></p></span></div>','2016-10-16 12:47:34','2016-10-16 12:47:34',NULL),
-(13,'Olympops','<body style=\"background-color: #ff0076;\" />\n\n    <div class=\"template-details-title\">#NAME#</div>\n    <div
-id=\"video-panel\" class=\"row template-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n            <iframe id=\"video-frame\" style=\"border:10px solid black;background-color: #000;padding:0;margin:0 auto 0\n            auto;width: 100%;height:350px;\" src=\"#URL#\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen\n            allowfullscreen></iframe>\n        </div>\n    </div>\n\n    <div class=\"row template-row-container template-sub-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 template-text\">\n            #DESCRIPTION#\n        </div>\n    </div>\n\n
+INSERT INTO `templates` VALUES
+(13,'Olympops','<body style=\"background-color: #ff0076;\" /><style>.template-credits-label{color: #ff0076;}</style>\n    <div class=\"template-details-title\">#NAME#</div>\n    <div
+id=\"video-panel\" class=\"row template-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n            <iframe id=\"video-frame\" class=\"video-frame\" src=\"#URL#\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n        </div>\n    </div>\n\n    <div class=\"row template-row-container template-sub-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 template-text\">\n            #DESCRIPTION#\n        </div>\n    </div>\n\n
 <div class=\"template-row-container\">
         <div class=\"row\">
             <img class=\"details-work-image col-xs-12 col-sm-6 col-md-6 col-lg-4\" src=\"../img/gifs/1.OlympopRings_400sq_EZ.gif\">
@@ -246,10 +243,13 @@ id=\"video-panel\" class=\"row template-row-container\">\n        <div class=\"c
         </div>
     </div>
     <div class=\"template-credits-title\">credits</div>\n    <div class=\"row template-credits-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n            <div class=\"template-credits-label\">Director</div>\n            <div class=\"template-credits-text\">Russ Etheridge</div>\n            <div class=\"template-credits-label\">Produced</div>\n            <div class=\"template-credits-text\">Animade</div>\n            <div class=\"template-credits-label\">Sound</div>\n            <div class=\"template-credits-text\">Mutant Jukebox</div>\n        </div>\n    </div>','2017-02-17 11:09:28','2017-02-17 11:09:28',NULL),
-(14,'Bathroom boarder','<body style=\"background-color: #25d7d1;\" />\n    <div class=\"template-details-title\">#NAME#</div>\n    <div id=\"video-panel\" class=\"row template-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n            <iframe id=\"video-frame\" style=\"border:10px solid black;background-color: #000;padding:0;margin:0 auto 0\n            auto;width: 100%;height:350px;\" src=\"#URL#\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen\n            allowfullscreen></iframe>\n        </div>\n    </div>\n\n    <div class=\"row template-row-container template-sub-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 template-text\">\n            #DESCRIPTION#\n        </div>\n    </div>\n\n    <div class=\"row template-row-container template-sub-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 template-text\">\n            <img src=\"#BASE_URL#img/gifs/grindGIF_400x400.gif\" width=\"100%\" />\n        </div>\n    </div>\n\n    <div class=\"template-credits-title\">credits</div>\n    <div class=\"row template-credits-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n            <div class=\"template-credits-label\">Direction</div>\n            <div class=\"template-credits-text\">Russ Etheridge</div>\n            <div class=\"template-credits-label\">Production</div>\n            <div class=\"template-credits-text\">Animade</div>\n            <div class=\"template-credits-label\">Sound</div>\n            <div class=\"template-credits-text\">Mutant Jukebox</div>\n        </div>\n    </div>','2017-02-17 11:09:28','2017-02-17 11:09:28',NULL),
-(15,'Blocks','<body style=\"background-color: #f7dd00;\" />\n\n    <div
+
+(14,'Bathroom boarder','<body style=\"background-color: #25d7d1;\" /><style>.template-credits-label{color: #25d7d1;}</style>\n    <div class=\"template-details-title\">#NAME#</div>\n    <div id=\"video-panel\" class=\"row template-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n            <iframe id=\"video-frame\" class=\"video-frame\" src=\"#URL#\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n        </div>\n    </div>\n\n    <div class=\"row template-row-container template-sub-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 template-text\">\n            #DESCRIPTION#\n        </div>\n    </div>\n\n    <div class=\"row template-row-container template-sub-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 template-text\">\n            <img src=\"#BASE_URL#img/gifs/grindGIF_400x400.gif\" width=\"100%\" />\n        </div>\n    </div>\n\n    <div class=\"template-credits-title\">credits</div>\n    <div class=\"row template-credits-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n            <div class=\"template-credits-label\">Direction</div>\n            <div class=\"template-credits-text\">Russ Etheridge</div>\n            <div class=\"template-credits-label\">Production</div>\n            <div class=\"template-credits-text\">Animade</div>\n            <div class=\"template-credits-label\">Sound</div>\n            <div class=\"template-credits-text\">Mutant Jukebox</div>\n        </div>\n    </div>','2017-02-17 11:09:28','2017-02-17 11:09:28',NULL),
+
+(15,'Blocks','<body style=\"background-color: #f7dd00;\" /><style>.template-credits-label{color: #f7dd00;}</style>\n
+<div
 class=\"template-details-title\">#NAME#</div>\n    <div
-id=\"video-panel\" class=\"row template-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n            <iframe id=\"video-frame\" style=\"border:10px solid black;background-color: #000;padding:0;margin:0 auto 0\n            auto;width: 100%;height:350px;\" src=\"#URL#\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen\n            allowfullscreen></iframe>\n        </div>\n    </div>\n\n    <div class=\"row template-row-container template-sub-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 template-text\">\n            #DESCRIPTION#\n        </div>\n    </div>\n\n
+id=\"video-panel\" class=\"row template-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n            <iframe id=\"video-frame\" class=\"video-frame\" src=\"#URL#\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n        </div>\n    </div>\n\n    <div class=\"row template-row-container template-sub-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 template-text\">\n            #DESCRIPTION#\n        </div>\n    </div>\n\n
         <div class=\"row template-row-container template-sub-container\">
         <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 template-text\">
             <img src=\"../img/stills/1.muscles_01.jpg\" width=\"100%\" />
@@ -266,9 +266,11 @@ id=\"video-panel\" class=\"row template-row-container\">\n        <div class=\"c
         </div>
     </div>\n\n
     <div class=\"template-credits-title\">credits</div>\n    <div class=\"row template-credits-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n            <div class=\"template-credits-label\">Director</div>\n            <div class=\"template-credits-text\">Russ Etheridge</div>\n   <div class=\"template-credits-label\">Sound</div>\n            <div class=\"template-credits-text\">Mutant Jukebox</div>\n        </div>\n    </div>','2017-02-23 11:09:28','2017-02-23 11:09:28',NULL),
-(16,'Weetabix','<body style=\"background-color: #a3cbeb;\" />\n\n    <div
+
+(16,'Weetabix','<body style=\"background-color: #a3cbeb;\" /><style>.template-credits-label{color: #a3cbeb;}</style>\n
+    <div
 class=\"template-details-title\">#NAME#</div>\n    <div
-id=\"video-panel\" class=\"row template-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n            <iframe id=\"video-frame\" style=\"border:10px solid black;background-color: #000;padding:0;margin:0 auto 0\n            auto;width: 100%;height:350px;\" src=\"#URL#\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen\n            allowfullscreen></iframe>\n        </div>\n    </div>\n\n    <div class=\"row template-row-container template-sub-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 template-text\">\n            #DESCRIPTION#\n        </div>\n    </div>\n\n
+id=\"video-panel\" class=\"row template-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n            <iframe id=\"video-frame\" class=\"video-frame\" src=\"#URL#\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n        </div>\n    </div>\n\n    <div class=\"row template-row-container template-sub-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 template-text\">\n            #DESCRIPTION#\n        </div>\n    </div>\n\n
         <div class=\"row template-row-container template-sub-container\">
         <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 template-text\">
             <img src=\"../img/stills/1.catchTrain.png\" width=\"100%\" />
@@ -281,9 +283,11 @@ id=\"video-panel\" class=\"row template-row-container\">\n        <div class=\"c
     </div>\n\n
     <div class=\"template-credits-title\">credits</div>\n    <div class=\"row template-credits-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n            <div class=\"template-credits-label\">Designed and Directed</div>\n            <div class=\"template-credits-text\">Russ Etheridge</div>\n   <div class=\"template-credits-label\">Produced</div>\n            <div class=\"template-credits-text\">Animade</div>\n   <div class=\"template-credits-label\">Agency</div>\n            <div class=\"template-credits-text\">Cake</div>\n   <div
     class=\"template-credits-label\">Client</div>\n            <div class=\"template-credits-text\">Weetabix</div>\n        </div>\n    </div>','2017-02-23 11:09:28','2017-02-23 11:09:28',NULL),
-(17,'Brick Lane','<body style=\"background-color: #71ca75;\" />\n\n    <div
+
+(17,'Brick Lane','<body style=\"background-color: #71ca75;\" /><style>.template-credits-label{color: #71ca75;
+}</style>\n    <div
 class=\"template-details-title\">#NAME#</div>\n    <div
-id=\"video-panel\" class=\"row template-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n            <iframe id=\"video-frame\" style=\"border:10px solid black;background-color: #000;padding:0;margin:0 auto 0\n            auto;width: 100%;height:350px;\" src=\"#URL#\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen\n            allowfullscreen></iframe>\n        </div>\n    </div>\n\n    <div class=\"row template-row-container template-sub-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 template-text\">\n            #DESCRIPTION#\n        </div>\n    </div>\n\n
+id=\"video-panel\" class=\"row template-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n            <iframe id=\"video-frame\" class=\"video-frame\" src=\"#URL#\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n        </div>\n    </div>\n\n    <div class=\"row template-row-container template-sub-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 template-text\">\n            #DESCRIPTION#\n        </div>\n    </div>\n\n
     <div class=\"template-credits-title\">credits</div>\n    <div class=\"row template-credits-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n
     <div class=\"template-credits-label\">Design</div>\n<div class=\"template-credits-text\">Russ
     Etheridge</div>\n
@@ -291,7 +295,9 @@ id=\"video-panel\" class=\"row template-row-container\">\n        <div class=\"c
     Etheridge<br />Tom Judd</div>\n
        <div class=\"template-credits-label\">Production</div>\n <div class=\"template-credits-text\">Animade</div>\n
        <div class=\"template-credits-label\">Client</div>\n <div class=\"template-credits-text\">Brick Lane Property</div>\n        </div>\n    </div>','2017-02-23 11:09:28','2017-02-23 11:09:28',NULL),
-(18,'Good hand','<body style=\"background-color: #00ffbb;\" />\n\n    <div
+
+(18,'Good hand','<body style=\"background-color: #00ffbb;\" /><style>.template-credits-label{color: #00ffbb;
+}</style>\n    <div
 class=\"template-details-title\">#NAME#</div>\n
 
 <div class=\"template-row-container\">
@@ -306,7 +312,7 @@ class=\"template-details-title\">#NAME#</div>\n
 
 <div class=\"row template-row-container template-sub-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 template-text\">\n            #DESCRIPTION#\n        </div>\n    </div>\n\n
 
-<div id=\"video-panel\" class=\"row template-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n            <iframe id=\"video-frame\" style=\"border:10px solid black;background-color: #000;padding:0;margin:0 auto 0\n            auto;width: 100%;height:350px;\" src=\"#URL#\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen\n            allowfullscreen></iframe>\n        </div>\n    </div>\n\n
+<div id=\"video-panel\" class=\"row template-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n            <iframe id=\"video-frame\" class=\"video-frame\" src=\"#URL#\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n        </div>\n    </div>\n\n
 
     <div class=\"template-credits-title\">credits</div>\n    <div class=\"row template-credits-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n
     <div class=\"template-credits-label\">Animation Design and Direction</div>\n<div
@@ -314,10 +320,12 @@ class=\"template-details-title\">#NAME#</div>\n
     Etheridge</div>\n
     <div class=\"template-credits-label\">Audio</div>\n<div class=\"template-credits-text\">Ben
     Etheridge</div>\n       </div>\n    </div>','2017-02-23 11:09:28','2017-02-23 11:09:28',NULL),
-(19,'Squeeze','<body style=\"background-color: #3057b5;\" />\n\n    <div
+
+(19,'Squeeze','<body style=\"background-color: #3057b5;\" /><style>.template-credits-label{color: #3057b5;}</style>\n
+    <div
 class=\"template-details-title\">#NAME#</div>\n
-<div id=\"video-panel\" class=\"row template-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n            <iframe id=\"video-frame\" style=\"border:10px solid black;background-color: #000;padding:0;margin:0 auto 0\n            auto;width: 100%;height:350px;\" src=\"#URL#\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen\n            allowfullscreen></iframe>\n        </div>\n    </div>\n\n
-<div id=\"video-panel\" class=\"row template-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n            <iframe id=\"video-frame\" style=\"border:10px solid black;background-color: #000;padding:0;margin:0 auto 0\n            auto;width: 100%;height:350px;\" src=\"https://player.vimeo.com/video/200832260/\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen\n            allowfullscreen></iframe>\n        </div>\n    </div>\n\n
+<div id=\"video-panel\" class=\"row template-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n            <iframe id=\"video-frame\" class=\"video-frame\" src=\"#URL#\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n        </div>\n    </div>\n\n
+<div id=\"video-panel\" class=\"row template-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n            <iframe id=\"video-frame\" class=\"video-frame\" src=\"https://player.vimeo.com/video/200832260/\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n        </div>\n    </div>\n\n
 
 <div class=\"row template-row-container template-sub-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 template-text\">\n            #DESCRIPTION#\n        </div>\n    </div>\n\n
         <div class=\"row template-row-container template-sub-container\">
@@ -336,19 +344,22 @@ class=\"template-details-title\">#NAME#</div>\n
         </div>
     </div>\n\n
     <div class=\"template-credits-title\">credits</div>\n    <div class=\"row template-credits-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n            <div class=\"template-credits-label\">Animation Design and Direction</div>\n            <div class=\"template-credits-text\">Russ Etheridge</div>\n   <div class=\"template-credits-label\">Production</div>\n            <div class=\"template-credits-text\">Animade</div>\n        </div>\n    </div>','2017-02-23 11:09:28','2017-02-23 11:09:28',NULL),
-(20,'Squeeze','<body style=\"background-color: #1c968a;\" />\n\n    <div
+
+(20,'Squeeze','<body style=\"background-color: #1c968a;\" /><style>.template-credits-label{color: #1c968a;}</style>\n
+    <div
 class=\"template-details-title\">#NAME#</div>\n
-<div id=\"video-panel\" class=\"row template-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n            <iframe id=\"video-frame\" style=\"border:10px solid black;background-color: #000;padding:0;margin:0 auto 0\n            auto;width: 100%;height:350px;\" src=\"#URL#\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen\n            allowfullscreen></iframe>\n        </div>\n    </div>\n\n
+<div id=\"video-panel\" class=\"row template-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n            <iframe id=\"video-frame\" class=\"video-frame\" src=\"#URL#\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n        </div>\n    </div>\n\n
 
 <div class=\"row template-row-container template-sub-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 template-text\">\n            #DESCRIPTION#\n        </div>\n    </div>\n\n
 
-<div id=\"video-panel\" class=\"row template-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n            <iframe id=\"video-frame\" style=\"border:10px solid black;background-color: #000;padding:0;margin:0 auto 0\n            auto;width: 100%;
-height:350px;\" src=\"https://player.vimeo.com/video/119444475/\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen\n            allowfullscreen></iframe>\n        </div>\n    </div>\n\n
+<div id=\"video-panel\" class=\"row template-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n            <iframe id=\"video-frame\" class=\"video-frame\" src=\"https://player.vimeo.com/video/119444475/\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen\n            allowfullscreen></iframe>\n        </div>\n    </div>\n\n
 
 <div class=\"row template-row-container template-sub-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 template-text\">\n #CONTENT_A#\n        </div>\n    </div>\n\n
 
     <div class=\"template-credits-title\">credits</div>\n    <div class=\"row template-credits-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n            <div class=\"template-credits-label\">Director</div>\n            <div class=\"template-credits-text\">Russ Etheridge</div>\n   <div class=\"template-credits-label\">Production</div>\n            <div class=\"template-credits-text\">Animade</div>\n        </div>\n    </div>','2017-02-23 11:09:28','2017-02-23 11:09:28',NULL),
-(21,'Gifs for Fun','<body style=\"background-color: #00daff;\" />\n\n    <div
+
+(21,'Gifs for Fun','<body style=\"background-color: #00daff;\" /><style>.template-credits-label{color: #00daff;
+}</style>\n    <div
 class=\"template-details-title\">#NAME#</div>\n
 
 <div class=\"template-row-container\">
@@ -360,9 +371,11 @@ class=\"template-details-title\">#NAME#</div>\n
         </div>
     </div>
 ','2017-02-23 11:09:28','2017-02-23 11:09:28',NULL),
-(22,'The Lion','<body style=\"background-color: #cf6689;\" />\n\n    <div
+
+(22,'The Lion','<body style=\"background-color: #cf6689;\" /><style>.template-credits-label{color: #cf6689;}</style>\n
+    <div
 class=\"template-details-title\">#NAME#</div>\n
-<div id=\"video-panel\" class=\"row template-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n            <iframe id=\"video-frame\" style=\"border:10px solid black;background-color: #000;padding:0;margin:0 auto 0\n            auto;width: 100%;height:350px;\" src=\"#URL#\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen\n            allowfullscreen></iframe>\n        </div>\n    </div>\n\n
+<div id=\"video-panel\" class=\"row template-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n            <iframe id=\"video-frame\" class=\"video-frame\" src=\"#URL#\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n        </div>\n    </div>\n\n
 
 <div class=\"row template-row-container template-sub-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 template-text\">\n            #DESCRIPTION#\n        </div>\n    </div>\n\n
 
@@ -385,9 +398,11 @@ class=\"template-details-title\">#NAME#</div>\n
         class=\"template-credits-text\">Benjamin Scheuer</div>\n
       </div>\n
     </div>','2017-02-23 11:09:28','2017-02-23 11:09:28',NULL),
-(23,'Robbie Williams','<body style=\"background-color: #00daff;\" />\n\n    <div
+
+(23,'Robbie Williams','<body style=\"background-color: #00daff;\" /><style>.template-credits-label{color: #00daff;
+}</style>\n    <div
 class=\"template-details-title\">#NAME#</div>\n
-<div id=\"video-panel\" class=\"row template-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n            <iframe id=\"video-frame\" style=\"border:10px solid black;background-color: #000;padding:0;margin:0 auto 0\n            auto;width: 100%;height:350px;\" src=\"#URL#\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen\n            allowfullscreen></iframe>\n        </div>\n    </div>\n\n
+<div id=\"video-panel\" class=\"row template-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n            <iframe id=\"video-frame\" class=\"video-frame\" src=\"#URL#\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n        </div>\n    </div>\n\n
 
 <div class=\"row template-row-container template-sub-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 template-text\">\n            #DESCRIPTION#\n        </div>\n    </div>\n\n
 
@@ -400,9 +415,11 @@ class=\"template-details-title\">#NAME#</div>\n
         class=\"template-credits-text\">Robbie Wiliams</div>\n
       </div>\n
     </div>','2017-02-23 11:09:28','2017-02-23 11:09:28',NULL),
-(24,'Motion Design Reel 2014','<body style=\"background-color: #f7dd00;\" />\n\n    <div
+
+(24,'Motion Design Reel 2014','<body style=\"background-color: #f7dd00;\" /><style>.template-credits-label{color:
+#f7dd00;}</style>\n    <div
 class=\"template-details-title\">#NAME#</div>\n
-<div id=\"video-panel\" class=\"row template-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n            <iframe id=\"video-frame\" style=\"border:10px solid black;background-color: #000;padding:0;margin:0 auto 0\n            auto;width: 100%;height:350px;\" src=\"#URL#\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen\n            allowfullscreen></iframe>\n        </div>\n    </div>\n\n
+<div id=\"video-panel\" class=\"row template-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n            <iframe id=\"video-frame\" class=\"video-frame\" src=\"#URL#\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n        </div>\n    </div>\n\n
 
 <div class=\"row template-row-container template-sub-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 template-text\">\n            #DESCRIPTION#\n        </div>\n    </div>','2017-02-23 11:09:28','2017-02-23 11:09:28',NULL);
 /*!40000 ALTER TABLE `templates` ENABLE KEYS */;

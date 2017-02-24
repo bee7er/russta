@@ -64,7 +64,8 @@ elixir(function(mix) {
         paths.jquery + '/jquery.js',
         paths.bootstrap + '/js/bootstrap.js',
         paths.colorbox + '/jquery.colorbox.js',
-        paths.justifiedGallery + '/js/jquery.justifiedGallery.js'
+        paths.justifiedGallery + '/js/jquery.justifiedGallery.js',
+        'bee.js'
     ], 'public/js/site.js');
 
     // Merge Admin CSSs.

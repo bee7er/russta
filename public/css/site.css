@@ -20359,9 +20359,13 @@ body {
   font-size: 1.2em;
 }
 
-.video-container {
-  margin-top: 0;
-  padding: 20px;
+.video-frame {
+  border: 10px solid black;
+  background-color: #000;
+  padding: 0;
+  margin: 0 auto;
+  width: 100%;
+  height: 350px;
 }
 
 .resource-container {
@@ -20479,6 +20483,7 @@ body {
 }
 
 .go-top {
+  margin: 0 auto;
   text-align: center;
   padding: 0 20px;
   cursor: pointer;
@@ -20510,6 +20515,14 @@ body {
   width: 30px;
   margin: 8px;
 }
+
+.bodymovin-fishtank {
+  width: 100%;
+  height: 100%;
+  background-color: #00DAFF;
+}
+
+/* Media queries */
 
 @media (max-width: 768px) {
   .contact-row-container,
