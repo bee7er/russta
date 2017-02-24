@@ -9,7 +9,7 @@
     @section('meta_keywords')
         <meta name="keywords" content="animation, animator, director, creator, designer"/>
     @show @section('meta_author')
-        <meta name="author" content="Jon Doe"/>
+        <meta name="author" content="Brian Etheridge"/>
     @show @section('meta_description')
         <meta name="description"
               content="Russell Etheridge is a free lance animator."/>
@@ -26,7 +26,7 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <link rel="shortcut icon" href="{!! asset('assets/site/ico/favicon.ico')  !!} ">
+    <link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
 </head>
 <body>
 
