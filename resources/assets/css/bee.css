@@ -109,6 +109,38 @@ body {
     padding: 0;
 }
 
+
+.logo-menu-container {
+    margin:20px auto 0 auto;
+}
+.logo-menu-row {
+    margin-bottom:20px;
+}
+.logo-menu-table {
+    margin:10px auto 10px auto;
+    text-align:center;
+}
+.logo-menu-table-left, .logo-menu-table-center, .logo-menu-table-right {
+    padding-bottom: 12px;
+}
+.logo-menu-table-left {
+    width:40%;
+}
+.logo-menu-table-center {
+    width:20%;
+}
+.logo-menu-table-right {
+    width:40%;
+}
+.square {
+    padding: 0 15px;
+}
+.square-vertical {
+    text-align: center;
+    padding: 0 15px 12px 15px;
+    width: 20%;
+}
+
 .row-container, .about-row-container, .contact-row-container, .merch-row-container,
 .fish-tank-row-container, .footer-row-container, .template-row-container,
 .template-credits-row-container {
@@ -269,16 +301,6 @@ body {
     padding: 0 20px;
     cursor: pointer;
 }
-.white-link {
-    color: #fff;
-    padding: 0 35px;
-}
-.white-link:hover, .white-link:visited, .white-link:active {
-    color: #fff;
-    text-decoration: none;
-    border-bottom: 10px;
-    border-bottom-color: black;
-}
 .white-link-hover {
     padding-bottom:6px;
     border-bottom: 10px;
@@ -289,9 +311,6 @@ body {
 .social-icon {
     width: 30px;
     margin: 8px;
-}
-.square {
-    padding: 0 15px;
 }
 .bodymovin-fishtank {
     width:100%;
