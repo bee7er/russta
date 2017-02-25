@@ -19,7 +19,7 @@
                                                   onmouseout="$(this).removeClass('white-link-hover')">merch</span>
     </div>
     <div class="hidden-xs col-sm-12 hidden-md hidden-lg header-block">
-        <div class="row" class="logo-menu-row">
+        <div class="row logo-menu-row">
             <span onclick="gotoPage('top');" class="go-top"><img src="{{config('app.base_url')}}img/logo.png" /></span>
         </div>
         <span onclick="gotoPage('home');" onmouseover="$(this).addClass('white-link-hover');"

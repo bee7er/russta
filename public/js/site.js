@@ -28357,12 +28357,14 @@ var handleResizeEvent = function (event) {
  */
 var calcAspectRatio = function (event) {
     // On resize we recalculate the height of the iframe to maintain aspect ratio
-    if (vidFrame = $("#video-frame")) {
+    // There may be multiple video frames, so we are using the class to identify videos
+    $(".video-frame").each(function(index, elem) {
+        vidFrame = $(elem);
         vidWidth = vidFrame.width();
-        //vidHeight = (vidWidth / 16) * 9;
         vidHeight = (Math.round(vidWidth * 0.5625, 0) + 20);
         vidFrame.css('height', vidHeight);
-    }
+    });
+
 };
 
 /**
