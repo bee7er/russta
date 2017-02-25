@@ -368,8 +368,15 @@ class=\"template-details-title\">#NAME#</div>\n
             <img class=\"details-work-image col-xs-12 col-sm-6 col-md-6 col-lg-4\" src=\"../img/gifs/2.gf_chipWaffle_02_400.gif\">
             <img class=\"details-work-image col-xs-12 col-sm-6 col-md-6 col-lg-4\" src=\"../img/gifs/3.gf_pistachios_400sq.gif\">
             <img class=\"details-work-image col-xs-12 col-sm-6 col-md-6 col-lg-4\" src=\"../img/gifs/4.gf_blizzard_01.gif\">
+            <img class=\"details-work-image hidden-xs hidden-sm hidden-md col-lg-4\" src=\"../img/gifs/1.gf_bike_10_500x500.gif\">
+            <img class=\"details-work-image hidden-xs hidden-sm hidden-md col-lg-4\" src=\"../img/gifs/2.gf_chipWaffle_02_400.gif\">
         </div>
     </div>
+
+        <div class="hidden-xs col-sm-12 hidden-md hidden-lg header-block">
+
+    </div>
+
 ','2017-02-23 11:09:28','2017-02-23 11:09:28',NULL),
 
 (22,'The Lion','<body style=\"background-color: #cf6689;\" /><style>.template-credits-label{color: #cf6689;}</style>\n
