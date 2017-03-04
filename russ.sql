@@ -139,9 +139,9 @@ INSERT INTO `resources` VALUES
 For more information check out this awesome behind the scenes article over at Animade’s website.
 </p><p>
 Sound kindly provided by the incredible award winning Mutant Jukebox.</p>',NULL,NULL,'','olympops_th.jpg','https://player.vimeo.com/video/205363016',13,'2017-02-17 11:19:20','2017-02-17 11:19:20',NULL),
-(2,'video','blocks','A kids show and character test.',NULL,NULL,'','blocks_th.jpg','https://player.vimeo
+(2,'video','blocks','A kid''s show and character test.',NULL,NULL,'','blocks_th.jpg','https://player.vimeo
 .com/video/202748408',15,'2017-02-17 11:19:20','2017-02-17 11:19:20',NULL),
-(3,'video','weetabix - on the go','<p>A series of quick morning cheats I designed and directed for Weetabix.</p><p>Produced by Animade. To see the full credit list and a lovely write up on this project, mosey on over to the animade website: Animade – On the Go</p>','','','','weetabix_th.jpg','https://player.vimeo.com/video/205356654',16,'2016-10-16 12:47:36','2016-10-16 12:47:36',NULL),
+(3,'video','weetabix - on the go','<p>A series of quick, morning cheats I designed and directed for Weetabix.</p><p>Produced by Animade. To see the full credit list and a lovely write up on this project, mosey on over to the animade website: Animade – On the Go</p>','','','','weetabix_th.jpg','https://player.vimeo.com/video/205356654',16,'2016-10-16 12:47:36','2016-10-16 12:47:36',NULL),
 (4,'video','brick lane','A fun explainer for Brick Lane property management.',NULL,NULL,'','bricklane_th.jpg',
 'https://player.vimeo.com/video/205358831',17,
 '2017-02-17 11:19:20','2017-02-17 11:19:20',NULL),
@@ -149,11 +149,12 @@ Sound kindly provided by the incredible award winning Mutant Jukebox.</p>',NULL,
 NULL,'','goodHand_th.jpg','https://player.vimeo
 .com/video/000000000',18,
 '2017-02-17 11:19:20','2017-02-17 11:19:20',NULL),
-(6,'video','train squeeze','<p>Series of seriously squeezey moments we all relate to.
+(6,'video','train squeeze','<p>Series of seriously squeezey moments we can all relate to.
 </p><p>
-This little loop inspired by my London commute packed a serious punch for me on social media, perhaps down to it’s sheer relatability. Just after release it became one of my most viral successes on twitter with nearly 1000 likes and hundreds of retweets before getting picked up by TimeOut London receiving over 200k views on their Facebook page.
+This little loop inspired by my London commute packed a serious punch for me on social media, perhaps down to its sheer relatability. Just after release it became one of my most successful viral videos on twitter with nearly 1000 likes and hundreds of retweets before getting picked up by TimeOut London, receiving over 200k views on their Facebook page.
 </p><p>
-The follow up to the Train Squeeze loop also garned a good ammount of social media attention, perhaps most impressively being viewed over 1.3 million times on Instagram!
+The follow up to the Train Squeeze loop also garnered a huge amount of social media attention, perhaps most impressively
+ being viewed over 1.3 million times on Instagram!
 </p><p>
 Check out this awesome article over at Animade’s website.
 </p><p>
@@ -172,7 +173,7 @@ More coming soon ;o)</p>',NULL,NULL,'','trainSqueeze_th.jpg','https://player.vim
 </p><p>
 This project is an animated music video for US based band Escapist Papers. My role was compositor while working closely with the director and main animator on the project, the talented Peter Baynton.
 </p><p>
-The animation is a mixture of photographed cardboard cutouts and hand drawn animation compoisited in After Effects. The main challenge for me on this job was to create the sense that the animation is being filmed in a miniature puppet set. This involved working with an array of cardboard textures and developing a convincing lighting setup. This then created a sense of depth through the use of an elaborate shadow set up and brought the piece together with a pleasing grade.
+The animation is a mixture of photographed cardboard cutouts and hand drawn animation composited in After Effects. The main challenge for me on this job was to create the sense that the animation is being filmed in a miniature puppet set. This involved working with an array of cardboard textures and developing a convincing lighting setup. This then created a sense of depth through the use of an elaborate shadow set up and brought the piece together with a pleasing grade.
 </p>','<p>AWARDS
 </p><p>
 British Animation Awards, UK 2014<br />
@@ -192,9 +193,11 @@ Screenings:<br />
 Edinburgh Fringe Festival 26th June 2013</p>','','','lion_th.jpg','https://player.vimeo.com/video/60453523',22,
 '2016-10-16 12:47:36','2016-10-16
 12:47:36',NULL),
-(11,'video','robbie williams – take the crown','<p>Promo for Robbie Williams'' ''Take the Crown'' album release.
+(11,'video','robbie williams – take the crown','<p>Promo for Robbie Williams''s ''Take the Crown'' album release.
 </p><p>
-This project was a video to promote Robbie Williams'' ''Take the Crown'' album release. All created in Cinema 4D and After Effects using 3D scans of Robbie Williams'' head.</p>','','','','robbieWilliams_th.jpg','http://player.vimeo.com/video/69224915',23,'2016-10-16 12:47:36',
+This project was a video to promote Robbie Williams''s ''Take the Crown'' album release. All created in Cinema 4D
+and After Effects using 3D scans of Robbie Williams''s head.</p>','','','','robbieWilliams_th.jpg','http://player
+.vimeo.com/video/69224915',23,'2016-10-16 12:47:36',
 '2016-10-16 12:47:36',NULL),
 (12,'video','motion design reel','Motion Design showreel from various freelance jobs.','','','','motionReel_th.jpg','https://player.vimeo.com/video/104406081',24,'2016-10-16 12:47:36','2016-10-16 12:47:36',NULL);
 /*!40000 ALTER TABLE `resources` ENABLE KEYS */;
@@ -307,6 +310,7 @@ class=\"template-details-title\">#NAME#</div>\n
             <img class=\"details-work-image col-xs-12 col-sm-6 col-md-6 col-lg-4\" src=\"../img/gifs/gh_magicBox_BOTTOM_400px.gif\">
             <img class=\"details-work-image col-xs-12 col-sm-6 col-md-6 col-lg-4\" src=\"../img/gifs/gh_magicBox_TOP_400px.gif\">
             <img class=\"details-work-image col-xs-12 col-sm-6 col-md-6 col-lg-4\" src=\"../img/gifs/gh_thingWalk_400px.gif\">
+            <img class=\"details-work-image col-xs-12 col-sm-6 col-md-6 col-lg-4\" src=\"../img/gifs/gh_gooFlop_400px.gif\">
         </div>
     </div>
 
@@ -419,7 +423,7 @@ class=\"template-details-title\">#NAME#</div>\n
         <div class=\"template-credits-label\">Design</div><div class=\"template-credits-text\">Ros Urien</div>\n
         <div class=\"template-credits-label\">Animation</div>\n <div class=\"template-credits-text\">Russ Etheridge</div>\n
         <div class=\"template-credits-label\">Client</div>\n <div
-        class=\"template-credits-text\">Robbie Wiliams</div>\n
+        class=\"template-credits-text\">Robbie Williams</div>\n
       </div>\n
     </div>','2017-02-23 11:09:28','2017-02-23 11:09:28',NULL),
 

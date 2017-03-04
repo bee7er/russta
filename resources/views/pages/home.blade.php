@@ -72,8 +72,7 @@
     <div id="merch" class="panel-title">merch</div>
     <div class="row merch-row-container">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <p><img class="col-xs-12 col-sm-12 col-md-12 col-lg-12" src="img/stills/blocks.jpg" title=""></p>
-            <p>&nbsp;</p>
+            <p><img class="work-image col-xs-12 col-sm-12 col-md-12 col-lg-12" src="img/stills/blocks.jpg" title=""></p>
             <p>Coming soon, and not just a few blocks! Follow me on your favourite social media site for updates.</p>
         </div>
     </div>

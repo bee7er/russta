@@ -32,6 +32,8 @@ var calcAspectRatio = function (event) {
  * @param event
  */
 var calcAboutTextPanelHeight = function (event) {
+    var leftContainer = null;
+    var rightContainer = null;
     // On resize we recalculate the height of the About text panel to make sure is at least as big as the image one
     if ((leftContainer = $("#about-left-container"))
         && (rightContainer = $("#about-right-container"))) {
