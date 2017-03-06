@@ -16,8 +16,6 @@
                              src="{!! url('img/thumbs/'.$resources[$i]->thumb) !!}" title="" alt="{!!
                              $resources[$i]->name !!}">
                     </div>
-                    {{-- Preload image --}}
-                    <style>#preload-{!! $resources[$i]->id !!} { background: url('{!! url('img/thumbs/'.$resources[$i]->hover) !!}') no-repeat -9999px -9999px; }</style>
                 @endfor
             </div>
         </div>
@@ -81,6 +79,15 @@
              onmouseout="stopBodymovinHand(MERCH);">
         </div>
     </div>
+    @if(count($resources)>0)
+        {{-- Preload images --}}
+        <div style="visibility: hidden;">
+            @for ($i = 0; $i < count($resources); $i++)
+                <img src="{!! url('img/thumbs/'.$resources[$i]->thumb) !!}" style="width:1px;height:1px;">
+                <img src="{!! url('img/thumbs/'.$resources[$i]->hover) !!}" style="width:1px;height:1px;">
+            @endfor
+        </div>
+    @endif
 
 @endsection
 
