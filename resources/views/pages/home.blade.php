@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title') Home :: @parent @endsection
+@section('title') Home @parent @endsection
 
 @section('content')
 
@@ -83,8 +83,8 @@
         {{-- Preload images --}}
         <div style="visibility: hidden;">
             @for ($i = 0; $i < count($resources); $i++)
-                <img src="{!! url('img/thumbs/'.$resources[$i]->thumb) !!}" style="width:1px;height:1px;">
-                <img src="{!! url('img/thumbs/'.$resources[$i]->hover) !!}" style="width:1px;height:1px;">
+                <img src="{!! url('img/thumbs/'.$resources[$i]->thumb) !!}" class="hidden-preload">
+                <img src="{!! url('img/thumbs/'.$resources[$i]->hover) !!}" class="hidden-preload">
             @endfor
         </div>
     @endif

@@ -1,6 +1,5 @@
 @extends('layouts.app')
-@section('title')
-    {!! $video->name !!} :: @parent @endsection
+@section('title') {!! $video->name !!} @parent @endsection
 @section('content')
 
         {!! $video->rendered !!}

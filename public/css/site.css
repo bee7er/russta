@@ -20555,6 +20555,14 @@ body {
   margin: 0 auto;
 }
 
+#hidden-preload {
+  height: 1px;
+  left: -20000px;
+  position: absolute;
+  top: -20000px;
+  width: 1px;
+}
+
 /* Media queries */
 
 @media (max-width: 768px) {

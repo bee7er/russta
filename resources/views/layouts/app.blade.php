@@ -5,14 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>@section('title') Russell Etheridge @show</title>
+    <title>Russ Etheridge :: @section('title') @show</title>
     @section('meta_keywords')
         <meta name="keywords" content="animation, animator, director, creator, designer"/>
     @show @section('meta_author')
         <meta name="author" content="Brian Etheridge"/>
     @show @section('meta_description')
-        <meta name="description"
-              content="Russell Etheridge is a free lance animator."/>
+        <meta name="description" content="Russ Etheridge is a free lance animator."/>
     @show
 
 		<link href="{{ asset('css/site.css') }}" rel="stylesheet">
