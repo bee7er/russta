@@ -77,7 +77,11 @@
             @if (Request::is('home'))
                 scrollToAnchor(aid);
             @else
-                    document.location = ("{{config('app.base_url')}}" + "home#" + aid);
+            if (aid == "home") {
+                document.location = ("{{config('app.base_url')}}");
+            } else {
+                document.location = ("{{config('app.base_url')}}" + "home#" + aid);
+            }
             @endif
         }
 

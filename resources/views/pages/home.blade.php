@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title') Home @parent @endsection
+@section('title') home @parent @endsection
 
 @section('content')
 
@@ -8,8 +8,8 @@
         <div class="row-container">
             <div class="row">
                 @for ($i = 0; $i < count($resources); $i++)
-                    <div onclick="document.location='{{url($resources[$i]->type .'/' .
-                        $resources[$i]->id .'')}}';">
+{{--                    <div onclick="document.location='{{url($resources[$i]->type .'/' . $resources[$i]->name .'')}}';">--}}
+                    <div onclick="document.location='{{url($resources[$i]->name .'')}}';">
                         <img id="{!! $resources[$i]->id !!}" class="work-image col-xs-12 col-sm-6 col-md-6 col-lg-4"
                              onmouseover="this.src='{!! url('img/thumbs/'.$resources[$i]->hover) !!}'"
                              onmouseout="this.src='{!! url('img/thumbs/'.$resources[$i]->thumb) !!}'"

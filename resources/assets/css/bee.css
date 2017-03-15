@@ -322,7 +322,7 @@ body {
     height:150px;
     margin:0 auto;
 }
-.hidden-preload {
+#hidden-preload {
     height: 1px;
     left: -20000px;
     position: absolute;

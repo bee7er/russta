@@ -13,6 +13,9 @@
     @show @section('meta_description')
         <meta name="description" content="Russ Etheridge is a free lance animator."/>
     @show
+        <meta property="og:title" content="Russ Etheridge">
+        <meta property="og:image" content="http://www.russelletheridge.com/public/img/thumbs/bathroomBoarder_hv.jpg">
+        <meta property="og:description" content="Russ Etheridge is a free lance animator, director and designer">
 
 		<link href="{{ asset('css/site.css') }}" rel="stylesheet">
         <script src="{{ asset('js/site.js') }}"></script>

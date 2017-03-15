@@ -10,11 +10,15 @@ Route::pattern('slug', '[0-9a-z-_]+');
 
 /***************    Site routes  **********************************/
 Route::get('/', 'HomeController@index');
+Route::get('/home', 'HomeController@index');
+// NB Using the following as an alias to video controller
+Route::get('/{name}', 'VideoController@show');
+Route::get('video/{name}', 'VideoController@show');
+// Others
 Route::get('home', 'HomeController@index');
 Route::get('expressions', 'PagesController@expressions');
 Route::get('template', 'PagesController@template');
 Route::get('movin', 'PagesController@movin');
-Route::get('video/{id}', 'VideoController@show');
 Route::get('gif/{id}', 'GifController@show');
 Route::get('image/{id}', 'ImageController@show');
 
