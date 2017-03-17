@@ -12,17 +12,17 @@ class VideoController extends Controller
     public function show($name)
 	{
         $error = null;
-        $videoName = null;
+        $videoTitle = null;
 
         $video = Resource::with('template')->where("name", "=", $name)->first();
         if ($video) {
             $video->rendered = TemplateHelper::render($video);
-            $videoName = $video->name;
+            $videoTitle = $video->title;
         } else {
             $error = "Sorry, could not find that video";
-            $videoName = "None";
+            $videoTitle = "None";
         }
 
-        return view('video.view_video',compact('video', 'error', 'videoName'));
+        return view('video.view_video',compact('video', 'error', 'videoTitle'));
 	}
 }

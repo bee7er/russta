@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title') {!! $videoName !!} @parent @endsection
+@section('title') {!! $videoTitle !!} @parent @endsection
 @section('content')
 
     @if($error)

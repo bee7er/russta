@@ -11,6 +11,7 @@ class TemplateHelper
 	];
 	public static $resource_attrs = [
         'NAME' => ['name' => 'The name of the resource'],
+        'TITLE' => ['title' => 'The title of the resource'],
         'IMAGE' => ['image' => 'The file name of the image or animated GIF'],
         'THUMB' => ['thumb' => 'The file name of the thumb nail'],
         'URL' => ['url' => 'The location of the video'],

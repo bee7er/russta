@@ -110,6 +110,7 @@ DROP TABLE IF EXISTS `resources`;
 CREATE TABLE `resources` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `type` enum('video','gif','image') COLLATE utf8_unicode_ci NOT NULL,
+  `title` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `description` text COLLATE utf8_unicode_ci,
   `content_a` text COLLATE utf8_unicode_ci,
@@ -134,47 +135,34 @@ CREATE TABLE `resources` (
 LOCK TABLES `resources` WRITE;
 /*!40000 ALTER TABLE `resources` DISABLE KEYS */;
 INSERT INTO `resources` VALUES
-(1,'video','olympops','<p>I designed and directed these fun balloon dudes to celebrate the Rio Olympics 2016!
-</p><p>
-For more information check out this awesome behind the scenes article over at Animade’s website.
-</p><p>
-Sound kindly provided by the incredible award winning Mutant Jukebox.</p>',NULL,NULL,'','olympops_th.jpg','https://player.vimeo.com/video/205363016',13,'2017-02-17 11:19:20','2017-02-17 11:19:20',NULL),
-(2,'video','blocks','A kid''s show and character test.',NULL,NULL,'','blocks_th.jpg','https://player.vimeo
+(1,'video','olympops','olympops','<p>A few months before the Rio Olympics 2016, Animade tasked me with creating some fun animations in celebration of the events.</p>
+<p>Every great idea starts with a great pun and Olympops was no exception. Many gems were suggested that unfortunately didn''t make it, such as ''Olympigs'' and ''Old Limb Pics''. Tom, Ed and I thrashed through possible concepts before settling on squeeze and pump actioned balloons on the verge of popping.</p>
+<p>They were originally released as a series of looping animations which you can watch below. Then, as a final send-off we released the full edit which you can sit back and enjoy above.</p>
+<p>Sound kindly provided by the incredible award-winning Mutant Jukebox.</p>',NULL,NULL,'','olympops_th.jpg','https://player.vimeo.com/video/205363016',13,'2017-02-17 11:19:20','2017-02-17 11:19:20',NULL),
+(2,'video','blocks','blocks','<p>This started as an animation technique I created for some unused client work. I decided to develop it into a fun character exploration.</p><p>I asked Sherv from Mutant Jukebox to knock up some sounds and he came back with an awesome little jingle that made it feel like the intro to a kids'' show. It inspired me to add in the title screen at the end.</p><p>If you are a TV producer looking for the next Morph or OOglies, look no further!</p><p>Below are some fun concept photos I made using toy wooden blocks.</p>
+',NULL,NULL,'','blocks_th.jpg','https://player.vimeo
 .com/video/202748408',15,'2017-02-17 11:19:20','2017-02-17 11:19:20',NULL),
-(3,'video','weetabix - on the go','<p>A series of quick, morning cheats I designed and directed for Weetabix.</p><p>Produced by Animade. To see the full credit list and a lovely write up on this project, mosey on over to the animade website: Animade – On the Go</p>','','','','weetabix_th.jpg','https://player.vimeo.com/video/205356654',16,'2016-10-16 12:47:36','2016-10-16 12:47:36',NULL),
-(4,'video','brick lane','A fun explainer for Brick Lane property management.',NULL,NULL,'','bricklane_th.jpg',
+(3,'video','weetabix - on the go','weetabix-onthego','<p>A series of quick morning cheats I designed and directed for Weetabix while at Animade. This collection of breakfast busting shorts was used as a supporting social media campaign for their main live action TV ad.</p><p>They tasked us with creating a series of skits and comic strips inspired by aeroplane safety cards. I knocked up some designs and worked with them to develop 15 morning cheat scenarios. Above is a selection of my favourites and below are some of the comic strips.</p><p>Animade – On the Go</p>','','','','weetabix_th.jpg','https://player.vimeo.com/video/205356654',16,'2016-10-16 12:47:36','2016-10-16 12:47:36',NULL),
+(4,'video','brick lane','bricklane','A fun short explaining Brick Lane property management''s interesting new property based ISA.',NULL,NULL,'','bricklane_th.jpg',
 'https://player.vimeo.com/video/205358831',17,
 '2017-02-17 11:19:20','2017-02-17 11:19:20',NULL),
-(5,'video','good hand','<p>Good hand, nice hand...</p><p>Have a look at a little edit with sound below!</p>',NULL,
+(5,'video','good hand','goodhand','<p>Good hand, nice hand...</p><p>Have a look at a little edit with sound
+below!</p><p>Audio kindly provided by my very own brother and sound whizz, Ben Etheridge.</p>',NULL,
 NULL,'','goodHand_th.jpg','https://player.vimeo
 .com/video/000000000',18,
 '2017-02-17 11:19:20','2017-02-17 11:19:20',NULL),
-(6,'video','train squeeze','<p>Series of seriously squeezey moments we can all relate to.
-</p><p>
-This little loop inspired by my London commute packed a serious punch for me on social media, perhaps down to its sheer relatability. Just after release it became one of my most successful viral videos on twitter with nearly 1000 likes and hundreds of retweets before getting picked up by TimeOut London, receiving over 200k views on their Facebook page.
-</p><p>
-The follow up to the Train Squeeze loop also garnered a huge amount of social media attention, perhaps most impressively
- being viewed over 1.3 million times on Instagram!
-</p><p>
-Check out this awesome article over at Animade’s website.
-</p><p>
-More coming soon ;o)</p>',NULL,NULL,'','trainSqueeze_th.jpg','https://player.vimeo.com/video/161372781',19,'2017-02-17 11:19:20','2017-02-17 11:19:20',NULL),
-(7,'video','propz','<p>My feline-vision-aid contribution to the Propz series.</p>','<p>My valentines-shoe contribution to the Propz series.
+(6,'video','train squeeze','trainsqueeze','<p>A series of seriously squeezey moments we can all relate to.</p><p>This little loop inspired by my London commute packed a serious punch for me on social media, perhaps down to it’s sheer universality. Shortly after its release it became one of my most viral successes on Twitter with nearly 1000 likes and hundreds of re-tweets before getting picked up by TimeOut London and receiving over 200k views on their Facebook page.</p><p>The follow-up to the Train Squeeze loop, the Escalator Squeeze loop, also attracted a hefty amount of social media attention, perhaps most impressively being viewed over 1.3 million times on Instagram!</p><p>More coming soon ;o)</p>',NULL,NULL,'','trainSqueeze_th.jpg','https://player.vimeo.com/video/161372781',19,'2017-02-17 11:19:20','2017-02-17 11:19:20',NULL),
+(7,'video','propz','propz','<p>My feline-vision-aid contribution to the Propz series.</p>','<p>My valentines-shoe contribution to the Propz series.
 </p><p>Check out the rest of the amazing weirdness featuring some of Animade''s top talent over on their vimeo page.
 (<a href="https://vimeo.com/channels/propz" target="_blank">https://vimeo.com/channels/propz</a>)
 </p>
 ','','','propzBinoculars_th.jpg','https://player.vimeo
 .com/video/122770363',20,'2016-10-16 12:47:36','2016-10-16 12:47:36',NULL),
-(8,'video','bathroom boarder','A little arachnid in my bathroom.','Hello from content A','Hello from content B','','bathroomBoarder_th.jpg','https://player.vimeo
+(8,'video','bathroom boarder','bathroomboarder','A little arachnid in my bathroom.','Hello from content A','Hello from content B','','bathroomBoarder_th.jpg','https://player.vimeo
 .com/video/161502476',14,'2016-10-16 12:47:36','2017-02-17 17:20:36',NULL),
-(9,'video','gifs for fun','','','','','gifsMisc_th.jpg','https://player.vimeo.com/video/145770435',21,
+(9,'video','gifs for fun','gifsforfun','','','','','gifsMisc_th.jpg','https://player.vimeo.com/video/145770435',21,
 '2016-10-16 12:47:36','2016-10-16 12:47:36',NULL),
-(10,'video','the lion','<p>Award winning animated music video for US based band Escapist Papers.
-</p><p>
-This project is an animated music video for US based band Escapist Papers. My role was compositor while working closely with the director and main animator on the project, the talented Peter Baynton.
-</p><p>
-The animation is a mixture of photographed cardboard cutouts and hand drawn animation composited in After Effects. The main challenge for me on this job was to create the sense that the animation is being filmed in a miniature puppet set. This involved working with an array of cardboard textures and developing a convincing lighting setup. This then created a sense of depth through the use of an elaborate shadow set up and brought the piece together with a pleasing grade.
-</p>','<p>AWARDS
+(10,'video','the lion','thelion','<p>This project is an award winning animated music video for US based band Escapist Papers. My role was compositor while working closely with the director and main animator on the project, the talented Peter Baynton.</p><p>The animation is a mixture of photographed cardboard cutouts and hand drawn animation composited in After Effects. The main challenge for me on this job was to create the sense that the animation is being filmed in a miniature puppet set. This involved working with an array of cardboard textures and developing a convincing lighting setup. A sense of depth was created through the use of an elaborate shadow set-up and the whole piece was brought together with a pleasing grade.</p>','<p>AWARDS
 </p><p>
 British Animation Awards, UK 2014<br />
 Public Choice Best Music Video
@@ -193,13 +181,13 @@ Screenings:<br />
 Edinburgh Fringe Festival 26th June 2013</p>','','','lion_th.jpg','https://player.vimeo.com/video/60453523',22,
 '2016-10-16 12:47:36','2016-10-16
 12:47:36',NULL),
-(11,'video','robbie williams – take the crown','<p>Promo for Robbie Williams''s ''Take the Crown'' album release.
+(11,'video','robbie williams – take the crown','robbiewilliams–takethecrown','<p>Promo for Robbie Williams''s ''Take the Crown'' album release.
 </p><p>
 This project was a video to promote Robbie Williams''s ''Take the Crown'' album release. All created in Cinema 4D
 and After Effects using 3D scans of Robbie Williams''s head.</p>','','','','robbieWilliams_th.jpg','http://player
 .vimeo.com/video/69224915',23,'2016-10-16 12:47:36',
 '2016-10-16 12:47:36',NULL),
-(12,'video','motion design reel','Motion Design showreel from various freelance jobs.','','','','motionReel_th.jpg','https://player.vimeo.com/video/104406081',24,'2016-10-16 12:47:36','2016-10-16 12:47:36',NULL);
+(12,'video','motion design reel','motiondesignreel','Motion Design showreel from various freelance jobs.','','','','motionReel_th.jpg','https://player.vimeo.com/video/104406081',24,'2016-10-16 12:47:36','2016-10-16 12:47:36',NULL);
 /*!40000 ALTER TABLE `resources` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -228,7 +216,7 @@ CREATE TABLE `templates` (
 LOCK TABLES `templates` WRITE;
 /*!40000 ALTER TABLE `templates` DISABLE KEYS */;
 INSERT INTO `templates` VALUES
-(13,'Olympops','<body style=\"background-color: #ff0076;\" /><style>.template-credits-label{color: #ff0076;}</style>\n    <div class=\"template-details-title\">#NAME#</div>\n    <div
+(13,'Olympops','<body style=\"background-color: #ff0076;\" /><style>.template-credits-label{color: #ff0076;}</style>\n    <div class=\"template-details-title\">#TITLE#</div>\n    <div
 id=\"video-panel\" class=\"row template-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n            <iframe id=\"video-frame\" class=\"video-frame\" src=\"#URL#\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n        </div>\n    </div>\n\n    <div class=\"row template-row-container template-sub-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 template-text\">\n            #DESCRIPTION#\n        </div>\n    </div>\n\n
 <div class=\"template-row-container\">
         <div class=\"row\">
@@ -247,11 +235,11 @@ id=\"video-panel\" class=\"row template-row-container\">\n        <div class=\"c
     </div>
     <div class=\"template-credits-title\">credits</div>\n    <div class=\"row template-credits-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n            <div class=\"template-credits-label\">Director</div>\n            <div class=\"template-credits-text\">Russ Etheridge</div>\n            <div class=\"template-credits-label\">Production</div>\n            <div class=\"template-credits-text\">Animade</div>\n            <div class=\"template-credits-label\">Sound</div>\n            <div class=\"template-credits-text\">Mutant Jukebox</div>\n        </div>\n    </div>','2017-02-17 11:09:28','2017-02-17 11:09:28',NULL),
 
-(14,'Bathroom boarder','<body style=\"background-color: #25d7d1;\" /><style>.template-credits-label{color: #25d7d1;}</style>\n    <div class=\"template-details-title\">#NAME#</div>\n    <div id=\"video-panel\" class=\"row template-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n            <iframe id=\"video-frame\" class=\"video-frame\" src=\"#URL#\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n        </div>\n    </div>\n\n    <div class=\"row template-row-container template-sub-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 template-text\">\n            #DESCRIPTION#\n        </div>\n    </div>\n\n    <div class=\"row template-row-container template-sub-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 template-text\">\n            <img src=\"#BASE_URL#img/gifs/grindGIF_400x400.gif\" width=\"100%\" />\n        </div>\n    </div>\n\n    <div class=\"template-credits-title\">credits</div>\n    <div class=\"row template-credits-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n            <div class=\"template-credits-label\">Direction</div>\n            <div class=\"template-credits-text\">Russ Etheridge</div>\n            <div class=\"template-credits-label\">Production</div>\n            <div class=\"template-credits-text\">Animade</div>\n            <div class=\"template-credits-label\">Sound</div>\n            <div class=\"template-credits-text\">Mutant Jukebox</div>\n        </div>\n    </div>','2017-02-17 11:09:28','2017-02-17 11:09:28',NULL),
+(14,'Bathroom boarder','<body style=\"background-color: #25d7d1;\" /><style>.template-credits-label{color: #25d7d1;}</style>\n    <div class=\"template-details-title\">#TITLE#</div>\n    <div id=\"video-panel\" class=\"row template-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n            <iframe id=\"video-frame\" class=\"video-frame\" src=\"#URL#\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n        </div>\n    </div>\n\n    <div class=\"row template-row-container template-sub-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 template-text\">\n            #DESCRIPTION#\n        </div>\n    </div>\n\n    <div class=\"row template-row-container template-sub-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 template-text\">\n            <img src=\"#BASE_URL#img/gifs/grindGIF_400x400.gif\" width=\"100%\" />\n        </div>\n    </div>\n\n    <div class=\"template-credits-title\">credits</div>\n    <div class=\"row template-credits-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n            <div class=\"template-credits-label\">Direction</div>\n            <div class=\"template-credits-text\">Russ Etheridge</div>\n            <div class=\"template-credits-label\">Production</div>\n            <div class=\"template-credits-text\">Animade</div>\n            <div class=\"template-credits-label\">Sound</div>\n            <div class=\"template-credits-text\">Mutant Jukebox</div>\n        </div>\n    </div>','2017-02-17 11:09:28','2017-02-17 11:09:28',NULL),
 
 (15,'Blocks','<body style=\"background-color: #f7dd00;\" /><style>.template-credits-label{color: #f7dd00;}</style>\n
 <div
-class=\"template-details-title\">#NAME#</div>\n    <div
+class=\"template-details-title\">#TITLE#</div>\n    <div
 id=\"video-panel\" class=\"row template-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n            <iframe id=\"video-frame\" class=\"video-frame\" src=\"#URL#\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n        </div>\n    </div>\n\n    <div class=\"row template-row-container template-sub-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 template-text\">\n            #DESCRIPTION#\n        </div>\n    </div>\n\n
         <div class=\"row template-row-container template-sub-container\">
         <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 template-text\">
@@ -270,9 +258,9 @@ id=\"video-panel\" class=\"row template-row-container\">\n        <div class=\"c
     </div>\n\n
     <div class=\"template-credits-title\">credits</div>\n    <div class=\"row template-credits-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n            <div class=\"template-credits-label\">Director</div>\n            <div class=\"template-credits-text\">Russ Etheridge</div>\n   <div class=\"template-credits-label\">Sound</div>\n            <div class=\"template-credits-text\">Mutant Jukebox</div>\n        </div>\n    </div>','2017-02-23 11:09:28','2017-02-23 11:09:28',NULL),
 
-(16,'Weetabix','<body style=\"background-color: #a3cbeb;\" /><style>.template-credits-label{color: #a3cbeb;}</style>\n
+(16,'Weetabix','<body style=\"background-color: #4d82b4;\" /><style>.template-credits-label{color: #4d82b4;}</style>\n
     <div
-class=\"template-details-title\">#NAME#</div>\n    <div
+class=\"template-details-title\">#TITLE#</div>\n    <div
 id=\"video-panel\" class=\"row template-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n            <iframe id=\"video-frame\" class=\"video-frame\" src=\"#URL#\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n        </div>\n    </div>\n\n    <div class=\"row template-row-container template-sub-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 template-text\">\n            #DESCRIPTION#\n        </div>\n    </div>\n\n
         <div class=\"row template-row-container template-sub-container\">
         <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 template-text\">
@@ -287,9 +275,9 @@ id=\"video-panel\" class=\"row template-row-container\">\n        <div class=\"c
     <div class=\"template-credits-title\">credits</div>\n    <div class=\"row template-credits-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n            <div class=\"template-credits-label\">Design and Direction</div>\n            <div class=\"template-credits-text\">Russ Etheridge</div>\n   <div class=\"template-credits-label\">Production</div>\n            <div class=\"template-credits-text\">Animade</div>\n   <div class=\"template-credits-label\">Agency</div>\n            <div class=\"template-credits-text\">Cake</div>\n   <div
     class=\"template-credits-label\">Client</div>\n            <div class=\"template-credits-text\">Weetabix</div>\n        </div>\n    </div>','2017-02-23 11:09:28','2017-02-23 11:09:28',NULL),
 
-(17,'Brick Lane','<body style=\"background-color: #71ca75;\" /><style>.template-credits-label{color: #71ca75;
+(17,'Brick Lane','<body style=\"background-color: #3b9240;\" /><style>.template-credits-label{color: #3b9240;
 }</style>\n    <div
-class=\"template-details-title\">#NAME#</div>\n    <div
+class=\"template-details-title\">#TITLE#</div>\n    <div
 id=\"video-panel\" class=\"row template-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n            <iframe id=\"video-frame\" class=\"video-frame\" src=\"#URL#\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n        </div>\n    </div>\n\n    <div class=\"row template-row-container template-sub-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 template-text\">\n            #DESCRIPTION#\n        </div>\n    </div>\n\n
     <div class=\"template-credits-title\">credits</div>\n    <div class=\"row template-credits-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n
     <div class=\"template-credits-label\">Direction</div>\n<div class=\"template-credits-text\">Russ
@@ -301,7 +289,7 @@ id=\"video-panel\" class=\"row template-row-container\">\n        <div class=\"c
 
 (18,'Good hand','<body style=\"background-color: #00ffbb;\" /><style>.template-credits-label{color: #00ffbb;
 }</style>\n    <div
-class=\"template-details-title\">#NAME#</div>\n
+class=\"template-details-title\">#TITLE#</div>\n
 
 <div class=\"template-row-container\">
         <div class=\"row\">
@@ -327,7 +315,7 @@ class=\"template-details-title\">#NAME#</div>\n
 
 (19,'Squeeze','<body style=\"background-color: #0028ab;\" /><style>.template-credits-label{color: #0028ab;}</style>\n
     <div
-class=\"template-details-title\">#NAME#</div>\n
+class=\"template-details-title\">#TITLE#</div>\n
 <div id=\"video-panel\" class=\"row template-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n            <iframe id=\"video-frame\" class=\"video-frame\" src=\"#URL#\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n        </div>\n    </div>\n\n
 <div id=\"video-panel\" class=\"row template-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n            <iframe id=\"video-frame\" class=\"video-frame\" src=\"https://player.vimeo.com/video/200832260/\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n        </div>\n    </div>\n\n
 
@@ -351,7 +339,7 @@ class=\"template-details-title\">#NAME#</div>\n
 
 (20,'Propz','<body style=\"background-color: #1c968a;\" /><style>.template-credits-label{color: #1c968a;}</style>\n
     <div
-class=\"template-details-title\">#NAME#</div>\n
+class=\"template-details-title\">#TITLE#</div>\n
 <div id=\"video-panel\" class=\"row template-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n            <iframe id=\"video-frame-1\" class=\"video-frame\" src=\"#URL#\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n        </div>\n    </div>\n\n
 
 <div class=\"row template-row-container template-sub-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 template-text\">\n            #DESCRIPTION#\n        </div>\n    </div>\n\n
@@ -364,7 +352,7 @@ class=\"template-details-title\">#NAME#</div>\n
 
 (21,'Gifs for Fun','<body style=\"background-color: #00daff;\" /><style>.template-credits-label{color: #00daff;
 }</style>\n    <div
-class=\"template-details-title\">#NAME#</div>\n
+class=\"template-details-title\">#TITLE#</div>\n
 
 <div class=\"template-row-container\">
         <div class=\"row\">
@@ -372,7 +360,16 @@ class=\"template-details-title\">#NAME#</div>\n
             <img class=\"details-work-image col-xs-12 col-sm-6 col-md-6 col-lg-4\" src=\"../img/gifs/2.gf_chipWaffle_02_400.gif\">
             <img class=\"details-work-image col-xs-12 col-sm-6 col-md-6 col-lg-4\" src=\"../img/gifs/3.gf_pistachios_400sq.gif\">
             <img class=\"details-work-image col-xs-12 col-sm-6 col-md-6 col-lg-4\" src=\"../img/gifs/4.gf_blizzard_01.gif\">
-            <img class=\"details-work-image hidden-xs hidden-sm hidden-md col-lg-4\" src=\"../img/gifs/1.gf_bike_10_500x500.gif\">
+            <img class=\"details-work-image col-xs-12 col-sm-6 col-md-6 col-lg-4\" src=\"../img/gifs/5.gf_fringe_031.gif\">
+            <img class=\"details-work-image col-xs-12 col-sm-6 col-md-6 col-lg-4\" src=\"../img/gifs/6.gf_tents_scene_10_500x500.gif\">
+            <img class=\"details-work-image col-xs-12 col-sm-6 col-md-6 col-lg-4\" src=\"../img/gifs/1.trainSqueeze_450x450.gif\">
+            <img class=\"details-work-image col-xs-12 col-sm-6 col-md-6 col-lg-4\" src=\"../img/gifs/2.EscalatorSqueeze_04_450sq_EZ.gif\">
+            <img class=\"details-work-image col-xs-12 col-sm-6 col-md-6 col-lg-4\" src=\"../img/gifs/gh_gooFlop_400px.gif\">
+            <img class=\"details-work-image col-xs-12 col-sm-6 col-md-6 col-lg-4\" src=\"../img/gifs/gh_handGoo_400px.gif\">
+            <img class=\"details-work-image col-xs-12 col-sm-6 col-md-6 col-lg-4\" src=\"../img/gifs/gh_magicBox_BOTTOM_400px.gif\">
+            <img class=\"details-work-image col-xs-12 col-sm-6 col-md-6 col-lg-4\" src=\"../img/gifs/gh_magicBox_TOP_400px.gif\">
+            <img class=\"details-work-image col-xs-12 col-sm-6 col-md-6 col-lg-4\" src=\"../img/gifs/gh_thingWalk_400px.gif\">
+            <img class=\"details-work-image hidden-xs col-sm-6 col-md-6 col-lg-4\" src=\"../img/gifs/1.gf_bike_10_500x500.gif\">
             <img class=\"details-work-image hidden-xs hidden-sm hidden-md col-lg-4\" src=\"../img/gifs/2.gf_chipWaffle_02_400.gif\">
         </div>
     </div>
@@ -385,7 +382,7 @@ class=\"template-details-title\">#NAME#</div>\n
 
 (22,'The Lion','<body style=\"background-color: #cf6689;\" /><style>.template-credits-label{color: #cf6689;}</style>\n
     <div
-class=\"template-details-title\">#NAME#</div>\n
+class=\"template-details-title\">#TITLE#</div>\n
 <div id=\"video-panel\" class=\"row template-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n            <iframe id=\"video-frame\" class=\"video-frame\" src=\"#URL#\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n        </div>\n    </div>\n\n
 
 <div class=\"row template-row-container template-sub-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 template-text\">\n            #DESCRIPTION#\n        </div>\n    </div>\n\n
@@ -412,7 +409,7 @@ class=\"template-details-title\">#NAME#</div>\n
 
 (23,'Robbie Williams','<body style=\"background-color: #00daff;\" /><style>.template-credits-label{color: #00daff;
 }</style>\n    <div
-class=\"template-details-title\">#NAME#</div>\n
+class=\"template-details-title\">#TITLE#</div>\n
 <div id=\"video-panel\" class=\"row template-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n            <iframe id=\"video-frame\" class=\"video-frame\" src=\"#URL#\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n        </div>\n    </div>\n\n
 
 <div class=\"row template-row-container template-sub-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 template-text\">\n            #DESCRIPTION#\n        </div>\n    </div>\n\n
@@ -429,7 +426,7 @@ class=\"template-details-title\">#NAME#</div>\n
 
 (24,'Motion Design Reel 2014','<body style=\"background-color: #f7dd00;\" /><style>.template-credits-label{color:
 #f7dd00;}</style>\n    <div
-class=\"template-details-title\">#NAME#</div>\n
+class=\"template-details-title\">#TITLE#</div>\n
 <div id=\"video-panel\" class=\"row template-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n            <iframe id=\"video-frame\" class=\"video-frame\" src=\"#URL#\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n        </div>\n    </div>\n\n
 
 <div class=\"row template-row-container template-sub-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 template-text\">\n            #DESCRIPTION#\n        </div>\n    </div>','2017-02-23 11:09:28','2017-02-23 11:09:28',NULL);
