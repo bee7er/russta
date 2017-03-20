@@ -113,6 +113,34 @@
                 };
                 var anim = bodymovin.loadAnimation(animData);
             }
+
+            // Check if we are running the diver animation and, if so, kick it off
+            bodymovinDiverPanel = document.getElementById('bodymovinDiver');
+            if (bodymovinDiverPanel) {
+                var diverAnimData = {
+                    wrapper: bodymovinDiverPanel,
+                    animType: 'svg',
+                    loop: true,
+                    prerender: true,
+                    autoplay: true,
+                    path: '{{config('app.base_url')}}animation/diver.json'
+                };
+                var diverAnim = bodymovin.loadAnimation(diverAnimData);
+            }
+
+            // Check if we are running the diver animation and, if so, kick it off
+            bodymovinDiverVerticalPanel = document.getElementById('bodymovinDiverVertical');
+            if (bodymovinDiverVerticalPanel) {
+                var diverVerticalAnimData = {
+                    wrapper: bodymovinDiverVerticalPanel,
+                    animType: 'svg',
+                    loop: true,
+                    prerender: true,
+                    autoplay: true,
+                    path: '{{config('app.base_url')}}animation/diver.json'
+                };
+                var diverVerticalAnim = bodymovin.loadAnimation(diverVerticalAnimData);
+            }
         });
 
         // Bodymovin hand animation functions to go top

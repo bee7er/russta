@@ -20379,7 +20379,7 @@ body {
 .about-row-container {
   margin-top: 0;
   padding: 0;
-  background-color: #00DAFF;
+  background-color: #fff;
 }
 
 .contact-row-container {
@@ -20436,7 +20436,7 @@ body {
 }
 
 .about-left {
-  background-color: #00DAFF;
+  background-color: #000;
 }
 
 .about-right,
@@ -20549,13 +20549,19 @@ body {
   background-color: #00DAFF;
 }
 
+.bodymovin-diver {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+
 .bodymovin-hand {
   width: 150px;
   height: 150px;
   margin: 0 auto;
 }
 
-.hidden-preload {
+#hidden-preload {
   height: 1px;
   left: -20000px;
   position: absolute;

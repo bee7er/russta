@@ -1,2 +1,2 @@
 
-<img alt="squaresquare" src="img/fish.png" class="about-left-img">
+<div id="bodymovinDiver" class="bodymovin-diver"></div>
