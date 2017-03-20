@@ -128,11 +128,10 @@
                 var diverAnim = bodymovin.loadAnimation(diverAnimData);
                 // Attempt to fix the flickering feet problem
                 diverAnim.addEventListener('data_ready', function(){
-//                    diverAnim.frameRate = 25;
-                    diverAnim.setSpeed(25/60);
-//                    diverAnim.frameModifier = 0.04;
-//                    diverAnim.frameMult = 0.04;
-//                    diverAnim.frameRate = 25;
+                    diverAnim.frameModifier = 0.025;
+                    diverAnim.frameMult = 0.025;
+                    diverAnim.frameRate = 25;
+                    console.log('rate?', diverAnim);
                 });
             }
 
@@ -150,11 +149,10 @@
                 var diverVerticalAnim = bodymovin.loadAnimation(diverVerticalAnimData);
                 // Attempt to fix the flickering feet problem
                 diverVerticalAnim.addEventListener('data_ready', function(){
-//                    diverVerticalAnim.frameRate = 25;
-                    diverVerticalAnim.setSpeed(25/60);
-//                    diverVerticalAnim.frameModifier = 0.04;
-//                    diverVerticalAnim.frameMult = 0.04;
-//                    diverVerticalAnim.frameRate = 25;
+                    diverVerticalAnim.frameModifier = 0.025;
+                    diverVerticalAnim.frameMult = 0.025;
+                    diverVerticalAnim.frameRate = 25;
+                    console.log('rate?', diverVerticalAnim);
                 });
             }
         });
