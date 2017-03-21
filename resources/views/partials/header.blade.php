@@ -123,16 +123,9 @@
                     loop: true,
                     prerender: true,
                     autoplay: true,
-                    path: '{{config('app.base_url')}}animation/diver_60fps.json'
+                    path: '{{config('app.base_url')}}animation/diver.json'
                 };
                 var diverAnim = bodymovin.loadAnimation(diverAnimData);
-                // Attempt to fix the flickering feet problem
-//                diverAnim.addEventListener('data_ready', function(){
-//                    diverAnim.frameModifier = 0.025;
-//                    diverAnim.frameMult = 0.025;
-//                    diverAnim.frameRate = 25;
-//                    console.log('rate?', diverAnim);
-//                });
             }
 
             // Check if we are running the diver animation and, if so, kick it off
@@ -144,16 +137,9 @@
                     loop: true,
                     prerender: true,
                     autoplay: true,
-                    path: '{{config('app.base_url')}}animation/diver_60fps.json'
+                    path: '{{config('app.base_url')}}animation/diver.json'
                 };
                 var diverVerticalAnim = bodymovin.loadAnimation(diverVerticalAnimData);
-                // Attempt to fix the flickering feet problem
-//                diverVerticalAnim.addEventListener('data_ready', function(){
-//                    diverVerticalAnim.frameModifier = 0.025;
-//                    diverVerticalAnim.frameMult = 0.025;
-//                    diverVerticalAnim.frameRate = 25;
-//                    console.log('rate?', diverVerticalAnim);
-//                });
             }
         });
 
