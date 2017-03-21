@@ -1,5 +1,5 @@
 <div>
-    <div style="width: 100%;border:0px solid red;"><img alt="" src="img/headshot.png" style="margin-left: 30%;width: 40%;"></div>
+    <div style="width: 100%;border:0px solid red;"><img alt="" src="img/headshot.png" style="margin-left: 35%;width: 30%;"></div>
     <p>Hello!</p>
     <p>I'm Russ Etheridge, a Brighton-based Freelance Animation Director and Designer with a wide range of animation skills, including 2D & 3D character animation and motion graphics. I have 7+ years of experience in the motion industry, creating numerous high profile and award-winning campaigns.</p>
     <p>Most recently I was Senior Creative at Animade where I worked as a Director, Designer and Team Lead to produce exciting animation for TV and online. I worked closely with their regular clients including Facebook, IBM and Virgin America.</p>
