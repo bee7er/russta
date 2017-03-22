@@ -32,12 +32,16 @@
 
     <div id="about" class="panel-title">about</div>
     <div id="about-row-container" class="row about-row-container">
-        <div id="about-left-container" class="hidden-xs hidden-sm col-md-6 col-lg-6 about-left">
-            <div id="bodymovinDiver" class="bodymovin-diver"></div>
-        </div>
-        <div id="about-right-container" class="hidden-xs hidden-sm col-md-6 col-lg-6 about-right">
-            @include('partials.about-text')
-        </div>
+        <table class="hidden-xs hidden-sm col-md-6 col-lg-6 about-table" style="width: 100%;">
+            <tr>
+                <td style="width:50%;vertical-align: top;border-right: 10px solid #000;">
+                    <div id="bodymovinDiver" class="bodymovin-diver"></div>
+                </td>
+                <td style="width:50%;vertical-align: top;border-left: 10px solid #000;">
+                    @include('partials.about-text')
+                </td>
+            </tr>
+        </table>
         <div class="col-xs-12 col-sm-12 hidden-md hidden-lg about-left-vertical">
             <div id="bodymovinDiverVertical" class="bodymovin-diver"></div>
         </div>
@@ -55,7 +59,7 @@
     <div class="row contact-row-container">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <p>Have a project in mind, or just want to say hi?</p>
-            <p>I’d love to hear from you!.</p>
+            <p>I’d love to hear from you!</p>
             <p><img class="col-xs-12 col-sm-12 col-md-12 col-lg-12" src="img/emailNumImage.png" title=""></p>
             <p class="center-text">Follow me!</p>
             <p class="center-text"><a target="_blank" href="https://dribbble.com/russ_ether"><img src="img/social/dribble.png" class="social-icon" title="Share on dribble" /></a><a target="_blank" href="https://www.facebook.com/profile.php?id=100013591591149"><img src="img/social/facebook.png" class="social-icon" title="Share on facebook" /></a><a target="_blank" href="https://www.instagram.com/russ_ether/"><img src="img/social/instagram.png" class="social-icon" title="Share on instagram" /></a><br><a target="_blank" href="https://www.linkedin.com/in/russether"><img src="img/social/linkedin.png" class="social-icon" title="Share on linkedin" /></a><a target="_blank" href="https://twitter.com/russ_ether"><img src="img/social/twitter.png" class="social-icon" title="Share on twitter" /></a><a target="_blank" href="https://vimeo.com/russether"><img src="img/social/vimeo.png" class="social-icon" title="Share on vimeo" /></a></p>
