@@ -60,7 +60,9 @@
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <p>Have a project in mind, or just want to say hi?</p>
             <p>I’d love to hear from you!</p>
-            <p><img class="col-xs-12 col-sm-12 col-md-12 col-lg-12" src="img/emailNumImage.png" title=""></p>
+            <p>
+                <a href="javascript: mail2('contact','russ','etheridge','com')"><img class="col-xs-12 col-sm-12 col-md-12 col-lg-12" src="img/emailNumImage.png" title=""></a>
+            </p>
             <p class="center-text">Follow me!</p>
             <p class="center-text"><a target="_blank" href="https://dribbble.com/russ_ether"><img src="img/social/dribble.png" class="social-icon" title="Share on dribble" /></a><a target="_blank" href="https://www.facebook.com/profile.php?id=100013591591149"><img src="img/social/facebook.png" class="social-icon" title="Share on facebook" /></a><a target="_blank" href="https://www.instagram.com/russ_ether/"><img src="img/social/instagram.png" class="social-icon" title="Share on instagram" /></a><br><a target="_blank" href="https://www.linkedin.com/in/russether"><img src="img/social/linkedin.png" class="social-icon" title="Share on linkedin" /></a><a target="_blank" href="https://twitter.com/russ_ether"><img src="img/social/twitter.png" class="social-icon" title="Share on twitter" /></a><a target="_blank" href="https://vimeo.com/russether"><img src="img/social/vimeo.png" class="social-icon" title="Share on vimeo" /></a></p>
         </div>

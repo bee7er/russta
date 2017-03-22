@@ -62,3 +62,7 @@ var addEvent = function(object, type, callback) {
         object["on"+type] = callback;
     }
 };
+
+var mail2 = function(name, dom1, dom2, tld, link) {
+    document.location=('mailto:' + name + '@' + dom1 + dom2 + '.' + tld);
+}
