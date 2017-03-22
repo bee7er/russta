@@ -148,8 +148,7 @@ INSERT INTO `resources` VALUES
 '2017-02-17 11:19:20','2017-02-17 11:19:20',NULL),
 (5,'video','good hand','goodhand','<p>Good hand, nice hand...</p><p>Have a look at a little edit with sound
 below!</p><p>Audio kindly provided by my very own brother and sound whizz, Ben Etheridge.</p>',NULL,
-NULL,'','goodHand_th.jpg','https://player.vimeo
-.com/video/000000000',18,
+NULL,'','goodHand_th.jpg','https://player.vimeo.com/video/208469076',18,
 '2017-02-17 11:19:20','2017-02-17 11:19:20',NULL),
 (6,'video','train squeeze','trainsqueeze','<p>A series of seriously squeezey moments we can all relate to.</p><p>This little loop inspired by my London commute packed a serious punch for me on social media, perhaps down to it’s sheer universality. Shortly after its release it became one of my most viral successes on Twitter with nearly 1000 likes and hundreds of re-tweets before getting picked up by TimeOut London and receiving over 200k views on their Facebook page.</p><p>The follow-up to the Train Squeeze loop, the Escalator Squeeze loop, also attracted a hefty amount of social media attention, perhaps most impressively being viewed over 1.3 million times on Instagram!</p><p>More coming soon ;o)</p>',NULL,NULL,'','trainSqueeze_th.jpg','https://player.vimeo.com/video/161372781',19,'2017-02-17 11:19:20','2017-02-17 11:19:20',NULL),
 (7,'video','propz','propz','<p>My feline-vision-aid contribution to the Propz series.</p>','<p>My valentines-shoe contribution to the Propz series.

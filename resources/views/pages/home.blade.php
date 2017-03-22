@@ -31,7 +31,7 @@
     </div>
 
     <div id="about" class="panel-title">about</div>
-    <div class="row about-row-container">
+    <div id="about-row-container" class="row about-row-container">
         <div id="about-left-container" class="hidden-xs hidden-sm col-md-6 col-lg-6 about-left">
             <div id="bodymovinDiver" class="bodymovin-diver"></div>
         </div>
