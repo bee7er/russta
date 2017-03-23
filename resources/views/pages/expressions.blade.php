@@ -2,8 +2,6 @@
 @section('title') Expressions :: @parent @endsection
 @section('content')
 
-    @include('partials.header')
-
     <address>N.B. Not all these scripts are my own they are taken from around the web, many being from expressions godfather himself Dan Ebberts. So if you choose to re-post them please reference the original author.</address>
     <a id="top"></a>
     <p><b>Contents</b></p>
