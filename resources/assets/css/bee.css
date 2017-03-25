@@ -354,7 +354,7 @@ body {
 
 @media (max-width: 1200px) {
     .row-container, .about-row-container, .contact-row-container, .merch-row-container,
-    .fish-tank-row-container, .footer-row-container, .template-row-container,
+    .fish-tank-row-container, .template-row-container,
     .template-credits-row-container {
         padding: 9px;
         width: 80%;
@@ -362,7 +362,7 @@ body {
 }
 @media (max-width: 768px) {
     .row-container, .about-row-container, .contact-row-container, .merch-row-container,
-    .fish-tank-row-container, .footer-row-container, .template-row-container,
+    .fish-tank-row-container, .template-row-container,
     .template-credits-row-container {
         padding: 0;
         width: 90%;
