@@ -1,7 +1,7 @@
 
 <div id="top">&nbsp;</div>
 
-<div class="row" class="logo-menu-container">
+<div class="row logo-menu-container">
     <div class="hidden-xs hidden-sm col-md-12 col-lg-12 header-block">
         <!-- The non-breaking spaces with 'work' force the logo image to be centered above the thumbs -->
         &nbsp;&nbsp;&nbsp;<span onclick="gotoPage('home');"

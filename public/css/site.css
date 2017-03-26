@@ -20227,7 +20227,7 @@ body {
 
 .header-block {
   padding: 0;
-  margin: 0 auto 0 auto;
+  margin: 0 auto 20px auto;
   color: #fff;
   font-size: 2.0em;
   font-weight: normal;
@@ -20288,7 +20288,7 @@ body {
 }
 
 .logo-menu-row {
-  margin-bottom: 20px;
+  margin-bottom: 0;
 }
 
 .logo-menu-table {
@@ -20299,7 +20299,7 @@ body {
 .logo-menu-table-left,
 .logo-menu-table-center,
 .logo-menu-table-right {
-  padding-bottom: 12px;
+  padding-bottom: 0;
 }
 
 .logo-menu-table-left {
@@ -20588,6 +20588,11 @@ body {
   width: 30%;
 }
 
+#home {
+  margin: 0;
+  height: 0;
+}
+
 /* Media queries */
 
 @media (max-width: 1200px) {
@@ -20596,10 +20601,14 @@ body {
   .contact-row-container,
   .merch-row-container,
   .fish-tank-row-container,
-  .template-row-container,
-  .template-credits-row-container {
+  .template-row-container {
     padding: 9px;
     width: 80%;
+  }
+
+  .template-details-title {
+    font-size: 48px;
+    margin-top: 0;
   }
 }
 
@@ -20612,6 +20621,7 @@ body {
   .template-row-container,
   .template-credits-row-container {
     padding: 0;
+    margin-bottom: 0;
     width: 90%;
   }
 
@@ -20627,5 +20637,10 @@ body {
   .template-credits-row-container {
     width: 70%;
     padding: 10px;
+  }
+
+  .template-details-title {
+    font-size: 36px;
+    margin-top: 0;
   }
 }

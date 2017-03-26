@@ -143,7 +143,8 @@ INSERT INTO `resources` VALUES
 ',NULL,NULL,'','blocks_th.jpg','https://player.vimeo
 .com/video/202748408',15,'2017-02-17 11:19:20','2017-02-17 11:19:20',NULL),
 (3,'video','weetabix - on the go','weetabix-onthego','<p>A series of quick morning cheats I designed and directed for Weetabix while at Animade. This collection of breakfast busting shorts was used as a supporting social media campaign for their main live action TV ad.</p><p>They tasked us with creating a series of skits and comic strips inspired by aeroplane safety cards. I knocked up some designs and worked with them to develop 15 morning cheat scenarios. Above is a selection of my favourites and below are some of the comic strips.</p>','','','','weetabix_th.jpg','https://player.vimeo.com/video/205356654',16,'2016-10-16 12:47:36','2016-10-16 12:47:36',NULL),
-(4,'video','brick lane','bricklane','A fun short explaining Brick Lane property management''s interesting new property based ISA.',NULL,NULL,'','bricklane_th.jpg',
+(4,'video','bricklane.com','bricklane','A fun short explaining Brick Lane property management''s interesting new
+property based ISA.',NULL,NULL,'','bricklane_th.jpg',
 'https://player.vimeo.com/video/205358831',17,
 '2017-02-17 11:19:20','2017-02-17 11:19:20',NULL),
 (5,'video','good hand','goodhand','<p>Good hand, nice hand...</p><p>Have a look at a little edit with sound
