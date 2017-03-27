@@ -20,7 +20,7 @@ var calcAspectRatio = function (event) {
     $(".video-frame").each(function(index, elem) {
         var vidFrame = $(elem);
         var vidWidth = vidFrame.width();
-        // If we switch the border width down to zero we no longer need the adjustment
+        // If we switch the border width down to zero, which we do for mobile, we no longer need the adjustment
         var borderWidth = vidFrame.css("border-left-width");
         var adjustment = 20;
         if (borderWidth == "0px") {
