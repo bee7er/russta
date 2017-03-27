@@ -217,7 +217,7 @@ LOCK TABLES `templates` WRITE;
 /*!40000 ALTER TABLE `templates` DISABLE KEYS */;
 INSERT INTO `templates` VALUES
 (13,'Olympops','<body style=\"background-color: #ff0076;\" /><style>.template-credits-label{color: #ff0076;}</style>\n    <div class=\"template-details-title\">#TITLE#</div>\n    <div
-id=\"video-panel\" class=\"row template-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n            <iframe id=\"video-frame\" class=\"video-frame\" src=\"#URL#\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n        </div>\n    </div>\n\n    <div class=\"row template-row-container template-sub-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 template-text\">\n            #DESCRIPTION#\n        </div>\n    </div>\n\n
+id=\"video-panel\" class=\"row template-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 video-frame-container\">\n            <iframe id=\"video-frame\" class=\"video-frame\" src=\"#URL#\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n        </div>\n    </div>\n\n    <div class=\"row template-row-container template-sub-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 template-text\">\n            #DESCRIPTION#\n        </div>\n    </div>\n\n
 <div class=\"template-row-container\">
         <div class=\"row\">
             <img class=\"details-work-image col-xs-12 col-sm-6 col-md-6 col-lg-4\" src=\"../img/gifs/1.OlympopRings_400sq_EZ.gif\">
@@ -235,12 +235,12 @@ id=\"video-panel\" class=\"row template-row-container\">\n        <div class=\"c
     </div>
     <div class=\"template-credits-title\">credits</div>\n    <div class=\"row template-credits-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n            <div class=\"template-credits-label\">Director</div>\n            <div class=\"template-credits-text\">Russ Etheridge</div>\n            <div class=\"template-credits-label\">Production</div>\n            <div class=\"template-credits-text\">Animade</div>\n            <div class=\"template-credits-label\">Sound</div>\n            <div class=\"template-credits-text\">Mutant Jukebox</div>\n        </div>\n    </div>','2017-02-17 11:09:28','2017-02-17 11:09:28',NULL),
 
-(14,'Bathroom boarder','<body style=\"background-color: #25d7d1;\" /><style>.template-credits-label{color: #25d7d1;}</style>\n    <div class=\"template-details-title\">#TITLE#</div>\n    <div id=\"video-panel\" class=\"row template-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n            <iframe id=\"video-frame\" class=\"video-frame\" src=\"#URL#\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n        </div>\n    </div>\n\n    <div class=\"row template-row-container template-sub-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 template-text\">\n            #DESCRIPTION#\n        </div>\n    </div>\n\n    <div class=\"row template-row-container template-sub-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 template-text\">\n            <img src=\"#BASE_URL#img/gifs/grindGIF_400x400.gif\" width=\"100%\" />\n        </div>\n    </div>\n\n    <div class=\"template-credits-title\">credits</div>\n    <div class=\"row template-credits-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n            <div class=\"template-credits-label\">Direction</div>\n            <div class=\"template-credits-text\">Russ Etheridge</div>\n            <div class=\"template-credits-label\">Production</div>\n            <div class=\"template-credits-text\">Animade</div>\n            <div class=\"template-credits-label\">Sound</div>\n            <div class=\"template-credits-text\">Mutant Jukebox</div>\n        </div>\n    </div>','2017-02-17 11:09:28','2017-02-17 11:09:28',NULL),
+(14,'Bathroom boarder','<body style=\"background-color: #25d7d1;\" /><style>.template-credits-label{color: #25d7d1;}</style>\n    <div class=\"template-details-title\">#TITLE#</div>\n    <div id=\"video-panel\" class=\"row template-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 video-frame-container\">\n            <iframe id=\"video-frame\" class=\"video-frame\" src=\"#URL#\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n        </div>\n    </div>\n\n    <div class=\"row template-row-container template-sub-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 template-text\">\n            #DESCRIPTION#\n        </div>\n    </div>\n\n    <div class=\"row template-row-container template-sub-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 template-text\">\n            <img src=\"#BASE_URL#img/gifs/grindGIF_400x400.gif\" width=\"100%\" />\n        </div>\n    </div>\n\n    <div class=\"template-credits-title\">credits</div>\n    <div class=\"row template-credits-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n            <div class=\"template-credits-label\">Direction</div>\n            <div class=\"template-credits-text\">Russ Etheridge</div>\n            <div class=\"template-credits-label\">Production</div>\n            <div class=\"template-credits-text\">Animade</div>\n            <div class=\"template-credits-label\">Sound</div>\n            <div class=\"template-credits-text\">Mutant Jukebox</div>\n        </div>\n    </div>','2017-02-17 11:09:28','2017-02-17 11:09:28',NULL),
 
 (15,'Blocks','<body style=\"background-color: #f7dd00;\" /><style>.template-credits-label{color: #f7dd00;}</style>\n
 <div
 class=\"template-details-title\">#TITLE#</div>\n    <div
-id=\"video-panel\" class=\"row template-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n            <iframe id=\"video-frame\" class=\"video-frame\" src=\"#URL#\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n        </div>\n    </div>\n\n    <div class=\"row template-row-container template-sub-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 template-text\">\n            #DESCRIPTION#\n        </div>\n    </div>\n\n
+id=\"video-panel\" class=\"row template-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 video-frame-container\">\n            <iframe id=\"video-frame\" class=\"video-frame\" src=\"#URL#\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n        </div>\n    </div>\n\n    <div class=\"row template-row-container template-sub-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 template-text\">\n            #DESCRIPTION#\n        </div>\n    </div>\n\n
         <div class=\"row template-row-container template-sub-container\">
         <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 template-text\">
             <img src=\"../img/stills/1.muscles_01.jpg\" width=\"100%\" />
@@ -261,7 +261,7 @@ id=\"video-panel\" class=\"row template-row-container\">\n        <div class=\"c
 (16,'Weetabix','<body style=\"background-color: #4d82b4;\" /><style>.template-credits-label{color: #4d82b4;}</style>\n
     <div
 class=\"template-details-title\">#TITLE#</div>\n    <div
-id=\"video-panel\" class=\"row template-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n            <iframe id=\"video-frame\" class=\"video-frame\" src=\"#URL#\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n        </div>\n    </div>\n\n    <div class=\"row template-row-container template-sub-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 template-text\">\n            #DESCRIPTION#\n        </div>\n    </div>\n\n
+id=\"video-panel\" class=\"row template-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 video-frame-container\">\n            <iframe id=\"video-frame\" class=\"video-frame\" src=\"#URL#\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n        </div>\n    </div>\n\n    <div class=\"row template-row-container template-sub-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 template-text\">\n            #DESCRIPTION#\n        </div>\n    </div>\n\n
         <div class=\"row template-row-container template-sub-container\">
         <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 template-text\">
             <img src=\"../img/stills/1.catchTrain.png\" width=\"100%\" />
@@ -278,7 +278,7 @@ id=\"video-panel\" class=\"row template-row-container\">\n        <div class=\"c
 (17,'Brick Lane','<body style=\"background-color: #3b9240;\" /><style>.template-credits-label{color: #3b9240;
 }</style>\n    <div
 class=\"template-details-title\">#TITLE#</div>\n    <div
-id=\"video-panel\" class=\"row template-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n            <iframe id=\"video-frame\" class=\"video-frame\" src=\"#URL#\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n        </div>\n    </div>\n\n    <div class=\"row template-row-container template-sub-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 template-text\">\n            #DESCRIPTION#\n        </div>\n    </div>\n\n
+id=\"video-panel\" class=\"row template-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 video-frame-container\">\n            <iframe id=\"video-frame\" class=\"video-frame\" src=\"#URL#\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n        </div>\n    </div>\n\n    <div class=\"row template-row-container template-sub-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 template-text\">\n            #DESCRIPTION#\n        </div>\n    </div>\n\n
     <div class=\"template-credits-title\">credits</div>\n    <div class=\"row template-credits-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n
     <div class=\"template-credits-label\">Direction</div>\n<div class=\"template-credits-text\">Russ
     Etheridge</div>\n
@@ -304,7 +304,7 @@ class=\"template-details-title\">#TITLE#</div>\n
 
 <div class=\"row template-row-container template-sub-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 template-text\">\n            #DESCRIPTION#\n        </div>\n    </div>\n\n
 
-<div id=\"video-panel\" class=\"row template-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n            <iframe id=\"video-frame\" class=\"video-frame\" src=\"#URL#\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n        </div>\n    </div>\n\n
+<div id=\"video-panel\" class=\"row template-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 video-frame-container\">\n            <iframe id=\"video-frame\" class=\"video-frame\" src=\"#URL#\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n        </div>\n    </div>\n\n
 
     <div class=\"template-credits-title\">credits</div>\n    <div class=\"row template-credits-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n
     <div class=\"template-credits-label\">Design and Direction</div>\n<div
@@ -316,8 +316,8 @@ class=\"template-details-title\">#TITLE#</div>\n
 (19,'Squeeze','<body style=\"background-color: #0028ab;\" /><style>.template-credits-label{color: #0028ab;}</style>\n
     <div
 class=\"template-details-title\">#TITLE#</div>\n
-<div id=\"video-panel\" class=\"row template-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n            <iframe id=\"video-frame\" class=\"video-frame\" src=\"#URL#\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n        </div>\n    </div>\n\n
-<div id=\"video-panel\" class=\"row template-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n            <iframe id=\"video-frame\" class=\"video-frame\" src=\"https://player.vimeo.com/video/200832260/\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n        </div>\n    </div>\n\n
+<div id=\"video-panel\" class=\"row template-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 video-frame-container\">\n            <iframe id=\"video-frame\" class=\"video-frame\" src=\"#URL#\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n        </div>\n    </div>\n\n
+<div id=\"video-panel\" class=\"row template-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 video-frame-container\">\n            <iframe id=\"video-frame\" class=\"video-frame\" src=\"https://player.vimeo.com/video/200832260/\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n        </div>\n    </div>\n\n
 
 <div class=\"row template-row-container template-sub-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 template-text\">\n            #DESCRIPTION#\n        </div>\n    </div>\n\n
         <div class=\"row template-row-container template-sub-container\">
@@ -340,11 +340,11 @@ class=\"template-details-title\">#TITLE#</div>\n
 (20,'Propz','<body style=\"background-color: #1c968a;\" /><style>.template-credits-label{color: #1c968a;}</style>\n
     <div
 class=\"template-details-title\">#TITLE#</div>\n
-<div id=\"video-panel\" class=\"row template-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n            <iframe id=\"video-frame-1\" class=\"video-frame\" src=\"#URL#\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n        </div>\n    </div>\n\n
+<div id=\"video-panel\" class=\"row template-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 video-frame-container\">\n            <iframe id=\"video-frame-1\" class=\"video-frame\" src=\"#URL#\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n        </div>\n    </div>\n\n
 
 <div class=\"row template-row-container template-sub-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 template-text\">\n            #DESCRIPTION#\n        </div>\n    </div>\n\n
 
-<div id=\"video-panel\" class=\"row template-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n            <iframe id=\"video-frame-2\" class=\"video-frame\" src=\"https://player.vimeo.com/video/119444475/\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen\n            allowfullscreen></iframe>\n        </div>\n    </div>\n\n
+<div id=\"video-panel\" class=\"row template-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 video-frame-container\">\n            <iframe id=\"video-frame-2\" class=\"video-frame\" src=\"https://player.vimeo.com/video/119444475/\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen\n            allowfullscreen></iframe>\n        </div>\n    </div>\n\n
 
 <div class=\"row template-row-container template-sub-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 template-text\">\n #CONTENT_A#\n        </div>\n    </div>\n\n
 
@@ -383,7 +383,7 @@ class=\"template-details-title\">#TITLE#</div>\n
 (22,'The Lion','<body style=\"background-color: #cf6689;\" /><style>.template-credits-label{color: #cf6689;}</style>\n
     <div
 class=\"template-details-title\">#TITLE#</div>\n
-<div id=\"video-panel\" class=\"row template-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n            <iframe id=\"video-frame\" class=\"video-frame\" src=\"#URL#\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n        </div>\n    </div>\n\n
+<div id=\"video-panel\" class=\"row template-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 video-frame-container\">\n            <iframe id=\"video-frame\" class=\"video-frame\" src=\"#URL#\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n        </div>\n    </div>\n\n
 
 <div class=\"row template-row-container template-sub-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 template-text\">\n            #DESCRIPTION#\n        </div>\n    </div>\n\n
 
@@ -410,7 +410,7 @@ class=\"template-details-title\">#TITLE#</div>\n
 (23,'Robbie Williams','<body style=\"background-color: #00daff;\" /><style>.template-credits-label{color: #00daff;
 }</style>\n    <div
 class=\"template-details-title\">#TITLE#</div>\n
-<div id=\"video-panel\" class=\"row template-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n            <iframe id=\"video-frame\" class=\"video-frame\" src=\"#URL#\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n        </div>\n    </div>\n\n
+<div id=\"video-panel\" class=\"row template-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 video-frame-container\">\n            <iframe id=\"video-frame\" class=\"video-frame\" src=\"#URL#\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n        </div>\n    </div>\n\n
 
 <div class=\"row template-row-container template-sub-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 template-text\">\n            #DESCRIPTION#\n        </div>\n    </div>\n\n
 
@@ -427,7 +427,7 @@ class=\"template-details-title\">#TITLE#</div>\n
 (24,'Motion Design Reel 2014','<body style=\"background-color: #f7dd00;\" /><style>.template-credits-label{color:
 #f7dd00;}</style>\n    <div
 class=\"template-details-title\">#TITLE#</div>\n
-<div id=\"video-panel\" class=\"row template-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n            <iframe id=\"video-frame\" class=\"video-frame\" src=\"#URL#\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n        </div>\n    </div>\n\n
+<div id=\"video-panel\" class=\"row template-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 video-frame-container\">\n            <iframe id=\"video-frame\" class=\"video-frame\" src=\"#URL#\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n        </div>\n    </div>\n\n
 
 <div class=\"row template-row-container template-sub-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 template-text\">\n            #DESCRIPTION#\n        </div>\n    </div>','2017-02-23 11:09:28','2017-02-23 11:09:28',NULL);
 /*!40000 ALTER TABLE `templates` ENABLE KEYS */;

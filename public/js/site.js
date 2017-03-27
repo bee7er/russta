@@ -28364,7 +28364,6 @@ var calcAspectRatio = function (event) {
         vidHeight = (Math.round(vidWidth * 0.5625, 0) + 20);
         vidFrame.css('height', vidHeight);
     });
-
 };
 
 /**
