@@ -20288,7 +20288,7 @@ body {
 }
 
 .logo-menu-row {
-  margin-bottom: 0;
+  margin-bottom: 20px;
 }
 
 .logo-menu-table {
@@ -20636,5 +20636,13 @@ body {
   .template-details-title {
     font-size: 32px;
     margin-bottom: 30px;
+  }
+
+  .header-block {
+    margin-bottom: 0;
+  }
+
+  .logo-menu-row {
+    margin-bottom: 0;
   }
 }

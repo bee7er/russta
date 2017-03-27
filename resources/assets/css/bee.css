@@ -114,7 +114,7 @@ body {
     margin:20px auto 0 auto;
 }
 .logo-menu-row {
-    margin-bottom:0;
+    margin-bottom:20px;
 }
 .logo-menu-table {
     margin:10px auto 10px auto;
@@ -383,5 +383,11 @@ body {
     .template-details-title {
         font-size: 32px;
         margin-bottom: 30px;
+    }
+    .header-block {
+        margin-bottom:0;
+    }
+    .logo-menu-row {
+        margin-bottom:0;
     }
 }
