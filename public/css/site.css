@@ -20523,7 +20523,7 @@ body {
 
 .template-credits-text {
   font-family: "Muli-ExtraBold", "Verdana", sans-serif;
-  margin-bottom: 20px;
+  margin: 0;
 }
 
 .template-credits-label {
@@ -20598,8 +20598,6 @@ body {
 @media (max-width: 1200px) {
   .row-container,
   .about-row-container,
-  .contact-row-container,
-  .merch-row-container,
   .fish-tank-row-container,
   .template-row-container {
     padding: 9px;
@@ -20610,11 +20608,8 @@ body {
 @media (max-width: 768px) {
   .row-container,
   .about-row-container,
-  .contact-row-container,
-  .merch-row-container,
   .fish-tank-row-container,
-  .template-row-container,
-  .template-credits-row-container {
+  .template-row-container {
     padding: 0;
     width: 90%;
   }
@@ -20629,8 +20624,7 @@ body {
   }
 
   .template-credits-row-container {
-    width: 70%;
-    padding: 10px;
+    width: 60%;
   }
 
   .template-details-title {
