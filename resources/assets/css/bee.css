@@ -390,4 +390,7 @@ body {
     .logo-menu-row {
         margin-bottom:0;
     }
+    .video-frame {
+        border:0;
+    }
 }

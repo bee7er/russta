@@ -18,9 +18,15 @@ var calcAspectRatio = function (event) {
     // On resize we recalculate the height of the iframe to maintain aspect ratio
     // There may be multiple video frames, so we are using the class to identify videos
     $(".video-frame").each(function(index, elem) {
-        vidFrame = $(elem);
-        vidWidth = vidFrame.width();
-        vidHeight = (Math.round(vidWidth * 0.5625, 0) + 20);
+        var vidFrame = $(elem);
+        var vidWidth = vidFrame.width();
+        // If we switch the border width down to zero we no longer need the adjustment
+        var borderWidth = vidFrame.css("border-left-width");
+        var adjustment = 20;
+        if (borderWidth == "0px") {
+            adjustment = 0;
+        }
+        vidHeight = (Math.round(vidWidth * 0.5625, 0) + adjustment);
         vidFrame.css('height', vidHeight);
     });
 };
