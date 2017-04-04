@@ -20644,7 +20644,9 @@ body {
     border: 0;
   }
 
-  #video-panel.template-row-container {
-    border: 0;
-  }
+  /*#video-panel.template-row-container {*/
+
+  /*border:0;*/
+
+  /*}*/
 }

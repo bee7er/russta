@@ -143,7 +143,7 @@ INSERT INTO `resources` VALUES
 ',NULL,NULL,'','blocks_th.jpg','https://player.vimeo
 .com/video/202748408',15,'2017-02-17 11:19:20','2017-02-17 11:19:20',NULL),
 (3,'video','weetabix - on the go','weetabix-onthego','<p>A series of quick morning cheats I designed and directed for Weetabix while at Animade. This collection of breakfast busting shorts was used as a supporting social media campaign for their main live action TV ad.</p><p>They tasked us with creating a series of skits and comic strips inspired by aeroplane safety cards. I knocked up some designs and worked with them to develop 15 morning cheat scenarios. Above is a selection of my favourites and below are some of the comic strips.</p>','','','','weetabix_th.jpg','https://player.vimeo.com/video/205356654',16,'2016-10-16 12:47:36','2016-10-16 12:47:36',NULL),
-(4,'video','bricklane.com','bricklane','A fun short explaining Brick Lane property management''s interesting new
+(4,'video','bricklane.com','bricklane','A fun short explaining Bricklane.com property management''s interesting new
 property based ISA.',NULL,NULL,'','bricklane_th.jpg',
 'https://player.vimeo.com/video/205358831',17,
 '2017-02-17 11:19:20','2017-02-17 11:19:20',NULL),
@@ -275,7 +275,7 @@ id=\"video-panel\" class=\"row template-row-container\">\n        <div class=\"c
     <div class=\"template-credits-title\">credits</div>\n    <div class=\"row template-credits-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n            <div class=\"template-credits-label\">Design and Direction</div>\n            <div class=\"template-credits-text\">Russ Etheridge</div>\n   <div class=\"template-credits-label\">Production</div>\n            <div class=\"template-credits-text\">Animade</div>\n   <div class=\"template-credits-label\">Agency</div>\n            <div class=\"template-credits-text\">Cake</div>\n   <div
     class=\"template-credits-label\">Client</div>\n            <div class=\"template-credits-text\">Weetabix</div>\n        </div>\n    </div>','2017-02-23 11:09:28','2017-02-23 11:09:28',NULL),
 
-(17,'Brick Lane','<body style=\"background-color: #3b9240;\" /><style>.template-credits-label{color: #3b9240;
+(17,'Bricklane.com','<body style=\"background-color: #3b9240;\" /><style>.template-credits-label{color: #3b9240;
 }</style>\n    <div
 class=\"template-details-title\">#TITLE#</div>\n    <div
 id=\"video-panel\" class=\"row template-row-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 video-frame-container\">\n            <iframe id=\"video-frame\" class=\"video-frame\" src=\"#URL#\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n        </div>\n    </div>\n\n    <div class=\"row template-row-container template-sub-container\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 template-text\">\n            #DESCRIPTION#\n        </div>\n    </div>\n\n
@@ -285,7 +285,7 @@ id=\"video-panel\" class=\"row template-row-container\">\n        <div class=\"c
     <div class=\"template-credits-label\">Design</div>\n<div class=\"template-credits-text\">Russ
     Etheridge<br />Tom Judd</div>\n
        <div class=\"template-credits-label\">Production</div>\n <div class=\"template-credits-text\">Animade</div>\n
-       <div class=\"template-credits-label\">Client</div>\n <div class=\"template-credits-text\">Brick Lane Property</div>\n        </div>\n    </div>','2017-02-23 11:09:28','2017-02-23 11:09:28',NULL),
+       <div class=\"template-credits-label\">Client</div>\n <div class=\"template-credits-text\">Bricklane.com</div>\n        </div>\n    </div>','2017-02-23 11:09:28','2017-02-23 11:09:28',NULL),
 
 (18,'Good hand','<body style=\"background-color: #00ffbb;\" /><style>.template-credits-label{color: #00ffbb;
 }</style>\n    <div
