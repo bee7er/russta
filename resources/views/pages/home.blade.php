@@ -26,12 +26,12 @@
         </div>
     @endif
 
-    <div class="row fish-tank-row-container">
+    <div class="row fish-tank-row-container" style="padding:0;">
         <div id="bodymovin" class="bodymovin-fishtank col-xs-12 col-sm-12 col-md-12 col-lg-12"></div>
     </div>
 
     <div id="about" class="panel-title">about</div>
-    <div id="about-row-container" class="row about-row-container">
+    <div id="about-row-container" class="row about-row-container" style="padding:0;">
         <table class="hidden-xs hidden-sm col-md-6 col-lg-6 about-table" style="width: 100%;">
             <tr>
                 <td style="width:50%;vertical-align: top;border-right: 10px solid #000;">
